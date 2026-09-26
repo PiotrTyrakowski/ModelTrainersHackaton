@@ -6,6 +6,10 @@ the public 2023 practice paper: medieval towns and dynasties, art, nineteenth
 century history, and twentieth century treaties and politics. Topic selection
 has seen that paper. This is development data, not an untouched evaluation.
 
+The [other-paper coverage audit](retrieval/other-papers-coverage.md) records what
+has been imported from 2024–2026, what still needs review, and topic gaps beyond
+the 2023 paper. Those other papers have not yet received a full tiny-model run.
+
 Each passage contains an exact article-text span plus its article title and
 section heading. Paragraphs stay intact where possible; long ones split at
 sentence or word boundaries. Bibliography, notes and navigation sections are
