@@ -1,5 +1,9 @@
 # Smallest-model exam checkpoints
 
+**Current user instruction:** run only 2B Q4, without essays, on four development
+papers (150 items / 180 points). Follow the [non-essay suite workflow](nonessay-evaluation.md).
+The tiny-model and full-paper instructions below describe historical experiments.
+
 Measure a tiny model on a fixed paper before expanding the system. After a meaningful change, rerun the same paper and compare points by question type. The first candidate is the image-capable `qwen3.5:0.8b`; its pinned learned files total **1,036,034,688 bytes**. This is a candidate, not a demonstrated passing model or a claim that no smaller model can work.
 
 The wrapper uses the existing `matura-lab` evaluator as an explicit local dependency. It does not vendor that evaluator: provide its checkout using `--runner-root`. The essay route imports the repository's `tasks-data` package directly. Use Python 3.10 or newer; the macOS system Python 3.9 cannot import this package. The checkpoint wrapper needs no external Python libraries.

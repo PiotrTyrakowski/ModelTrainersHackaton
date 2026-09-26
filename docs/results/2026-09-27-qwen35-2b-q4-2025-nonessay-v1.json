@@ -1,0 +1,1123 @@
+{
+  "schema_version": 1,
+  "checkpoint": "qwen35-2b-q4-2025-nonessay-v1",
+  "exam_id": "history-2025-may-nonessay-v1",
+  "grading_status": "local/provisional; not an official pass",
+  "target": {
+    "points": null,
+    "basis": "not specified"
+  },
+  "model": "qwen3.5:2b-q4_K_M",
+  "model_artifact_hash": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+  "learned_weight_bytes": 1945311744,
+  "config_sha256": "4c39a54c9b06b7760feea5660572d547b44449b3b14ff1fed46d77e6307e0f61",
+  "dependency_hashes": {
+    "source_config": "0e37c544158cfc379c687d2ec7eda78637ef163f708ee1bb3c3da1d106478b09",
+    "questions": "a4c500d446475b5e7407faf394f1fb79b593759689a66e883461a508dccebc2b",
+    "keys": "b868cffec5e3d48710b734b0584e5c8eed11cb9c6f55236937db936ca3ce81e7",
+    "rubrics": "704cb190cd7bfb7a6a96a01428a884cc03f1fe3351989d6c584015515986110f",
+    "corpus": "247ad0c11723812baa37c1d745ba7e2273446a95ab467ec79fd46df961721751",
+    "coverage_exam": "ce57ab79c68d247a073c580c2dc550fdc537254f7fbd5ddfe45ebb90ada2454d",
+    "coverage_types": "a16ab14a6652e080a0bba699c99ea9cff1854649493c0decf0f307fc987090e0",
+    "coverage_contract": "26be0d70446d4d319bb9d10791ff392223781232f6acdfc5d2a3f6d700e6bbf7",
+    "model_inventory": "0aca620abe03cb03c1a1c64b67a28d2d85a9b96f132998b9173db686c35ea9ab",
+    "runner:matura_lab/__init__.py": "26078843b1364deb68effd1dbe84e73eb0141009c1ff0267f7f8b558b2e6e421",
+    "runner:matura_lab/cli.py": "5420b0ba73aeabc0b555c93f5171c30f379f407721a41fd1e00d5ee02ad50b31",
+    "runner:matura_lab/core.py": "38614513502a197cf0116b74fe9122ed24b455b3e1470467d3f8bf2678098e89",
+    "runner:matura_lab/coverage.py": "00a5153404606d461a546e0b78eeb3a50f6b05421d99a95260246370bd80740d",
+    "runner:matura_lab/experiments.py": "b1b539729d8fdbb2839707a9ba7bb565bd0e1723756ee071cb11db1c33f9bb15",
+    "runner:matura_lab/generator.py": "f8416b05bd00915246243a2f2c9711519b0156ca9a60e082613575efcf934999",
+    "runner:matura_lab/modules/art.json": "d4430e78d1fb3432db6503f8336a97b6bc917b7e776504ae2c916fa0a99e03be",
+    "runner:matura_lab/modules/cartoon.json": "0dc77b47fe71c328e23d981f7fccd581ca66bc48d8dac54cd0bb8c2e0c6a2e7b",
+    "runner:matura_lab/modules/choice.json": "86e7230c6b3cb29edf3820f9347d6ceafb48688104ee701cb88f0890f143a884",
+    "runner:matura_lab/modules/chronology.json": "7cd1253a9682ee7b6b2a0a3a99dc36debb50247a9088c966e5ae3493012ba4d6",
+    "runner:matura_lab/modules/comparison.json": "2f557cc43bdd0031a6880eb913d853bc2e2bc46414ff4e008f479b15af7a869e",
+    "runner:matura_lab/modules/data_table.json": "c357967e8c35708399a06585fa58f0e122bda8c67dc5fbd30b3323d3503afa19",
+    "runner:matura_lab/modules/essay.json": "0a6f63ff1bbfd49a5fdd7b3045da34cd5191f57296068bfc8a52f39ea2859b69",
+    "runner:matura_lab/modules/explanation.json": "c16956f3fba7780f5bfa247a5e3b0acd9f3495eb1706214493a622e0f31fc119",
+    "runner:matura_lab/modules/genealogy.json": "6d2e422629e15eebc0fe5db1a60892c05a5e79c461f3c58a7087bd0fbc78616e",
+    "runner:matura_lab/modules/identification.json": "9f4277a846bbaeb458c3df2f1e68a39a7a2a28b707124399e6b5ff168bdfd81b",
+    "runner:matura_lab/modules/map.json": "e45b017fc2258929b6f5dedbd5b99a26b0dda7283d99e288dc0ec724ee045d05",
+    "runner:matura_lab/modules/matching.json": "ec23f5c480a15e613ca938d52eddcd25e963481a6b478087716452a9680647c6",
+    "runner:matura_lab/modules/true_false.json": "eb207e7faa3506ab8fee2a8b579bd357298708305b7a67d2105538ce9704044b",
+    "runner:matura_lab/providers.py": "afdde5acf452b12907e0127a4cc06f349650ce3e0530520a92d38e4f41b49368",
+    "runner:matura_lab/retrieval.py": "ffea813cdb3980f7396d122b9e033ac9a5b09068dcbafff9a8ca5a1fb14c337e",
+    "runner:matura_lab/scoring.py": "135e54003176802300385ab4f9b0c8656170795334c2582819d129579f7a3180",
+    "runner:matura_lab/strategies.py": "419980032c4be41a5c2cddeea93da4259c1dfaaee6b8c2490b0741051ec9cfaa",
+    "runner:matura_lab/submissions.py": "4bb4eb6228291047e9ce66db127000a6f2dd6e2e3d0aa835d66cf477c2db646f",
+    "runner:matura_lab/table_tools.py": "b7bb7e39c60965e7e0b2005d11e963499c822a5470214ea503db157a2e4783a8",
+    "runner:matura_lab/zero_model.py": "26c350ffc02a1d63feb14efb7326dba6a072a5ad30b4128659cd72187b3540b3",
+    "image:0": "5d41e6842eee01c6d8511e863346a9a24a8f3dcf49831a1333756569cac58325",
+    "image:1": "e4c0b389c21c03732b8922a35acba8093ddff92929242a315196c7e175a67c5e",
+    "image:2": "9e13371266114f8cb100ceb358df7b5ddfe9807ea3c5be78e772900eb0061589",
+    "image:3": "1854bba680ccf59bb7797aca2e3f583245f7997652b55bdbc332670d1943ee57",
+    "image:4": "136e5b1fce586be2604a61c1282f40c3866791069c9c8543aa4d34aaeb08cb02",
+    "image:5": "096b21702f175b401d9674a723d8404aa1e36f484d6372f86444c3bd9231e515",
+    "image:6": "959c3e45ea7095fb8fce676c56fd3f3db58cde366238a06ebe6d66dc521f6257",
+    "image:7": "075760953437c68530cc27ef7998dcd5a43370dc61f6db94590e9a08b735a29d",
+    "image:8": "8dfa68eba28851bf618274c0d03d32192d90c39c697f717a1986deb4eb4cfa86",
+    "image:9": "5103e7a5d34b9382c4a509d5efabeea736051bf395cc6cc344074398c6e72369",
+    "image:10": "fe77aedf22f5f55335f78ec42106e3580912394848e60cd87dff46a0f0dc6d51",
+    "image:11": "62538ac2f781d5a2df7ffb34740502145d064c0b955684d9d0058e3ed155de28",
+    "image:12": "ead8f9eeb8fd43a7cb053043a4c4bff9df2b90e94d8d138ec831a013d8dfa6d8",
+    "image:13": "3c08139be03f45d2ab194d4d5f8d1b1528a3d76635510e7422a3d024f19a8d61",
+    "image:14": "b5c23901cccda8b66e6c5475d59f91577f5df00547c49ba014dd40f90b99a2e1",
+    "image:15": "9a71fe26e0ea511c2065c4cf2ca68bd591993c4d097195dbcd04e41a54c28618",
+    "image:16": "50dbd2990940b42eb03fed47b45d72bb082248e7cb2599b462f5958a331ef936",
+    "checkpoint_tool:answer_contract.py": "c51917f478a686947a90f9ec1d273c0c6b6be05b135922b53c58211a405a03eb",
+    "checkpoint_tool:checkpoint.py": "b1969802e4a02cd86946876ffff6ed3d4d900568469c287ff80091b388529849",
+    "checkpoint_tool:closed_answers.py": "a18d3c73be0221533bbad37358bccba64da2d8f56a64f9eef3b3c874aeee4eda",
+    "checkpoint_tool:essay_routing.py": "fa9efbb2000bf52d3fc0d33e3799fd0f04961279f302abee21d8dc1255e16465",
+    "checkpoint_tool:focused_retrieval.py": "2aaae8a2f38298329d0329d818e77b62fc3c8ddd8273e9d9b3feec31cf375c85",
+    "checkpoint_tool:reporting.py": "ae3c5faa7b6c1932deabfbcabeca1d12113a933e3bdd2ddf13a82cad09e7781a"
+  },
+  "execution_environment": "local macOS arm64 / Apple M5 Metal / Ollama 0.34.4 / context 8192",
+  "comparison_contract": {
+    "exam": "ce57ab79c68d247a073c580c2dc550fdc537254f7fbd5ddfe45ebb90ada2454d",
+    "keys": "b868cffec5e3d48710b734b0584e5c8eed11cb9c6f55236937db936ca3ce81e7",
+    "rubric": "704cb190cd7bfb7a6a96a01428a884cc03f1fe3351989d6c584015515986110f",
+    "question_inputs": "a4c500d446475b5e7407faf394f1fb79b593759689a66e883461a508dccebc2b",
+    "exam_max_points": 45
+  },
+  "variants": {
+    "bm25": {
+      "earned_points": 7.0,
+      "exam_max_points": 45,
+      "score_lower_bound": 7.0,
+      "score_upper_bound": 7.0,
+      "exam_items": 37,
+      "selected_items": 37,
+      "processed_items": 37,
+      "answered_items": 36,
+      "empty_answer_items": 0,
+      "selected_not_run_ids": [],
+      "selected_not_run_points": 0,
+      "excluded_ids": [],
+      "excluded_points": 0,
+      "pending_ids": [],
+      "pending_max_points": 0,
+      "abstained_ids": [],
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "21.1"
+      ],
+      "over_budget_ids": [],
+      "truncated_ids": [
+        "21.1"
+      ],
+      "run_complete": true,
+      "full_exam_selected": true,
+      "grading_complete": true,
+      "target_status": "target_not_specified",
+      "calls": 37,
+      "tokens": {
+        "prompt_tokens": {
+          "known_sum": 73163,
+          "reported_calls": 37,
+          "unknown_calls": 0
+        },
+        "completion_tokens": {
+          "known_sum": 7279,
+          "reported_calls": 37,
+          "unknown_calls": 0
+        },
+        "total_tokens": {
+          "known_sum": 80442,
+          "reported_calls": 37,
+          "unknown_calls": 0
+        }
+      },
+      "latency_seconds": {
+        "sum": 273.9127497500158,
+        "mean": 7.403047290540967,
+        "median": 5.562253999996756,
+        "p95": 15.177328582998598,
+        "max": 55.27023449999979
+      },
+      "by_type": {
+        "art": {
+          "earned_points": 1.0,
+          "exam_max_points": 5,
+          "score_lower_bound": 1.0,
+          "score_upper_bound": 1.0,
+          "exam_items": 4,
+          "selected_items": 4,
+          "processed_items": 4,
+          "answered_items": 4,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 4,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 7066,
+              "reported_calls": 4,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 612,
+              "reported_calls": 4,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 7678,
+              "reported_calls": 4,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 25.173079249012517,
+            "mean": 6.293269812253129,
+            "median": 6.505381479004427,
+            "p95": 8.29252745800477,
+            "max": 8.29252745800477
+          }
+        },
+        "cartoon": {
+          "earned_points": 0.0,
+          "exam_max_points": 3,
+          "score_lower_bound": 0.0,
+          "score_upper_bound": 0.0,
+          "exam_items": 1,
+          "selected_items": 1,
+          "processed_items": 1,
+          "answered_items": 1,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 1,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 1504,
+              "reported_calls": 1,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 256,
+              "reported_calls": 1,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 1760,
+              "reported_calls": 1,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 15.177328582998598,
+            "mean": 15.177328582998598,
+            "median": 15.177328582998598,
+            "p95": 15.177328582998598,
+            "max": 15.177328582998598
+          }
+        },
+        "choice": {
+          "earned_points": 2,
+          "exam_max_points": 3,
+          "score_lower_bound": 2,
+          "score_upper_bound": 2,
+          "exam_items": 3,
+          "selected_items": 3,
+          "processed_items": 3,
+          "answered_items": 3,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 3,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 5971,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 32,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 6003,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 8.639172958995914,
+            "mean": 2.879724319665305,
+            "median": 2.831842166997376,
+            "p95": 3.276639707997674,
+            "max": 3.276639707997674
+          }
+        },
+        "chronology": {
+          "earned_points": 0.0,
+          "exam_max_points": 2,
+          "score_lower_bound": 0.0,
+          "score_upper_bound": 0.0,
+          "exam_items": 2,
+          "selected_items": 2,
+          "processed_items": 2,
+          "answered_items": 2,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 2,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 3675,
+              "reported_calls": 2,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 486,
+              "reported_calls": 2,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 4161,
+              "reported_calls": 2,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 16.51816312500887,
+            "mean": 8.259081562504434,
+            "median": 8.259081562504434,
+            "p95": 9.781246500002453,
+            "max": 9.781246500002453
+          }
+        },
+        "comparison": {
+          "earned_points": 0.0,
+          "exam_max_points": 7,
+          "score_lower_bound": 0.0,
+          "score_upper_bound": 0.0,
+          "exam_items": 6,
+          "selected_items": 6,
+          "processed_items": 6,
+          "answered_items": 6,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 6,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 12132,
+              "reported_calls": 6,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 1014,
+              "reported_calls": 6,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 13146,
+              "reported_calls": 6,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 35.87374454098608,
+            "mean": 5.97895742349768,
+            "median": 5.666405562496948,
+            "p95": 8.041148541000439,
+            "max": 8.041148541000439
+          }
+        },
+        "explanation": {
+          "earned_points": 0.0,
+          "exam_max_points": 4,
+          "score_lower_bound": 0.0,
+          "score_upper_bound": 0.0,
+          "exam_items": 4,
+          "selected_items": 4,
+          "processed_items": 4,
+          "answered_items": 4,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 4,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 8231,
+              "reported_calls": 4,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 674,
+              "reported_calls": 4,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 8905,
+              "reported_calls": 4,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 25.661496582994005,
+            "mean": 6.415374145748501,
+            "median": 6.541478916496999,
+            "p95": 8.81313316700107,
+            "max": 8.81313316700107
+          }
+        },
+        "genealogy": {
+          "earned_points": 0.0,
+          "exam_max_points": 1,
+          "score_lower_bound": 0.0,
+          "score_upper_bound": 0.0,
+          "exam_items": 1,
+          "selected_items": 1,
+          "processed_items": 1,
+          "answered_items": 1,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 1,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 3136,
+              "reported_calls": 1,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 403,
+              "reported_calls": 1,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 3539,
+              "reported_calls": 1,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 14.176334750001843,
+            "mean": 14.176334750001843,
+            "median": 14.176334750001843,
+            "p95": 14.176334750001843,
+            "max": 14.176334750001843
+          }
+        },
+        "identification": {
+          "earned_points": 1.0,
+          "exam_max_points": 9,
+          "score_lower_bound": 1.0,
+          "score_upper_bound": 1.0,
+          "exam_items": 8,
+          "selected_items": 8,
+          "processed_items": 8,
+          "answered_items": 7,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [
+            "21.1"
+          ],
+          "over_budget_ids": [],
+          "truncated_ids": [
+            "21.1"
+          ],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 8,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 14237,
+              "reported_calls": 8,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 3052,
+              "reported_calls": 8,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 17289,
+              "reported_calls": 8,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 92.6028167920158,
+            "mean": 11.575352099001975,
+            "median": 5.421551562500099,
+            "p95": 55.27023449999979,
+            "max": 55.27023449999979
+          }
+        },
+        "map": {
+          "earned_points": 0.0,
+          "exam_max_points": 3,
+          "score_lower_bound": 0.0,
+          "score_upper_bound": 0.0,
+          "exam_items": 3,
+          "selected_items": 3,
+          "processed_items": 3,
+          "answered_items": 3,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 3,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 6513,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 554,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 7067,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 21.992966501005867,
+            "mean": 7.330988833668623,
+            "median": 7.672552542004269,
+            "p95": 7.7022963339986745,
+            "max": 7.7022963339986745
+          }
+        },
+        "matching": {
+          "earned_points": 1.0,
+          "exam_max_points": 4,
+          "score_lower_bound": 1.0,
+          "score_upper_bound": 1.0,
+          "exam_items": 2,
+          "selected_items": 2,
+          "processed_items": 2,
+          "answered_items": 2,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 2,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 3941,
+              "reported_calls": 2,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 144,
+              "reported_calls": 2,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 4085,
+              "reported_calls": 2,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 9.186821125003917,
+            "mean": 4.593410562501958,
+            "median": 4.593410562501958,
+            "p95": 5.031543832999887,
+            "max": 5.031543832999887
+          }
+        },
+        "true_false": {
+          "earned_points": 2.0,
+          "exam_max_points": 4,
+          "score_lower_bound": 2.0,
+          "score_upper_bound": 2.0,
+          "exam_items": 3,
+          "selected_items": 3,
+          "processed_items": 3,
+          "answered_items": 3,
+          "empty_answer_items": 0,
+          "selected_not_run_ids": [],
+          "selected_not_run_points": 0,
+          "excluded_ids": [],
+          "excluded_points": 0,
+          "pending_ids": [],
+          "pending_max_points": 0,
+          "abstained_ids": [],
+          "technical_failure_ids": [],
+          "format_failure_ids": [],
+          "over_budget_ids": [],
+          "truncated_ids": [],
+          "run_complete": true,
+          "full_exam_selected": true,
+          "grading_complete": true,
+          "target_status": "target_not_specified",
+          "calls": 3,
+          "tokens": {
+            "prompt_tokens": {
+              "known_sum": 6757,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            },
+            "completion_tokens": {
+              "known_sum": 52,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            },
+            "total_tokens": {
+              "known_sum": 6809,
+              "reported_calls": 3,
+              "unknown_calls": 0
+            }
+          },
+          "latency_seconds": {
+            "sum": 8.91082554199238,
+            "mean": 2.9702751806641268,
+            "median": 2.8148849999997765,
+            "p95": 4.078766874998109,
+            "max": 4.078766874998109
+          }
+        }
+      }
+    }
+  },
+  "comparison_variant_map": {},
+  "items": [
+    {
+      "question_id": "1.1",
+      "type": "art",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "4c6e1a28233bcf61b9be2af3229c928f2beed50695cad497dd2096832c7253b7",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Chooses A rather than the required Egyptian vessel C; the imagery identification and justification are wrong."
+    },
+    {
+      "question_id": "1.2",
+      "type": "explanation",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "d884c55adb15352aaf44b5bd82a8091a9c5d8e0c5f6a30ac37157dc7acf030e2",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Discusses Greek and Roman religion instead of connecting Egyptian preservation/mummification of the body with belief in an afterlife."
+    },
+    {
+      "question_id": "2",
+      "type": "chronology",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "dbef5f93996de921bb02d6be7843e3fad9011bb1ca2399c06a9792f71cba76e1",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Places Paul before the Athenian democratic reform; the required order is after Pericles, with Paul in the first century AD."
+    },
+    {
+      "question_id": "3.1",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "e35e67742025f0f759abbbd7f42c22fe779e6b0a29da37fb94ae7dadae184807",
+      "status": "ok",
+      "points": 1.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Explicitly names water transport, the required non-bridge function. Awarded for that clause; unrelated cargo/bridge narrative is a selected stricter-grading sensitivity (could lose this point)."
+    },
+    {
+      "question_id": "3.2",
+      "type": "art",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "14e2a82faa4c0d72a2491ed9cce22a251f0d046073535a9ab6642630622cee25",
+      "status": "ok",
+      "points": 1.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Correctly identifies Rome and the visible multiple levels of arches, satisfying the required architectural justification."
+    },
+    {
+      "question_id": "4",
+      "type": "matching",
+      "variant": "bm25",
+      "max_points": 2,
+      "question_hash": "2b6c5fd5049eaa366ee968042886c75e9ad2c888caacf202d3ca518d7c7889cc",
+      "status": "ok",
+      "points": 1.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "A Bracia mniejsi identifies the Franciscans and C Towarzystwo Jezusowe the Jesuits. B Mnisze does not identify the Benedictines. Two correct matches earn one point."
+    },
+    {
+      "question_id": "5.1",
+      "type": "genealogy",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "ca0dbc4d3bdb263feb04cc76616a467ca401ac8b20b25b84c9c3079f6f2d3b8b",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Does not provide both required matches A Waclaw II / B Brzetyslaw I; the unrelated dynastic narrative includes substantial chronological errors."
+    },
+    {
+      "question_id": "5.2",
+      "type": "explanation",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "508adeba478a3867cfcfd165c10611368c339426a88b31365dca9a0f327a13f0",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Fails to identify St Adalbert/Wojciech or justify this using the Gniezno relics; answers with unrelated and erroneous royal history."
+    },
+    {
+      "question_id": "6",
+      "type": "map",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "947087ebe2f5986ec48f7da857a0c9b39981fa477f643cb1cecb8358cffcebd1",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Selects area 1/Ostrow instead of area 3; does not identify the regular street grid and market supporting German-law town planning."
+    },
+    {
+      "question_id": "7.1",
+      "type": "map",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "fd61424eceb97f00945dd2a243b9224eeb24f679d4b0eb15d2dd62adb0f341f9",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Correctly says the same Thirteen Years War but dates it 1308–1326 and misdescribes the map/annexation, so the historical justification is erroneous. A lenient reading of the separate 1454/1466 references could award one point; selected sensitivity."
+    },
+    {
+      "question_id": "7.2",
+      "type": "choice",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "6ce9f3c1c778d4355ecf1cfb410d79b960449268ca46a4af938f53efbf820e94",
+      "status": "ok",
+      "points": 1,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "8",
+      "type": "art",
+      "variant": "bm25",
+      "max_points": 2,
+      "question_hash": "f22e191ee28fa6917f5ef4a0c744e56e2a726610776c3665bfb80b5ebdd26c70",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Names Gothic but pairs it with stone columns/red facade instead of a valid visible Gothic feature; second style Renaissance is wrong (Baroque tower). No complete correct style-feature pair. A lenient reading of red facade as brick Gothic could award one; selected sensitivity."
+    },
+    {
+      "question_id": "9.1",
+      "type": "choice",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "e8766db24e098f5c226901e2f432775e73fbe61e630acc1f5afcabadd6fee204",
+      "status": "ok",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "9.2",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "72efacf474662b442416a0714ac7af83f389ee50ca9af6ab465311c0a9c851ae",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Does not name the Warsaw Confederation; the invented Pacts of Warsaw / Order of Peace names do not satisfy identification."
+    },
+    {
+      "question_id": "9.3",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "08b7ca1910815b222da6c0736d9a1f6304c345de0d246cec5414bf3d77b2b9d1",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Does not identify St Bartholomew’s Day massacre; discusses unrelated peasant and French revolutionary events."
+    },
+    {
+      "question_id": "10",
+      "type": "true_false",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "4a14cabc4c892c1c5be190f6b5a4f3d6d3964b6a62114b8a56592ac07b274e2b",
+      "status": "ok",
+      "points": 0.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "11.1",
+      "type": "matching",
+      "variant": "bm25",
+      "max_points": 2,
+      "question_hash": "262d10769ba8b8d8974faa4db198f55d46f11c4c0c70f010c0b44ab95c45dde3",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Only B France is correct. A is USA, not Poland; C is Poland, not the German/Hohenzollern state. Fewer than two correct matches earns zero."
+    },
+    {
+      "question_id": "11.2",
+      "type": "chronology",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "69559976e0b78888b6e376ce796ad4b1ad358cc43720fc05abcc25457f5364bf",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Chooses C instead of the earliest document A, the US Constitution of 1787. The justification also misattributes American and French institutions to Poland."
+    },
+    {
+      "question_id": "12",
+      "type": "comparison",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "74b9dba5526063b13d20f76bebd6cc713d947e57652f853177da8b92a39bd296",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Incorrectly says yes: the 1810 Duchy of Warsaw banknote predates the Congress Poland bank described under Nicholas I. The marking example swaps source numbers, but the substantive no/chronology requirement is unambiguous."
+    },
+    {
+      "question_id": "13",
+      "type": "explanation",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "4ed9ade22c2dcbc08416f831b0bd9a8336eb302416286e3d227f27bad04a318c",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Does not explain workers fearing job loss or reduced living standards; the claim that liberation from feudal agriculture motivated machine destruction reverses the required social mechanism."
+    },
+    {
+      "question_id": "14.1",
+      "type": "map",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "e68ac6e7a5f2042b5d6bb2ad869aaf373d3df3811144cdd1552622f00e7bfd10",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Selects A but wrongly dates the uprising to 1918 and misidentifies the heraldic elements. The required justification relates the November Uprising map to the two-field Polish-Lithuanian arms."
+    },
+    {
+      "question_id": "14.2",
+      "type": "true_false",
+      "variant": "bm25",
+      "max_points": 2,
+      "question_hash": "2f7dbf7bc22536c576662a05bddd7d0e2760a85354f3a54ecd1b2525ddd854bd",
+      "status": "ok",
+      "points": 2.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "15.1",
+      "type": "true_false",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "723e512c0145e2678843ea15e1d18d149b3c690469cad762e583fd9b7a09ab13",
+      "status": "ok",
+      "points": 0.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "15.2",
+      "type": "explanation",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "7b3cb680e5881a40f2d84575e0e37829e0dd8b261edd644fc451ed8bd519f338",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "The opening opponents label is followed by a contradictory Republican/pro-abolition justification; fails to connect Confederate cotton embargo with defending slavery."
+    },
+    {
+      "question_id": "16.1",
+      "type": "comparison",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "77d7905a47235505db82cc361e7c7e8936409ecd8f217ba51716fe05fe09a891",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Selects A but attributes the papers to PZPR and falsely calls B anti-socialist. Does not correctly link PPS socialism plus independence with Robotnik."
+    },
+    {
+      "question_id": "16.2",
+      "type": "comparison",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "37a8517235d1d9d9de84acf5e636c2e89cfb2360c201a27c3f75bab3b69b6221",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "The no answer is justified by a false account of the 1917 February Revolution; fails to identify the newspaper’s 1905 revolution and contrast it with the actual overthrow in 1917."
+    },
+    {
+      "question_id": "17.1",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "42b7edc627c86fe36c5bb7276ea9298e959e56a770275131be09cc524316747f",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Names the Civil Rights Movement rather than the suffragette/feminist/emancipation movement. The following explanation correctly mentions women’s voting rights; accepting that description despite the wrong movement name is a selected +1 sensitivity."
+    },
+    {
+      "question_id": "17.2",
+      "type": "choice",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "61f0c4059738ec81a4f43f49e288256879d7d549f04c97035c44d15983df81e5",
+      "status": "ok",
+      "points": 1,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "18",
+      "type": "cartoon",
+      "variant": "bm25",
+      "max_points": 3,
+      "question_hash": "2e6f76a3308db229340e16f1803318cd1cc684676f381ae82a7e32db0002f03b",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Misreads the allegory as Louis XIV and an 1871 uprising/transition from absolutism. No correct interpretation of the Franco-German reversal or required graphic/title elements; merely naming Versailles 1919 is insufficient."
+    },
+    {
+      "question_id": "19",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 2,
+      "question_hash": "d8a2af8c3acc292e5848ec05aa31973948128c2fc792ab0852475e9c8b547387",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Gives abstract and incorrect constitutional situations rather than the assassination of Narutowicz and resignation of Wojciechowski/May Coup. Neither required event is identified."
+    },
+    {
+      "question_id": "20",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "bc646f6eca9125782e63a321c95e86b3cd9f94ba2f4786958cf3a694bc854a7a",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Does not provide two distinct relevant totalitarian systems. Describes communism/Stalinism and unrelated Polish events, omitting fascism or Nazism."
+    },
+    {
+      "question_id": "21.1",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "c200d061ae08e6e20184048b7ea00651dff6aaa6bf6be0dc68b0b04d51949ff4",
+      "status": "error",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "21.2",
+      "type": "comparison",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "eaa54d273b0ee234746aec6711d608c817882f7597822cf7068fdd25744f9bcf",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Selects source 2/Gdynia instead of source 1/COP. Gdynia construction began before the 1926 coup, while COP began under Sanacja."
+    },
+    {
+      "question_id": "22",
+      "type": "comparison",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "457747f0b115ea533325103b6b672f63b07c05f5890fead79ee54b276d6e0b59",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Opening correctly contrasts a 1941 agreement with the 1943 Kosciuszko division, but then confuses the agreement with 1921 and says Berling’s formation arose after World War II. Contradictory source justification; a lenient first-sentence-only reading is a selected +1 sensitivity."
+    },
+    {
+      "question_id": "23",
+      "type": "art",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "5c30d8da71cb6855c4b685952b903a9c839fd4520c35d61f9909fca52402cb56",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Identifies Rococo rather than Socialist Realism; a relevant style-feature pair is absent."
+    },
+    {
+      "question_id": "24.1",
+      "type": "comparison",
+      "variant": "bm25",
+      "max_points": 2,
+      "question_hash": "d7c887a1486810339d4295c2f678cc6ade9e24d5f9ea61c994ecaad26076099d",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Similarity transfers Friszke’s overall great-victory judgment to Dudek, who only credits the Senate concession and denies that the agreement itself was decisive. The difference falsely attributes election of Jaruzelski/end of Solidarity rule to source 2. No accurate comparison; accepting a broad shared opposition-success reading is a selected +1 sensitivity."
+    },
+    {
+      "question_id": "24.2",
+      "type": "identification",
+      "variant": "bm25",
+      "max_points": 1,
+      "question_hash": "74bf85638146e88588757593f44dfc090a08c2b827a6adba403aff95dd0e57ef",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex manual CKE rubric review; provisional, not independent",
+      "grade_reason": "Poland is incorrect; the required country with violent overthrow of communist dictatorship in 1989 is Romania."
+    }
+  ],
+  "notes": [
+    "Pending grades and selected-but-not-run items remain unknown; excluded items contribute zero to the full-paper total.",
+    "Latency is per-question wall time including processing; token counts are partial when the server does not report usage.",
+    "Model artifact metadata does not by itself verify live server identity. Development results are not an untouched final test."
+  ],
+  "source_report_sha256": "b6840630c1aa4a50447137b7b1e5322723eb9f094e66980bb20ade8e706dde60",
+  "source_report": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/ModelTrainersHackaton/artifacts/nonessay-v1/checkpoints/qwen35-2b-q4-2025-nonessay-v1/run-graded.json"
+}

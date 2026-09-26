@@ -1,0 +1,18 @@
+{
+  "choice": {
+    "7.2": "C",
+    "9.1": "A",
+    "17.2": "A"
+  },
+  "true_false": {
+    "10": "FP",
+    "14.2": "PFP",
+    "15.1": "PF"
+  },
+  "grading_pdf_sha256": "dc8b17f097e0a5da07bb30a3ba7c73df2ca25db0e8c70817baa6b627a019f29c",
+  "grading_text_sha256": "88f05433ce76bcf3255cfbed7684853bb51e5f676c6c78d93ea3f6ba41b5683f",
+  "excluded_ids": [
+    "26"
+  ],
+  "note": "2025 marking PDF labels its essay 26 whereas the paper labels it 25; both are excluded. Every non-essay ID and maximum must match."
+}

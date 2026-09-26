@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "scope": "nonessay",
+  "model": {
+    "tag": "qwen3.5:2b-q4_K_M",
+    "manifest_sha256": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+    "learned_bytes": 1945311744
+  },
+  "papers": [
+    {
+      "name": "qwen35-2b-q4-2023-nonessay-v1",
+      "config": "configs/checkpoints/qwen35-2b-q4-2023-nonessay-v1.json",
+      "exam_id": "history-2023-mock-v1-nonessay-v1",
+      "items": 36,
+      "points": 45
+    },
+    {
+      "name": "qwen35-2b-q4-2024-nonessay-v1",
+      "config": "configs/checkpoints/qwen35-2b-q4-2024-nonessay-v1.json",
+      "exam_id": "history-2024-may-reviewed-v1-nonessay-v1",
+      "items": 39,
+      "points": 45
+    },
+    {
+      "name": "qwen35-2b-q4-2025-nonessay-v1",
+      "config": "configs/checkpoints/qwen35-2b-q4-2025-nonessay-v1.json",
+      "exam_id": "history-2025-may-nonessay-v1",
+      "items": 37,
+      "points": 45
+    },
+    {
+      "name": "qwen35-2b-q4-2026-nonessay-v1",
+      "config": "configs/checkpoints/qwen35-2b-q4-2026-nonessay-v1.json",
+      "exam_id": "history-2026-may-nonessay-v1",
+      "items": 38,
+      "points": 45
+    }
+  ]
+}

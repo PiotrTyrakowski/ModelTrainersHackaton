@@ -1,0 +1,371 @@
+{
+  "demo": false,
+  "split": "development",
+  "exam_id": "history-2025-may-nonessay-v1",
+  "questions": "../ModelTrainersHackaton/data/processed/history-2025-may-nonessay-v1/input/questions.jsonl",
+  "keys": "../ModelTrainersHackaton/data/processed/history-2025-may-nonessay-v1/grading/keys.jsonl",
+  "model": {
+    "base_url": "http://127.0.0.1:18081/v1",
+    "model": "qwen3.5:2b-q4_K_M",
+    "key_env": "MATURA_LOCAL_API_KEY",
+    "vision": true,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "reasoning_effort": "none"
+  },
+  "variants": [
+    "bm25"
+  ],
+  "budget": {
+    "max_seconds": 120,
+    "max_calls": 1,
+    "max_output_tokens": 2200
+  },
+  "coverage": {
+    "exam": "../ModelTrainersHackaton/data/processed/history-2025-may-nonessay-v1/exam.json",
+    "types": "../ModelTrainersHackaton/data/processed/history-2025-may-nonessay-v1/types.json",
+    "contract": "../ModelTrainersHackaton/data/processed/history-2025-may-nonessay-v1/coverage.json",
+    "require_full_exam": true
+  },
+  "model_provenance": {
+    "registry": "https://ollama.com/library/qwen3.5:2b-q4_K_M",
+    "runtime": "Ollama 0.34.4",
+    "download_verified": true,
+    "note": "Official same-parameter Q4_K_M artifact, manifest and every blob SHA verified; live loaded identity checked separately.",
+    "manifest_sha256": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+    "total_learned_bytes": 1945311744,
+    "parameter_count": 2274069824,
+    "quantization": "Q4_K_M",
+    "inventory": "../ModelTrainersHackaton/artifacts/local-runtime/qwen35-2b-q4/inventory.json",
+    "context_tokens": 8192
+  },
+  "corpus": "../ModelTrainersHackaton/data/raw/retrieval/wiki-ehistoria-v1/index.sqlite",
+  "strategy": {
+    "top_k": 3,
+    "output_contract": "typed_answer_v3",
+    "query_policy": "focused_bm25_v1"
+  },
+  "corpus_provenance": {
+    "kind": "wikipedia-plus-ehistoria-v1",
+    "articles": 286,
+    "passages": 4638,
+    "sources": [
+      {
+        "kind": "wikipedia",
+        "manifest_sha256": "611367d6424bd5fe03d6f745d72e55aeb588723988f0e6992db9f85ac8c8e5c0",
+        "manifest": {
+          "kind": "development_coverage_expansion",
+          "selection_note": "General historical topics chosen from observed gaps on the public development paper. These are encyclopedia articles, not exam solutions. Selection has seen the development questions; evaluation is not held out.",
+          "articles": 89,
+          "passages": 3060,
+          "failures": [],
+          "pending_titles": [],
+          "articles_sha256": "1dd81cde22f6a4e46029823306b2f97e64894213a042bf24095e821f9b8a7e6f",
+          "passages_sha256": "f5541e1323437fde5d4ecf21bf120d3c988592834258510946692d0b11b6fe1a",
+          "topics_sha256": "8b16c8450d230ab339638bb8adf21a1c5d533ab20d972f89e5d7b49a085ac757",
+          "transform": "Exact paragraph/sentence spans; title and section prefixes; omit bibliography/navigation; no generated facts or exam answer keys",
+          "quality_limit": "Provenance and passage boundaries verified; encyclopedia claims are not independently fact-checked"
+        }
+      },
+      {
+        "kind": "ehistoria",
+        "manifest_sha256": "7750b8fe89e9f3d59166d28c7fcdc274ad4387e904db64db69287ac3f63e4016",
+        "manifest": {
+          "kind": "e-historia-repetytorium-v1",
+          "source_index": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony.html",
+          "selection_note": "All lessons linked from the four user-selected repetytorium classes, independent of exam answer keys.",
+          "articles": 197,
+          "passages": 1578,
+          "catalogue_items": 198,
+          "failures": [],
+          "excluded_empty_lessons": [
+            {
+              "url": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-7-sprawa-polski-pod-koniec-wojny-repetytorium-streszczenie-zakres-rozszerzony.html",
+              "catalog_title": "2. 7. Sprawa Polski pod koniec wojny",
+              "class": "Klasa 4",
+              "category_url": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony.html",
+              "reason": "Published article body is empty",
+              "html_sha256": "1389496a6c4156dad77e5020406813f7eb424fade1a6a3db67e6bc73a18c27c0"
+            }
+          ],
+          "pending_titles": [],
+          "robots_sha256": "5cc6230a4126d736a49e17f4a1699b831962e5ec28ac84da1a79efa7f3c3da74",
+          "articles_sha256": "3d94ee7e5c78c262b88624e4631e4138a66266b58f42e39c09f4d2a9a5b62b46",
+          "passages_sha256": "d1e55248e108174681f888268a70697f0fdddff54a239efb2c54b765d8c65dca",
+          "catalogue_sha256": "a8304b2e778a88af2b90431b13167d244f100ab0dd7a4b063ef2a31f13e64591",
+          "builder_sha256": "9b8e7f6cdc8946ab3cf2c59d1e01cee617ff3685ebc204347c0f476260c48e4d",
+          "generated_facts": 0,
+          "quality_limit": "Extraction and provenance checks, not independent historical fact verification; image contents not transcribed.",
+          "licence": "No open redistribution licence identified; author rights retained. Local research snapshot.",
+          "attribution": "Wiesław Zdziabek / e-Historia",
+          "author_url": "https://e-historia.com.pl/o-projekcie-e-historia---wspolpraca-miedzynarodowa/4-o-autorze.html"
+        }
+      }
+    ],
+    "failures": [],
+    "pending_titles": [],
+    "selection_note": "Unchanged Wikipedia v3 plus all four classes of the user-selected repetytorium. No exam answer keys or generated historical supplements.",
+    "articles_sha256": "7be55fb69e5690774fc351a57ea2d76ceff02951237fe52c4f267327d5a87f72",
+    "passages_sha256": "017fc16f591af3e7ea9ac692a4921dc23d26ac398ac4335244e6260c501247ee",
+    "index_sha256": "247ad0c11723812baa37c1d745ba7e2273446a95ab467ec79fd46df961721751",
+    "index_chunks": 4638,
+    "legacy_add_size": 1422,
+    "legacy_add_overlap": 0,
+    "builder_sha256": "4c05789a6b92a34e915626bfd67e8fa5f1a4f872c1681d5f86d8c6be65e08de2",
+    "verification": "Input hashes, scoped source URLs, attribution, exact article spans and indexed text verified; original source records unchanged",
+    "quality_limit": "Historical claims not independently verified; site images not transcribed; development corpus, not held-out evaluation data"
+  },
+  "experiment_note": "Non-essay evaluation, all 45 points; only Qwen3.5 2B Q4_K_M requested by user. Frozen mixed BM25 harness, no essay bank; four development papers, not a held-out or full matura result.",
+  "rubrics": "../ModelTrainersHackaton/data/processed/history-2025-may-nonessay-v1/grading/rubrics.jsonl",
+  "evaluation_scope": {
+    "kind": "nonessay",
+    "parent_max_points": 60,
+    "excluded_ids": [
+      "25"
+    ],
+    "excluded_points": 15
+  },
+  "review_provenance": {
+    "reviewer": "Codex text and visual review; not independent expert review",
+    "scope": {
+      "kind": "nonessay",
+      "parent_max_points": 60,
+      "excluded_ids": [
+        "25"
+      ],
+      "excluded_points": 15
+    },
+    "items": 37,
+    "points": 45,
+    "source_pdf_sha256": "bb4964f3462d809433c0379d21faf99935fb91c366c8786b0cb1c6c82f59c934",
+    "review_spec_sha256": "2c35451994647d5bc3da21d68d8446206dc298ddc7df5e5aa5d34a596163b4a0",
+    "grading_pdf_sha256": "dc8b17f097e0a5da07bb30a3ba7c73df2ca25db0e8c70817baa6b627a019f29c",
+    "grading_text_sha256": "88f05433ce76bcf3255cfbed7684853bb51e5f676c6c78d93ea3f6ba41b5683f",
+    "grading_spec_sha256": "20dc0d8d73415fd3f0e3461f9216c9f4c8c6459b3dbbaa00db1ca6ec412448d5",
+    "builder_sha256": "29290e30fe0953fb543fc94f7d8a73fad04c1aa059aa3b75d4a96e363156fff7",
+    "image_regions": [
+      {
+        "path": "images/task-1-0.png",
+        "sha256": "5d41e6842eee01c6d8511e863346a9a24a8f3dcf49831a1333756569cac58325",
+        "source_page": 4,
+        "pixel_bbox": [
+          0,
+          141,
+          910,
+          720
+        ],
+        "page_sha256": "8dc04821f0b96309734dba83979d272daff6f3d5e223ebb45ef9b716f406325c"
+      },
+      {
+        "path": "images/task-3-0.png",
+        "sha256": "62538ac2f781d5a2df7ffb34740502145d064c0b955684d9d0058e3ed155de28",
+        "source_page": 6,
+        "pixel_bbox": [
+          0,
+          141,
+          910,
+          508
+        ],
+        "page_sha256": "7b3a7de80ea6c8c3a0c328c4d825f55a1a88425b8ca8890c310629acb6e1609a"
+      },
+      {
+        "path": "images/task-4-0.png",
+        "sha256": "ead8f9eeb8fd43a7cb053043a4c4bff9df2b90e94d8d138ec831a013d8dfa6d8",
+        "source_page": 7,
+        "pixel_bbox": [
+          0,
+          193,
+          910,
+          870
+        ],
+        "page_sha256": "c9f847c76240a43da8060267d70ebd01af5ffbffb1086c00927818d2a85d16ae"
+      },
+      {
+        "path": "images/task-5-0.png",
+        "sha256": "3c08139be03f45d2ab194d4d5f8d1b1528a3d76635510e7422a3d024f19a8d61",
+        "source_page": 8,
+        "pixel_bbox": [
+          0,
+          136,
+          910,
+          1003
+        ],
+        "page_sha256": "c97072359dc4bac5bfb1f81eff58b22c6411996693a6e453cbcbc6c03eaebc1c"
+      },
+      {
+        "path": "images/task-6-0.png",
+        "sha256": "b5c23901cccda8b66e6c5475d59f91577f5df00547c49ba014dd40f90b99a2e1",
+        "source_page": 10,
+        "pixel_bbox": [
+          0,
+          141,
+          910,
+          592
+        ],
+        "page_sha256": "3ae9b6a1df173418f411a3c3b8bb65dd20c1c29b8658a305ac3300124bbf365a"
+      },
+      {
+        "path": "images/task-7-1.png",
+        "sha256": "9a71fe26e0ea511c2065c4cf2ca68bd591993c4d097195dbcd04e41a54c28618",
+        "source_page": 11,
+        "pixel_bbox": [
+          0,
+          70,
+          910,
+          566
+        ],
+        "page_sha256": "b2010d085fd42bf018a89346fb1f99fcc25a2c1e8659b4b93baa9af4ca42731e"
+      },
+      {
+        "path": "images/task-8-0.png",
+        "sha256": "50dbd2990940b42eb03fed47b45d72bb082248e7cb2599b462f5958a331ef936",
+        "source_page": 12,
+        "pixel_bbox": [
+          0,
+          141,
+          910,
+          611
+        ],
+        "page_sha256": "dfa4bc040ad72c921473629b347dcb59cefb0a8d44957c36674b6d3881f2da93"
+      },
+      {
+        "path": "images/task-10-0.png",
+        "sha256": "e4c0b389c21c03732b8922a35acba8093ddff92929242a315196c7e175a67c5e",
+        "source_page": 13,
+        "pixel_bbox": [
+          0,
+          630,
+          910,
+          961
+        ],
+        "page_sha256": "a85a5ebcb0a1cff3b6ec57468c07c18c1a4cab09c73c0fcfa1aa07d6b340d483"
+      },
+      {
+        "path": "images/task-12-1.png",
+        "sha256": "9e13371266114f8cb100ceb358df7b5ddfe9807ea3c5be78e772900eb0061589",
+        "source_page": 15,
+        "pixel_bbox": [
+          0,
+          106,
+          910,
+          467
+        ],
+        "page_sha256": "c77b2741ac082fb455f740121f13da9d325f967d54d844b45fd57e34c92bb608"
+      },
+      {
+        "path": "images/task-14-0.png",
+        "sha256": "1854bba680ccf59bb7797aca2e3f583245f7997652b55bdbc332670d1943ee57",
+        "source_page": 16,
+        "pixel_bbox": [
+          0,
+          141,
+          910,
+          951
+        ],
+        "page_sha256": "beba7b8539330543618f37ca06d11f6b4a7b9796a3b7e33d8bb134a9b9dd4d4b"
+      },
+      {
+        "path": "images/task-14-1.png",
+        "sha256": "136e5b1fce586be2604a61c1282f40c3866791069c9c8543aa4d34aaeb08cb02",
+        "source_page": 17,
+        "pixel_bbox": [
+          0,
+          106,
+          910,
+          513
+        ],
+        "page_sha256": "0212410899c8c472ce7d6451f9bac46ae9f3ed8644d96f9c26aecc8c1e05cf0c"
+      },
+      {
+        "path": "images/task-16-1.png",
+        "sha256": "096b21702f175b401d9674a723d8404aa1e36f484d6372f86444c3bd9231e515",
+        "source_page": 19,
+        "pixel_bbox": [
+          0,
+          106,
+          910,
+          595
+        ],
+        "page_sha256": "348479ed82c7d420b227067681aa5ef13a11b39d1bd60d89659d78ab1da73f73"
+      },
+      {
+        "path": "images/task-17-0.png",
+        "sha256": "959c3e45ea7095fb8fce676c56fd3f3db58cde366238a06ebe6d66dc521f6257",
+        "source_page": 20,
+        "pixel_bbox": [
+          0,
+          140,
+          910,
+          761
+        ],
+        "page_sha256": "8fc30b51cb9d006b21a3ab00b10d2199218f076d6168b4679bf9c6a94549eecb"
+      },
+      {
+        "path": "images/task-18-0.png",
+        "sha256": "075760953437c68530cc27ef7998dcd5a43370dc61f6db94590e9a08b735a29d",
+        "source_page": 21,
+        "pixel_bbox": [
+          0,
+          140,
+          910,
+          694
+        ],
+        "page_sha256": "09610bde2bf7c7af3d4c9861901309b1fd7c24b75439b92052f80e665cac8f61"
+      },
+      {
+        "path": "images/task-20-0.png",
+        "sha256": "8dfa68eba28851bf618274c0d03d32192d90c39c697f717a1986deb4eb4cfa86",
+        "source_page": 22,
+        "pixel_bbox": [
+          0,
+          537,
+          910,
+          1011
+        ],
+        "page_sha256": "ac337be6d347a696a40e28f2333b790e235b8aaa68a177349379ff2d46caeb2d"
+      },
+      {
+        "path": "images/task-21-0.png",
+        "sha256": "5103e7a5d34b9382c4a509d5efabeea736051bf395cc6cc344074398c6e72369",
+        "source_page": 23,
+        "pixel_bbox": [
+          0,
+          140,
+          910,
+          777
+        ],
+        "page_sha256": "ae749502cda0db5f1a81fa143b4383493f5a8697583ef05959e69064e7d15f87"
+      },
+      {
+        "path": "images/task-23-0.png",
+        "sha256": "fe77aedf22f5f55335f78ec42106e3580912394848e60cd87dff46a0f0dc6d51",
+        "source_page": 25,
+        "pixel_bbox": [
+          0,
+          140,
+          910,
+          673
+        ],
+        "page_sha256": "9e7be9fa45815db0e936e007c55b0191333e61e0937c13cd099b031780645345"
+      }
+    ],
+    "note": "Reviewed page regions preserve original sources and figures. No marking material or essay is supplied to the model."
+  }
+}

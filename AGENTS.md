@@ -1,5 +1,23 @@
 # Research objective
 
+Current user override (27 September 2026): **run only Qwen3.5 2B Q4_K_M**.
+Temporarily exclude essays and the essay bank. Use the complete non-essay suite
+in `configs/evaluation/nonessay-v1.json`: 2023 and May 2024–2026, 150 items,
+180 points (45 per paper). This replaces the earlier tiny-model/full-paper run
+instructions below for current experiments. Keep historical results unchanged.
+Use `scripts/evaluation/nonessay_suite.py`; see `docs/nonessay-evaluation.md`.
+Question coverage is expanded to four development papers; none is an untouched
+holdout. June 2026 remains reserved. Do not run 0.8B or Q8 as extra controls.
+The completed baseline scored 18/45, 8/45, 7/45 and 7/45 respectively: 40/180.
+All 150 items ran; three answers truncated into invalid JSON. Grades are local
+and provisional, with selected sensitivity documented in
+`docs/results/2026-09-27-nonessay-baseline.md`. The old two-paper non-essay
+responses/scores reproduced; new papers expose more source-confusion and visual
+errors. The next proposed single change is stricter source-grounded retrieval
+with fallback; it has not yet been implemented or measured.
+
+The remaining notes below document historical experiments and decisions.
+
 The objective is a small system that earns enough exam points to reach our
 explicit research target. Data generation supports that objective; dataset size
 is not the success metric.

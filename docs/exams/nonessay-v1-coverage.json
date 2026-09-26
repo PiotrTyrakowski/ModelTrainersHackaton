@@ -1,0 +1,398 @@
+{
+  "scope": "Non-essay views; original papers remain 60 points",
+  "papers": [
+    {
+      "exam_id": "history-2023-mock-v1-nonessay-v1",
+      "items": 36,
+      "max_points": 45,
+      "types": {
+        "art": {
+          "ids": [
+            "5.3",
+            "7",
+            "15"
+          ],
+          "points": 4
+        },
+        "cartoon": {
+          "ids": [
+            "8",
+            "18"
+          ],
+          "points": 5
+        },
+        "choice": {
+          "ids": [
+            "11.2",
+            "21"
+          ],
+          "points": 3
+        },
+        "chronology": {
+          "ids": [
+            "13.2"
+          ],
+          "points": 1
+        },
+        "comparison": {
+          "ids": [
+            "6",
+            "9.3",
+            "16.1",
+            "17",
+            "20",
+            "22",
+            "24"
+          ],
+          "points": 8
+        },
+        "explanation": {
+          "ids": [
+            "9.2",
+            "11.1",
+            "12",
+            "23"
+          ],
+          "points": 4
+        },
+        "genealogy": {
+          "ids": [
+            "5.2"
+          ],
+          "points": 1
+        },
+        "identification": {
+          "ids": [
+            "1",
+            "2.1",
+            "4.1",
+            "5.1",
+            "9.1",
+            "14.1",
+            "14.2",
+            "16.2",
+            "25.1",
+            "25.2"
+          ],
+          "points": 10
+        },
+        "map": {
+          "ids": [
+            "4.2",
+            "13.1"
+          ],
+          "points": 2
+        },
+        "matching": {
+          "ids": [
+            "2.2"
+          ],
+          "points": 1
+        },
+        "true_false": {
+          "ids": [
+            "3",
+            "10",
+            "19"
+          ],
+          "points": 6
+        }
+      }
+    },
+    {
+      "exam_id": "history-2024-may-reviewed-v1-nonessay-v1",
+      "items": 39,
+      "max_points": 45,
+      "types": {
+        "art": {
+          "ids": [
+            "4",
+            "6",
+            "9",
+            "12.3",
+            "21"
+          ],
+          "points": 6
+        },
+        "cartoon": {
+          "ids": [
+            "16.1",
+            "18",
+            "25"
+          ],
+          "points": 5
+        },
+        "choice": {
+          "ids": [
+            "10",
+            "14.2",
+            "16.2"
+          ],
+          "points": 3
+        },
+        "chronology": {
+          "ids": [
+            "7"
+          ],
+          "points": 1
+        },
+        "comparison": {
+          "ids": [
+            "1",
+            "8.2",
+            "15.2",
+            "20.1",
+            "22.2"
+          ],
+          "points": 6
+        },
+        "data_table": {
+          "ids": [
+            "23.2"
+          ],
+          "points": 1
+        },
+        "explanation": {
+          "ids": [
+            "11.2",
+            "17.1",
+            "23.1"
+          ],
+          "points": 3
+        },
+        "identification": {
+          "ids": [
+            "3.1",
+            "3.2",
+            "8.1",
+            "12.1",
+            "12.2",
+            "13",
+            "15.1",
+            "17.2",
+            "19.2",
+            "22.1"
+          ],
+          "points": 10
+        },
+        "map": {
+          "ids": [
+            "2",
+            "5.1",
+            "5.2",
+            "14.1",
+            "24"
+          ],
+          "points": 5
+        },
+        "matching": {
+          "ids": [
+            "11.1"
+          ],
+          "points": 1
+        },
+        "true_false": {
+          "ids": [
+            "19.1",
+            "20.2"
+          ],
+          "points": 4
+        }
+      }
+    },
+    {
+      "exam_id": "history-2025-may-nonessay-v1",
+      "items": 37,
+      "max_points": 45,
+      "types": {
+        "art": {
+          "ids": [
+            "1.1",
+            "3.2",
+            "8",
+            "23"
+          ],
+          "points": 5
+        },
+        "cartoon": {
+          "ids": [
+            "18"
+          ],
+          "points": 3
+        },
+        "choice": {
+          "ids": [
+            "7.2",
+            "9.1",
+            "17.2"
+          ],
+          "points": 3
+        },
+        "chronology": {
+          "ids": [
+            "2",
+            "11.2"
+          ],
+          "points": 2
+        },
+        "comparison": {
+          "ids": [
+            "12",
+            "16.1",
+            "16.2",
+            "21.2",
+            "22",
+            "24.1"
+          ],
+          "points": 7
+        },
+        "explanation": {
+          "ids": [
+            "1.2",
+            "5.2",
+            "13",
+            "15.2"
+          ],
+          "points": 4
+        },
+        "genealogy": {
+          "ids": [
+            "5.1"
+          ],
+          "points": 1
+        },
+        "identification": {
+          "ids": [
+            "3.1",
+            "9.2",
+            "9.3",
+            "17.1",
+            "19",
+            "20",
+            "21.1",
+            "24.2"
+          ],
+          "points": 9
+        },
+        "map": {
+          "ids": [
+            "6",
+            "7.1",
+            "14.1"
+          ],
+          "points": 3
+        },
+        "matching": {
+          "ids": [
+            "4",
+            "11.1"
+          ],
+          "points": 4
+        },
+        "true_false": {
+          "ids": [
+            "10",
+            "14.2",
+            "15.1"
+          ],
+          "points": 4
+        }
+      }
+    },
+    {
+      "exam_id": "history-2026-may-nonessay-v1",
+      "items": 38,
+      "max_points": 45,
+      "types": {
+        "cartoon": {
+          "ids": [
+            "15.1",
+            "20",
+            "23.1",
+            "24"
+          ],
+          "points": 7
+        },
+        "choice": {
+          "ids": [
+            "3.2",
+            "10.1",
+            "15.2"
+          ],
+          "points": 3
+        },
+        "chronology": {
+          "ids": [
+            "25"
+          ],
+          "points": 1
+        },
+        "comparison": {
+          "ids": [
+            "9",
+            "14.2",
+            "17",
+            "18.2",
+            "19.1"
+          ],
+          "points": 6
+        },
+        "data_table": {
+          "ids": [
+            "11",
+            "22"
+          ],
+          "points": 2
+        },
+        "explanation": {
+          "ids": [
+            "6.2"
+          ],
+          "points": 1
+        },
+        "identification": {
+          "ids": [
+            "5.1",
+            "5.2",
+            "8",
+            "12.1",
+            "14.1",
+            "16.2",
+            "18.1",
+            "23.2"
+          ],
+          "points": 8
+        },
+        "map": {
+          "ids": [
+            "1",
+            "3.1",
+            "4.1",
+            "4.2",
+            "7",
+            "12.2",
+            "16.1"
+          ],
+          "points": 8
+        },
+        "matching": {
+          "ids": [
+            "6.1",
+            "13",
+            "21"
+          ],
+          "points": 5
+        },
+        "true_false": {
+          "ids": [
+            "2",
+            "10.2",
+            "14.3",
+            "19.2"
+          ],
+          "points": 4
+        }
+      }
+    }
+  ]
+}

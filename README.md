@@ -2,12 +2,28 @@
 
 Modules for preparing matura task data and comparing exam-solving systems.
 
-Our research is guided by exam points: run a tiny model on the same full paper
-after each meaningful checkpoint, grade its answers, and choose the next change
-from its mistakes. The initial reference is `qwen3.5:0.8b`, including image input.
-See [the checkpoint workflow](docs/checkpoints.md).
+Our research is guided by exam points: run a fixed model after each meaningful
+checkpoint, grade its answers, and choose the next change from measured errors.
+The current user-selected model is **Qwen3.5 2B Q4_K_M only**, including image
+input. Essays are temporarily excluded. See the [four-paper workflow](docs/nonessay-evaluation.md).
 
-Latest experiments: [adding e-Historia to retrieval](docs/results/2026-09-26-ehistoria-comparison.md)
+Latest [non-essay baseline](docs/results/2026-09-27-nonessay-baseline.md):
+
+| Development paper | Tasks | Points without essay |
+|---|---:|---:|
+| 2023 practice | 36 | 18/45 |
+| May 2024 | 39 | 8/45 |
+| May 2025 | 37 | 7/45 |
+| May 2026 | 38 | 7/45 |
+| Total | 150 | 40/180 (22.2%) |
+
+Active reviewed coverage doubles from two to four papers. Local grades are
+provisional, with item-level reasons and selected grading sensitivity. All
+questions ran; three responses truncated into invalid JSON. No official pass is
+claimed. The 2023/2024 non-essay results reproduce the earlier Q4 results, so
+removing essays is not a solver improvement. No 0.8B or Q8 model ran in this series.
+
+Historical full-paper experiments: [adding e-Historia to retrieval](docs/results/2026-09-26-ehistoria-comparison.md)
 and [2B Q4 versus Q8](docs/results/2026-09-26-quantization-comparison.md), each
 measured on both complete development papers.
 
@@ -29,9 +45,8 @@ Earlier [0.8B versus 2B comparison](docs/results/2026-09-26-model-size-compariso
 Without Wikipedia retrieval, 2B scored provisional **19/60 on 2023 and 16/60 on
 2024**, versus 19/60 and 8/60 for 0.8B. With retrieval, 2B scored 28/60 and 11/60,
 versus 24/60 and 9/60. All 2023 totals include the same 12-point prepared essay.
-Retrieval helps one paper and hurts the larger model on the other; stricter
-relevance filtering is the next experiment. Keep 0.8B as the size reference and
-2B without Wikipedia as the next comparison control. Grading remains provisional.
+Retrieval helped one paper and hurt the larger model on the other. These are
+historical size comparisons; current runs use only 2B Q4. Grading remains provisional.
 
 First measured baseline: [Qwen3.5:0.8b scored a provisional 3/60 on the full
 practice paper](docs/results/2026-09-26-qwen35-direct.md). Its errors guide the

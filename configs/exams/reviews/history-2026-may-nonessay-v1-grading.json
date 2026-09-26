@@ -1,0 +1,19 @@
+{
+  "choice": {
+    "3.2": "D",
+    "10.1": "C",
+    "15.2": "C"
+  },
+  "true_false": {
+    "2": "FF",
+    "10.2": "FP",
+    "14.3": "FF",
+    "19.2": "FP"
+  },
+  "grading_pdf_sha256": "482b5e10d028246e0c2becf581bf147f630c8cd968176d99c09fc037a26af0c7",
+  "grading_text_sha256": "aeb8bd7137f0fa13ca0e284c133d23058bb9adc3d37ce5e09d6e10341101c0a3",
+  "excluded_ids": [
+    "26"
+  ],
+  "note": "Essay 26 excluded."
+}

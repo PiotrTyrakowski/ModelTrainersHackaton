@@ -1,0 +1,187 @@
+{
+  "demo": false,
+  "split": "development",
+  "exam_id": "history-2023-mock-v1-nonessay-v1",
+  "questions": "../ModelTrainersHackaton/data/processed/history-2023-nonessay-v1/input/questions.jsonl",
+  "keys": "../ModelTrainersHackaton/data/processed/history-2023-nonessay-v1/grading/keys.jsonl",
+  "model": {
+    "base_url": "http://127.0.0.1:18081/v1",
+    "model": "qwen3.5:2b-q4_K_M",
+    "key_env": "MATURA_LOCAL_API_KEY",
+    "vision": true,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "reasoning_effort": "none"
+  },
+  "variants": [
+    "bm25"
+  ],
+  "budget": {
+    "max_seconds": 120,
+    "max_calls": 1,
+    "max_output_tokens": 2200
+  },
+  "coverage": {
+    "exam": "../ModelTrainersHackaton/data/processed/history-2023-nonessay-v1/exam.json",
+    "types": "../ModelTrainersHackaton/data/processed/history-2023-nonessay-v1/types.json",
+    "contract": "../ModelTrainersHackaton/data/processed/history-2023-nonessay-v1/coverage.json",
+    "require_full_exam": true
+  },
+  "model_provenance": {
+    "registry": "https://ollama.com/library/qwen3.5:2b-q4_K_M",
+    "runtime": "Ollama 0.34.4",
+    "download_verified": true,
+    "note": "Official same-parameter Q4_K_M artifact, manifest and every blob SHA verified; live loaded identity checked separately.",
+    "manifest_sha256": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+    "total_learned_bytes": 1945311744,
+    "parameter_count": 2274069824,
+    "quantization": "Q4_K_M",
+    "inventory": "../ModelTrainersHackaton/artifacts/local-runtime/qwen35-2b-q4/inventory.json",
+    "context_tokens": 8192
+  },
+  "corpus": "../ModelTrainersHackaton/data/raw/retrieval/wiki-ehistoria-v1/index.sqlite",
+  "strategy": {
+    "top_k": 3,
+    "output_contract": "typed_answer_v3",
+    "query_policy": "focused_bm25_v1"
+  },
+  "corpus_provenance": {
+    "kind": "wikipedia-plus-ehistoria-v1",
+    "articles": 286,
+    "passages": 4638,
+    "sources": [
+      {
+        "kind": "wikipedia",
+        "manifest_sha256": "611367d6424bd5fe03d6f745d72e55aeb588723988f0e6992db9f85ac8c8e5c0",
+        "manifest": {
+          "kind": "development_coverage_expansion",
+          "selection_note": "General historical topics chosen from observed gaps on the public development paper. These are encyclopedia articles, not exam solutions. Selection has seen the development questions; evaluation is not held out.",
+          "articles": 89,
+          "passages": 3060,
+          "failures": [],
+          "pending_titles": [],
+          "articles_sha256": "1dd81cde22f6a4e46029823306b2f97e64894213a042bf24095e821f9b8a7e6f",
+          "passages_sha256": "f5541e1323437fde5d4ecf21bf120d3c988592834258510946692d0b11b6fe1a",
+          "topics_sha256": "8b16c8450d230ab339638bb8adf21a1c5d533ab20d972f89e5d7b49a085ac757",
+          "transform": "Exact paragraph/sentence spans; title and section prefixes; omit bibliography/navigation; no generated facts or exam answer keys",
+          "quality_limit": "Provenance and passage boundaries verified; encyclopedia claims are not independently fact-checked"
+        }
+      },
+      {
+        "kind": "ehistoria",
+        "manifest_sha256": "7750b8fe89e9f3d59166d28c7fcdc274ad4387e904db64db69287ac3f63e4016",
+        "manifest": {
+          "kind": "e-historia-repetytorium-v1",
+          "source_index": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony.html",
+          "selection_note": "All lessons linked from the four user-selected repetytorium classes, independent of exam answer keys.",
+          "articles": 197,
+          "passages": 1578,
+          "catalogue_items": 198,
+          "failures": [],
+          "excluded_empty_lessons": [
+            {
+              "url": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-7-sprawa-polski-pod-koniec-wojny-repetytorium-streszczenie-zakres-rozszerzony.html",
+              "catalog_title": "2. 7. Sprawa Polski pod koniec wojny",
+              "class": "Klasa 4",
+              "category_url": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony.html",
+              "reason": "Published article body is empty",
+              "html_sha256": "1389496a6c4156dad77e5020406813f7eb424fade1a6a3db67e6bc73a18c27c0"
+            }
+          ],
+          "pending_titles": [],
+          "robots_sha256": "5cc6230a4126d736a49e17f4a1699b831962e5ec28ac84da1a79efa7f3c3da74",
+          "articles_sha256": "3d94ee7e5c78c262b88624e4631e4138a66266b58f42e39c09f4d2a9a5b62b46",
+          "passages_sha256": "d1e55248e108174681f888268a70697f0fdddff54a239efb2c54b765d8c65dca",
+          "catalogue_sha256": "a8304b2e778a88af2b90431b13167d244f100ab0dd7a4b063ef2a31f13e64591",
+          "builder_sha256": "9b8e7f6cdc8946ab3cf2c59d1e01cee617ff3685ebc204347c0f476260c48e4d",
+          "generated_facts": 0,
+          "quality_limit": "Extraction and provenance checks, not independent historical fact verification; image contents not transcribed.",
+          "licence": "No open redistribution licence identified; author rights retained. Local research snapshot.",
+          "attribution": "Wiesław Zdziabek / e-Historia",
+          "author_url": "https://e-historia.com.pl/o-projekcie-e-historia---wspolpraca-miedzynarodowa/4-o-autorze.html"
+        }
+      }
+    ],
+    "failures": [],
+    "pending_titles": [],
+    "selection_note": "Unchanged Wikipedia v3 plus all four classes of the user-selected repetytorium. No exam answer keys or generated historical supplements.",
+    "articles_sha256": "7be55fb69e5690774fc351a57ea2d76ceff02951237fe52c4f267327d5a87f72",
+    "passages_sha256": "017fc16f591af3e7ea9ac692a4921dc23d26ac398ac4335244e6260c501247ee",
+    "index_sha256": "247ad0c11723812baa37c1d745ba7e2273446a95ab467ec79fd46df961721751",
+    "index_chunks": 4638,
+    "legacy_add_size": 1422,
+    "legacy_add_overlap": 0,
+    "builder_sha256": "4c05789a6b92a34e915626bfd67e8fa5f1a4f872c1681d5f86d8c6be65e08de2",
+    "verification": "Input hashes, scoped source URLs, attribution, exact article spans and indexed text verified; original source records unchanged",
+    "quality_limit": "Historical claims not independently verified; site images not transcribed; development corpus, not held-out evaluation data"
+  },
+  "experiment_note": "Non-essay evaluation, all 45 points; only Qwen3.5 2B Q4_K_M requested by user. Frozen mixed BM25 harness, no essay bank; four development papers, not a held-out or full matura result.",
+  "rubrics": "../ModelTrainersHackaton/data/processed/history-2023-nonessay-v1/grading/rubrics.jsonl",
+  "evaluation_scope": {
+    "kind": "nonessay",
+    "parent_exam_id": "history-2023-mock-v1",
+    "parent_max_points": 60,
+    "excluded_ids": [
+      "26"
+    ],
+    "excluded_points": 15
+  },
+  "review_provenance": {
+    "scope": {
+      "kind": "nonessay",
+      "parent_exam_id": "history-2023-mock-v1",
+      "parent_max_points": 60,
+      "excluded_ids": [
+        "26"
+      ],
+      "excluded_points": 15
+    },
+    "items": 36,
+    "points": 45,
+    "source_files": {
+      "exam": {
+        "path": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/matura-lab/data/official/history-2023-mock-v1/exam.json",
+        "sha256": "0d4559be6ffae26304b102d8cec14814849caec879fd53d8be0196f24116354c"
+      },
+      "types": {
+        "path": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/matura-lab/configs/mock-2023-types.json",
+        "sha256": "38cdcee4d521f9ac596ff740fa642e3508810929d89fdab005c7992c94bd11a0"
+      },
+      "contract": {
+        "path": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/matura-lab/configs/mock-2023-coverage.json",
+        "sha256": "071e2810f68bb952efe1da70ec579499d07fc50bb6e1febd39176a4a1902cadc"
+      },
+      "questions": {
+        "path": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/matura-lab/data/mock-2023/questions.jsonl",
+        "sha256": "bb496a7a213217052eabbab7a3f78154bd9f4fed70966ae1629f976255088e8c"
+      },
+      "keys": {
+        "path": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/matura-lab/data/grading/history-2023/keys.jsonl",
+        "sha256": "15daf1237eafc00d3ac37d7a5a5fffb57b025b3e05d639edaba668ccf42d3229"
+      },
+      "rubrics": {
+        "path": "/Users/piotrtyrakowski/.codex/.chatgpt-projects/g-p-6ab7a142274c8191a0e22196d2100c93/matura-lab/data/grading/history-2023/rubrics.jsonl",
+        "sha256": "a8677ed0da2b7a7f3246a82a5e32e6c2457d6249d43a85d191bb08663aad4cc8"
+      }
+    },
+    "builder_sha256": "29290e30fe0953fb543fc94f7d8a73fad04c1aa059aa3b75d4a96e363156fff7",
+    "note": "Exact original question payloads and original absolute image references retained. Original full-paper files unchanged."
+  }
+}

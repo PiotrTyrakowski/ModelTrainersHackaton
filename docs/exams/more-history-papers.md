@@ -23,6 +23,11 @@ files. Older 50-point papers must not be compared as raw totals with the newer
 60-point papers. Their question structure and essay rubrics also need separate
 review before scoring.
 
+Update, 27 September: the previously held **May 2025 and May 2026** papers are
+now reviewed and active alongside 2023/2024 in the
+[150-item non-essay suite](../nonessay-evaluation.md). That work does not change
+the acquisition-only status of the eight additional sessions listed above.
+
 ## Source and verification
 
 The publisher is CKE; acquisition used public copies on

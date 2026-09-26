@@ -1,0 +1,492 @@
+{
+  "scope": "All non-essay tasks in the four declared development papers; not a full matura score",
+  "grading": "Provisional local rubric review, not independent or official",
+  "model": {
+    "tag": "qwen3.5:2b-q4_K_M",
+    "manifest_sha256": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+    "learned_bytes": 1945311744
+  },
+  "complete": true,
+  "earned_points_so_far": 40.0,
+  "max_points": 180,
+  "score_percent": 22.22222222222222,
+  "possible_points": [
+    40.0,
+    40.0
+  ],
+  "papers": [
+    {
+      "paper": "qwen35-2b-q4-2023-nonessay-v1",
+      "checkpoint": "qwen35-2b-q4-2023-nonessay-v1",
+      "points": 18.0,
+      "max_points": 45,
+      "run_complete": true,
+      "grading_complete": true,
+      "possible_points": [
+        18.0,
+        18.0
+      ],
+      "pending_ids": [],
+      "missing_ids": [],
+      "calls": 36,
+      "seconds": 235.08312904299964,
+      "tokens": {
+        "known_sum": 85035,
+        "reported_calls": 36,
+        "unknown_calls": 0
+      },
+      "technical_failure_ids": [],
+      "format_failure_ids": [],
+      "truncated_ids": [],
+      "by_type": {
+        "art": {
+          "points": 2.0,
+          "max_points": 4,
+          "pending_ids": []
+        },
+        "cartoon": {
+          "points": 1.0,
+          "max_points": 5,
+          "pending_ids": []
+        },
+        "choice": {
+          "points": 3.0,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "chronology": {
+          "points": 1,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "comparison": {
+          "points": 2.0,
+          "max_points": 8,
+          "pending_ids": []
+        },
+        "explanation": {
+          "points": 1.0,
+          "max_points": 4,
+          "pending_ids": []
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "identification": {
+          "points": 7.0,
+          "max_points": 10,
+          "pending_ids": []
+        },
+        "map": {
+          "points": 1.0,
+          "max_points": 2,
+          "pending_ids": []
+        },
+        "matching": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "true_false": {
+          "points": 0.0,
+          "max_points": 6,
+          "pending_ids": []
+        }
+      },
+      "year": 2023,
+      "closed_points": 4.0,
+      "closed_max_points": 11,
+      "manual_points": 14.0,
+      "manual_max_points": 34,
+      "selected_sensitivity": {
+        "stricter_remove_ids": [
+          "1",
+          "11.1",
+          "18",
+          "25.1"
+        ],
+        "lenient_add_ids": [],
+        "stricter_points": 14.0,
+        "lenient_points": 18.0,
+        "note": "Selected alternative grading decisions, not exhaustive bounds or statistical confidence intervals. See per-item reasons and earlier quantization sensitivity for 2023/2024."
+      },
+      "per_question_report": "2026-09-27-qwen35-2b-q4-2023-nonessay-v1.json",
+      "raw_run_sha256": "37715917770de6a3a28b0618cd36345343d1ced7a26b151dcdf2ce7b80c6adfb",
+      "exact_successful_response_matches_to_prior_q4_full_run": 36
+    },
+    {
+      "paper": "qwen35-2b-q4-2024-nonessay-v1",
+      "checkpoint": "qwen35-2b-q4-2024-nonessay-v1",
+      "points": 8.0,
+      "max_points": 45,
+      "run_complete": true,
+      "grading_complete": true,
+      "possible_points": [
+        8.0,
+        8.0
+      ],
+      "pending_ids": [],
+      "missing_ids": [],
+      "calls": 39,
+      "seconds": 283.31132470698503,
+      "tokens": {
+        "known_sum": 86310,
+        "reported_calls": 39,
+        "unknown_calls": 0
+      },
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "23.2"
+      ],
+      "truncated_ids": [
+        "23.2"
+      ],
+      "by_type": {
+        "art": {
+          "points": 2.0,
+          "max_points": 6,
+          "pending_ids": []
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max_points": 5,
+          "pending_ids": []
+        },
+        "choice": {
+          "points": 1,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "chronology": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "comparison": {
+          "points": 2.0,
+          "max_points": 6,
+          "pending_ids": []
+        },
+        "data_table": {
+          "points": 0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "explanation": {
+          "points": 0.0,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "identification": {
+          "points": 2.0,
+          "max_points": 10,
+          "pending_ids": []
+        },
+        "map": {
+          "points": 0.0,
+          "max_points": 5,
+          "pending_ids": []
+        },
+        "matching": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "true_false": {
+          "points": 1.0,
+          "max_points": 4,
+          "pending_ids": []
+        }
+      },
+      "year": 2024,
+      "closed_points": 2.0,
+      "closed_max_points": 7,
+      "manual_points": 6.0,
+      "manual_max_points": 38,
+      "selected_sensitivity": {
+        "stricter_remove_ids": [
+          "12.3",
+          "20.1",
+          "22.2"
+        ],
+        "lenient_add_ids": [],
+        "stricter_points": 5.0,
+        "lenient_points": 8.0,
+        "note": "Selected alternative grading decisions, not exhaustive bounds or statistical confidence intervals. See per-item reasons and earlier quantization sensitivity for 2023/2024."
+      },
+      "per_question_report": "2026-09-27-qwen35-2b-q4-2024-nonessay-v1.json",
+      "raw_run_sha256": "2234a0ade347c155980fa2bd342dff3b01ca3fd35c43e232cb5f577466d4afd4",
+      "exact_successful_response_matches_to_prior_q4_full_run": 38
+    },
+    {
+      "paper": "qwen35-2b-q4-2025-nonessay-v1",
+      "checkpoint": "qwen35-2b-q4-2025-nonessay-v1",
+      "points": 7.0,
+      "max_points": 45,
+      "run_complete": true,
+      "grading_complete": true,
+      "possible_points": [
+        7.0,
+        7.0
+      ],
+      "pending_ids": [],
+      "missing_ids": [],
+      "calls": 37,
+      "seconds": 273.9127497500158,
+      "tokens": {
+        "known_sum": 80442,
+        "reported_calls": 37,
+        "unknown_calls": 0
+      },
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "21.1"
+      ],
+      "truncated_ids": [
+        "21.1"
+      ],
+      "by_type": {
+        "art": {
+          "points": 1.0,
+          "max_points": 5,
+          "pending_ids": []
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "choice": {
+          "points": 2,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "chronology": {
+          "points": 0.0,
+          "max_points": 2,
+          "pending_ids": []
+        },
+        "comparison": {
+          "points": 0.0,
+          "max_points": 7,
+          "pending_ids": []
+        },
+        "explanation": {
+          "points": 0.0,
+          "max_points": 4,
+          "pending_ids": []
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "identification": {
+          "points": 1.0,
+          "max_points": 9,
+          "pending_ids": []
+        },
+        "map": {
+          "points": 0.0,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "matching": {
+          "points": 1.0,
+          "max_points": 4,
+          "pending_ids": []
+        },
+        "true_false": {
+          "points": 2.0,
+          "max_points": 4,
+          "pending_ids": []
+        }
+      },
+      "year": 2025,
+      "closed_points": 4.0,
+      "closed_max_points": 7,
+      "manual_points": 3.0,
+      "manual_max_points": 38,
+      "selected_sensitivity": {
+        "stricter_remove_ids": [
+          "3.1"
+        ],
+        "lenient_add_ids": [
+          "7.1",
+          "8",
+          "17.1",
+          "22",
+          "24.1"
+        ],
+        "stricter_points": 6.0,
+        "lenient_points": 12.0,
+        "note": "Selected alternative grading decisions, not exhaustive bounds or statistical confidence intervals. See per-item reasons and earlier quantization sensitivity for 2023/2024."
+      },
+      "per_question_report": "2026-09-27-qwen35-2b-q4-2025-nonessay-v1.json",
+      "raw_run_sha256": "e6487110acee00746937ff659b4e8a4b93b9f15213320f3d0be8e60d5175d75b"
+    },
+    {
+      "paper": "qwen35-2b-q4-2026-nonessay-v1",
+      "checkpoint": "qwen35-2b-q4-2026-nonessay-v1",
+      "points": 7.0,
+      "max_points": 45,
+      "run_complete": true,
+      "grading_complete": true,
+      "possible_points": [
+        7.0,
+        7.0
+      ],
+      "pending_ids": [],
+      "missing_ids": [],
+      "calls": 38,
+      "seconds": 205.99598712502484,
+      "tokens": {
+        "known_sum": 85650,
+        "reported_calls": 38,
+        "unknown_calls": 0
+      },
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "22"
+      ],
+      "truncated_ids": [
+        "22"
+      ],
+      "by_type": {
+        "cartoon": {
+          "points": 0.0,
+          "max_points": 7,
+          "pending_ids": []
+        },
+        "choice": {
+          "points": 0,
+          "max_points": 3,
+          "pending_ids": []
+        },
+        "chronology": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "comparison": {
+          "points": 2.0,
+          "max_points": 6,
+          "pending_ids": []
+        },
+        "data_table": {
+          "points": 0.0,
+          "max_points": 2,
+          "pending_ids": []
+        },
+        "explanation": {
+          "points": 0.0,
+          "max_points": 1,
+          "pending_ids": []
+        },
+        "identification": {
+          "points": 2.0,
+          "max_points": 8,
+          "pending_ids": []
+        },
+        "map": {
+          "points": 2.0,
+          "max_points": 8,
+          "pending_ids": []
+        },
+        "matching": {
+          "points": 0.0,
+          "max_points": 5,
+          "pending_ids": []
+        },
+        "true_false": {
+          "points": 1.0,
+          "max_points": 4,
+          "pending_ids": []
+        }
+      },
+      "year": 2026,
+      "closed_points": 1.0,
+      "closed_max_points": 7,
+      "manual_points": 6.0,
+      "manual_max_points": 38,
+      "selected_sensitivity": {
+        "stricter_remove_ids": [
+          "1",
+          "5.2"
+        ],
+        "lenient_add_ids": [
+          "4.1",
+          "11",
+          "14.2"
+        ],
+        "stricter_points": 5.0,
+        "lenient_points": 10.0,
+        "note": "Selected alternative grading decisions, not exhaustive bounds or statistical confidence intervals. See per-item reasons and earlier quantization sensitivity for 2023/2024."
+      },
+      "per_question_report": "2026-09-27-qwen35-2b-q4-2026-nonessay-v1.json",
+      "raw_run_sha256": "89fca02cdea6232a0a7eaf78a76c7c7ed09a8b189495567695bfbcbe0b1a5a78"
+    }
+  ],
+  "points_by_type": {
+    "art": {
+      "points": 5.0,
+      "max_points": 15
+    },
+    "cartoon": {
+      "points": 1.0,
+      "max_points": 20
+    },
+    "choice": {
+      "points": 6.0,
+      "max_points": 12
+    },
+    "chronology": {
+      "points": 1.0,
+      "max_points": 5
+    },
+    "comparison": {
+      "points": 6.0,
+      "max_points": 27
+    },
+    "data_table": {
+      "points": 0.0,
+      "max_points": 3
+    },
+    "explanation": {
+      "points": 1.0,
+      "max_points": 12
+    },
+    "genealogy": {
+      "points": 0.0,
+      "max_points": 2
+    },
+    "identification": {
+      "points": 12.0,
+      "max_points": 37
+    },
+    "map": {
+      "points": 3.0,
+      "max_points": 18
+    },
+    "matching": {
+      "points": 1.0,
+      "max_points": 11
+    },
+    "true_false": {
+      "points": 4.0,
+      "max_points": 18
+    }
+  },
+  "closed_points": 11.0,
+  "closed_max_points": 32,
+  "question_seconds": 998.3031906250253,
+  "calls": 150,
+  "token_total": 337437,
+  "selected_sensitivity": {
+    "stricter_points": 30.0,
+    "lenient_points": 48.0,
+    "note": "Selected manual-grade sensitivity, not exhaustive. possible_points above covers pending grading only."
+  }
+}

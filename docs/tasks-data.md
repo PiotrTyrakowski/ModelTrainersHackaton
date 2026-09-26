@@ -2,6 +2,10 @@
 
 `packages/tasks-data` is the base data module. It imports existing exams, preserves their evidence and exports reviewed task inputs for evaluation. It does not create historical answers, grade essays, or turn unreviewed PDF text into a verified question dataset.
 
+Current evaluation uses [four reviewed non-essay views](nonessay-evaluation.md),
+including newly reviewed May 2025 and May 2026: 150 items / 180 points, only
+Qwen3.5 2B Q4. Original candidate imports and complete papers are preserved.
+
 ## Dataset layout
 
 ```text
