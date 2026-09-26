@@ -113,7 +113,7 @@ def build_report(snapshot, run, previous=None):
         if row['status'] != 'ok' and row['points'] != 0: raise ValueError('Failed or abstained result must have zero points')
         number(row['seconds'], 'latency'); number(row['calls'], 'calls')
         if int(row['calls']) != row['calls']: raise ValueError('Calls must be an integer')
-    string_answer = run['config'].get('strategy', {}).get('output_contract') in {'complete_answer_v1', 'concise_answer_v2'}
+    string_answer = run['config'].get('strategy', {}).get('output_contract') in {'complete_answer_v1', 'concise_answer_v2', 'typed_answer_v3'}
     summaries = {}
     for variant in variants:
         rows = [r for r in run['results'] if r['variant'] == variant]

@@ -1,0 +1,94 @@
+{
+  "demo": false,
+  "split": "development",
+  "exam_id": "history-2023-mock-v1",
+  "questions": "data/mock-2023/questions.jsonl",
+  "keys": "data/grading/history-2023/keys.jsonl",
+  "model": {
+    "base_url": "http://127.0.0.1:18081/v1",
+    "model": "qwen3.5:0.8b",
+    "key_env": "MATURA_LOCAL_API_KEY",
+    "vision": true,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "reasoning_effort": "none"
+  },
+  "variants": [
+    "bm25"
+  ],
+  "budget": {
+    "max_seconds": 120,
+    "max_calls": 1,
+    "max_output_tokens": 2200
+  },
+  "coverage": {
+    "exam": "data/official/history-2023-mock-v1/exam.json",
+    "types": "configs/mock-2023-types.json",
+    "contract": "configs/mock-2023-coverage.json",
+    "require_full_exam": true
+  },
+  "model_provenance": {
+    "registry": "https://ollama.com/library/qwen3.5:0.8b",
+    "runtime": "Ollama 0.34.4",
+    "download_verified": true,
+    "note": "Same verified unchanged Qwen3.5:0.8b weights as the baseline. Live identity is verified separately for each local runtime session.",
+    "manifest_sha256": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+    "total_learned_bytes": 1036034688,
+    "inventory": "data/models/qwen3.5-0.8b/inventory.json",
+    "context_tokens": 8192
+  },
+  "corpus": "../ModelTrainersHackaton/data/raw/retrieval/wiki-focused-v3/index.sqlite",
+  "strategy": {
+    "top_k": 3,
+    "output_contract": "typed_answer_v3",
+    "query_policy": "focused_bm25_v1",
+    "essay_bank": {
+      "version": "reviewed_essay_v1",
+      "bank": "../ModelTrainersHackaton/data/essay-bank/history-development-v1.jsonl",
+      "catalog": "../ModelTrainersHackaton/data/essay-bank/reviewed-topics-v1.json",
+      "min_score": 0.3,
+      "min_margin": 0.03
+    }
+  },
+  "corpus_provenance": {
+    "kind": "development_coverage_expansion",
+    "selection_note": "General historical topics chosen from observed gaps on the public development paper. These are encyclopedia articles, not exam solutions. Selection has seen the development questions; evaluation is not held out.",
+    "articles": 89,
+    "passages": 3060,
+    "failures": [],
+    "pending_titles": [],
+    "articles_sha256": "1dd81cde22f6a4e46029823306b2f97e64894213a042bf24095e821f9b8a7e6f",
+    "passages_sha256": "f5541e1323437fde5d4ecf21bf120d3c988592834258510946692d0b11b6fe1a",
+    "topics_sha256": "8b16c8450d230ab339638bb8adf21a1c5d533ab20d972f89e5d7b49a085ac757",
+    "transform": "Exact paragraph/sentence spans; title and section prefixes; omit bibliography/navigation; no generated facts or exam answer keys",
+    "quality_limit": "Provenance and passage boundaries verified; encyclopedia claims are not independently fact-checked",
+    "index_sha256": "d47a281ed2f5fce648bc9159af44bc12afec1a6bc355da206ce8da584fba40b2",
+    "index_chunks": 3060,
+    "legacy_add_size": 1406,
+    "legacy_add_overlap": 0,
+    "verification": "Every indexed passage matches its exact article span plus title/section prefix; unique IDs and canonical titles; no secondary splitting",
+    "builder_sha256": "8caf8ac58509226748f90e5fa2bc7429d3884bc509944dcd9d6e5c89151e029f",
+    "indexer_sha256": "32848e83e7d062ee56fb037025cb328212b686f2e6446ee2aa7e425608513a57"
+  },
+  "experiment_note": "Essay routing only versus v5: one original, source-reviewed development-topic essay; reviewed scope guard, lexical ranking, unchanged body, no-match fallback. No neural embeddings or runtime model calls for matched essays. Preparation used Codex and inspected public practice questions; not held out.",
+  "comparison_variant_map": {
+    "bm25": "bm25"
+  }
+}

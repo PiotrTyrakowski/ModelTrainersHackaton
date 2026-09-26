@@ -1,5 +1,11 @@
 # Coverage audit across other matura papers
 
+**Later update, 26 September:** the 2024 paper now has a separately reviewed
+40-item input package and two complete tiny-model runs: 8/60 direct and 9/60 with
+retrieval, both provisional. See the [second-paper results](../results/2026-09-26-2024-transfer.md).
+The original candidate datasets remain unchanged; 2025 and 2026 still await full
+input review and evaluation. The table below records the earlier audit state.
+
 Checked on 26 September 2026 against the saved question extracts, imported task
 manifests and the 89-article v3 retrieval corpus. This is a preliminary topic
 audit, not a completed review of all source images, task boundaries or answers.

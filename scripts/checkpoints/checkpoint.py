@@ -68,6 +68,9 @@ def prepare(runner_root,config_path,output,variants=None,target_points=None,targ
         if candidate.is_file():cfg['rubrics']=str(candidate)
     for name in ['questions','keys','rubrics','corpus','facts','fact_documents']:
         if cfg.get(name):cfg[name]=absolute(cfg[name])
+    essay_bank=cfg.get('strategy',{}).get('essay_bank')
+    if essay_bank:
+        for name in ['bank','catalog']:essay_bank[name]=absolute(essay_bank[name])
     if not cfg.get('coverage'):raise ValueError('A reviewed complete exam coverage contract is required')
     for name in ['exam','types','contract']:cfg['coverage'][name]=absolute(cfg['coverage'][name])
     prov=cfg.get('model_provenance',{})
@@ -95,6 +98,10 @@ def prepare(runner_root,config_path,output,variants=None,target_points=None,targ
         if path.is_file() and path.suffix in {'.py','.json'} and '__pycache__' not in path.parts:capture('runner:'+str(path.relative_to(root)),path)
     for i,path in enumerate(sorted({image for q in questions for image in q.images})):capture(f'image:{i}',absolute(path))
     for path in sorted(Path(__file__).parent.glob('*.py')):capture('checkpoint_tool:'+path.name,path)
+    if essay_bank:
+        for name in ['bank','catalog']:capture('essay_bank:'+name,essay_bank[name])
+        package=Path(__file__).resolve().parents[2]/'packages/tasks-data/src/tasks_data'
+        for path in sorted(package.glob('*.py')):capture('essay_package:'+path.name,path)
     snapshot={'schema_version':1,'checkpoint':out.name,'prepared_at':datetime.now(timezone.utc).isoformat(),'runner_root':str(root),
               'note':note,'config_sha256':digest(cfg),'files':files,'exam_id':full['exam_id'],'exam_max_points':maximum,
               'exam_sha256':files['coverage_exam']['sha256'],'keys_sha256':files['keys']['sha256'],

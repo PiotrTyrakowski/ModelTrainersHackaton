@@ -2,7 +2,7 @@
 
 Measure a tiny model on a fixed paper before expanding the system. After a meaningful change, rerun the same paper and compare points by question type. The first candidate is the image-capable `qwen3.5:0.8b`; its pinned learned files total **1,036,034,688 bytes**. This is a candidate, not a demonstrated passing model or a claim that no smaller model can work.
 
-The wrapper uses the existing `matura-lab` evaluator as an explicit local dependency. It does not vendor that evaluator: provide its checkout using `--runner-root`. The new `tasks-data` package remains separate. Python's standard library is sufficient for the wrapper and its tests.
+The wrapper uses the existing `matura-lab` evaluator as an explicit local dependency. It does not vendor that evaluator: provide its checkout using `--runner-root`. The essay route imports the repository's `tasks-data` package directly. Use Python 3.10 or newer; the macOS system Python 3.9 cannot import this package. The checkpoint wrapper needs no external Python libraries.
 
 ## Prepare and run
 
@@ -136,6 +136,29 @@ Its explicit `focused_bm25_v1` policy is described in
 provisional [11/60 with two truncated answers](results/2026-09-26-focused-retrieval-v4.md).
 
 After the first baseline, fix the largest measured loss of points: malformed answers, missed parts of an instruction, missing evidence, weak image interpretation or the essay. Change one factor at a time. Compare retrieval and deterministic tools on the same paper before trying a smaller model or more aggressive quantisation. Keep every learned component in the size accounting. The papers already inspected during development are not untouched final evaluation data.
+
+## Complete closed answers and prepared essays
+
+`configs/checkpoints/qwen35-typed-bm25-v5.json` selects `typed_answer_v3`.
+For reviewed closed tasks, the response schema requires every slot and restricts
+its value to the choices in the question metadata. A deterministic renderer then
+returns a plain answer string. It permits repeated matching values, retains the
+original images, and restores the ordinary schema after each call, even on failure.
+Unknown layouts and tasks explicitly requesting an explanation retain the free-text
+contract. These constraints guarantee neither historical correctness nor adherence
+by every possible provider; returned values are validated locally too.
+
+`configs/checkpoints/qwen35-essay-bank-v6.json` adds the
+[reviewed essay route](essay-bank.md#measured-harness-integration).
+The checkpoint snapshot additionally hashes the bank, reviewed scope catalog and
+all Python files in the imported `tasks-data` package. Matched essays need no
+generation or embedding call. Their unchanged body hash, selected topic, match
+attempts and word count are recorded. All other questions use v5 behavior.
+
+Prepare either configuration using an absolute path and `--variants bm25`.
+Both retain the v4 corpus, tiny model and inference budget. Grading stays separate
+from inference. A prepared essay selected for an already inspected practice topic
+is development data, not evidence of generalization.
 
 ## Offline verification
 

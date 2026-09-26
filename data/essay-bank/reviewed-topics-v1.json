@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "policy": "Only explicitly reviewed topic wordings have trusted scope. Unknown or changed requirements abstain. Topic numbers are supplied by the incoming exam.",
+  "topics": [
+    {
+      "question": "Zimna wojna osiągnęła apogeum w latach 50. XX wieku. Zajmij stanowisko wobec\npowyższej tezy i je uzasadnij, charakteryzując trzy wybrane wydarzenia z tego okresu.",
+      "scope": {
+        "start_year": 1950,
+        "end_year": 1959,
+        "entities": [
+          "zimna wojna"
+        ],
+        "aspects": [
+          "trzy wydarzenia"
+        ],
+        "intent": "ocena tezy o apogeum"
+      }
+    }
+  ],
+  "introductions": [
+    "Zadanie zawiera trzy tematy. Wybierz jeden z nich do opracowania. Twoja wypowiedź\npowinna liczyć minimum 300 wyrazów.\n"
+  ]
+}

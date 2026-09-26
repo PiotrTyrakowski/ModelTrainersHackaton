@@ -30,8 +30,21 @@ not the selected default. The subsequent `qwen35-concise-bm25-v3.json` corpus
 experiment reached a provisional 9/60 with five truncated answers and two
 disputed points. The latest `qwen35-focused-bm25-v4.json` retrieval-policy change
 reached a provisional 11/60 with two truncated answers and two disputed points.
-Use v4 as the current retrieval candidate; concise direct remains the control
-with no truncation. Preserve this distinction and the grading uncertainty.
+The v5 typed-answer contract scored 12/60; v6 added one prepared development-topic
+essay and scored 24/60 (12/15 essay), still with two truncated answers. Use
+`qwen35-essay-bank-v6.json` as the current experimental harness, with v5 for its
+no-bank comparison and concise direct as the historical control. The essay bank
+currently covers one reviewed topic wording, prepared and graded by the same
+assistant. Do not present this as generalization or independent essay grading.
+Preserve grading uncertainty. Use Python 3.10+ when importing the essay package.
+
+The second full development test uses `qwen35-2024-transfer-v1.json`: 40 questions,
+60 points, reviewed inputs. With frozen v6 code/data, direct scored provisional
+8/60 and BM25 9/60, with two truncations each; the bank matches no 2024 essay.
+This paper had previously been inspected, so it is not untouched holdout data.
+Keep both 2023 and 2024 fixed for further comparisons; do not infer general
+passing ability from the narrow 2023 essay gain. See `docs/grading.md` for grading
+limitations and the result reports for disputed awards.
 
 No official passing threshold is confirmed. Label any chosen threshold as an
 experimental target and all local rubric grades as provisional. If the runtime

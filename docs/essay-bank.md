@@ -102,7 +102,7 @@ else:
     answer = None         # explicit abstention; let the caller choose a fallback
 ```
 
-Pass `EssayScope` and `min_words` when the caller knows the task requirements. This module and CLI do not submit answers to the competition and are not automatically wired into the older experimental harness.
+Pass `EssayScope` and `min_words` when the caller knows the task requirements. The CLI does not submit answers to the competition. The checkpoint adapter below explicitly connects this module to the experimental harness.
 
 ## Compare implementations honestly
 
@@ -110,4 +110,46 @@ Use the same bank, unseen query set and grading procedure for lexical and dense 
 
 Keep preparation essays separate from evaluation answers. Do not populate a bank from hidden benchmark answers. These public demonstration topics and already inspected development papers cannot serve as an untouched final test set.
 
-Current verification covers exact bytes, Polish text, ambiguity, explicit scope and length exclusions, no-network lexical matching, index freshness, encoder identity, invalid vectors and HTTP response validation. Dense tests use deterministic vectors and mocked HTTP responses. **No live encoder benchmark or official essay grading has been run.**
+Current verification covers exact bytes, Polish text, ambiguity, explicit scope and length exclusions, no-network lexical matching, index freshness, encoder identity, invalid vectors and HTTP response validation. Dense tests use deterministic vectors and mocked HTTP responses. **No live encoder benchmark or official essay grading has been run.** Local rubric grading is described with each measured checkpoint.
+
+## Measured harness integration
+
+The opt-in `reviewed_essay_v1` adapter is in
+`scripts/checkpoints/essay_routing.py`, configured by
+`configs/checkpoints/qwen35-essay-bank-v6.json`. It uses the existing lexical
+matcher, with no additional learned model or online service:
+
+1. Split the supplied numbered topic options and validate their labels.
+2. Require a reviewed general instruction and a reviewed topic wording to obtain
+   trusted scope. Whitespace and case may differ; new wording is not inferred.
+3. Filter the bank by period, entities, required aspects, intent and word minimum,
+   then rank stored questions by lexical similarity. Low or ambiguous matches abstain.
+4. Prefix the chosen **incoming** topic number and return the essay body unchanged.
+5. On `no_match`, use the ordinary tiny-model essay solver and record the reason.
+
+Tasks with source text or images always abstain because the prepared essay has
+not interpreted those exhibits. A changed century, negation, event count, general
+instruction or insufficient essay length also abstains. Scope and factual quality
+depend on preparation review; similarity is not proof that an essay answers a task.
+
+The initial [bank](../data/essay-bank/history-development-v1.jsonl) contains one
+original 392-word Polish essay on the Cold War in the 1950s, with sources and
+fact-review notes. Its [readable body](../data/essay-bank/cold-war-1950s.txt) is
+mirrored in the JSONL record; inference reads the JSONL file. The
+[catalog](../data/essay-bank/reviewed-topics-v1.json) records the reviewed input
+wording and scope, not a marking key. Body preparation used Codex and these
+historical sources: [Korea](https://history.state.gov/milestones/1945-1952/korean-war),
+[Hungary](https://history.state.gov/countries/hungary), a
+[1956 diplomatic telegram](https://history.state.gov/historicaldocuments/frus1955-57v25/d158),
+[Taiwan](https://history.state.gov/milestones/1953-1960/taiwan-strait-crises), and
+[Cuba](https://www.archives.gov/news/topics/cuban-missile-crisis).
+The argument assessing the decade is original synthesis. Source review and essay
+grading by the same assistant are not independent validation.
+
+This is deliberately narrow: **one covered topic, one reviewed wording**, chosen
+after seeing a public development question. It demonstrates the exact-return
+route, not a general essay solver or success on unseen topics. The module's dense
+embedding option remains available for later experiments; this run does not use it.
+Expanding the catalog requires reviewing new requirements, preparing compatible
+essays and testing close but incompatible prompts. More essays alone do not prove
+coverage or eliminate this requirement.

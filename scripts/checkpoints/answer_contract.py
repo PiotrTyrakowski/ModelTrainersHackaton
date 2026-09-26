@@ -49,6 +49,12 @@ def prompt(question, passages):
 
 
 def solve(question, context, retrieval=False):
+    essay_trace = None
+    if question.type == "essay" and context.get("essay_bank"):
+        from essay_routing import route
+        stored, essay_trace = route(question, context["essay_bank"])
+        if stored is not None:
+            return {"answer": stored, "evidence": [], "essay_routing": essay_trace}
     passages = []
     retrieval_trace = None
     if retrieval:
@@ -61,13 +67,23 @@ def solve(question, context, retrieval=False):
             passages = evidence(question, context, "bm25")
         else:
             raise ValueError(f"Unknown query policy: {mode}")
-    raw = context["client"].generate(
-        prompt(question, passages), question, context["budget"], temperature=0
-    )
-    answer = json.loads(raw)
-    if set(answer) != {"answer"} or not isinstance(answer["answer"], str):
-        raise ValueError("Expected exactly one string answer")
-    result = {"answer": answer["answer"], "evidence": []}
+    from closed_answers import CONTRACT as TYPED_CONTRACT, generate, layout
+    structure = layout(question) if context.get("output_contract") == TYPED_CONTRACT else None
+    if structure:
+        answer_text = generate(question, context, prompt(question, passages), structure)
+    else:
+        raw = context["client"].generate(
+            prompt(question, passages), question, context["budget"], temperature=0
+        )
+        answer = json.loads(raw)
+        if not isinstance(answer, dict) or set(answer) != {"answer"} or not isinstance(answer["answer"], str):
+            raise ValueError("Expected exactly one string answer")
+        answer_text = answer["answer"]
+    result = {"answer": answer_text, "evidence": []}
+    if essay_trace is not None:
+        result["essay_routing"] = essay_trace
+    if structure:
+        result["answer_structure"] = structure
     if retrieval:
         # Trace corpus passages independently of what the model claims it used.
         result["retrieved_evidence"] = passages
@@ -79,7 +95,8 @@ def solve(question, context, retrieval=False):
 @contextmanager
 def use_answer_contract(config):
     """Temporarily install an explicit contract in the legacy strategy registry."""
-    if config.get("strategy", {}).get("output_contract") != CONTRACT:
+    from closed_answers import CONTRACT as TYPED_CONTRACT
+    if config.get("strategy", {}).get("output_contract") not in {CONTRACT, TYPED_CONTRACT}:
         yield
         return
     if set(config["variants"]) - {"direct", "bm25"}:

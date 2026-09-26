@@ -11,11 +11,17 @@ First measured baseline: [Qwen3.5:0.8b scored a provisional 3/60 on the full
 practice paper](docs/results/2026-09-26-qwen35-direct.md). Its errors guide the
 next experiments.
 
-Latest comparison: [focused evidence selection raised the provisional score
-from 9/60 to 11/60](docs/results/2026-09-26-focused-retrieval-v4.md), with two
-truncated answers versus five previously. V4 is the current retrieval candidate;
-concise direct remains the 6/60 control with no truncation. Grades are provisional
-and no passing system has been demonstrated.
+Latest 2023 comparison: [complete closed-answer formats reached 12/60 and
+prepared essay retrieval reached 24/60](docs/results/2026-09-26-typed-answers-and-essay-bank.md).
+The bank covers one previously inspected topic and its author also performed the
+local rubric review; the gain is not evidence of unseen-topic performance. Two
+open answers still truncate. Concise direct remains the 6/60 historical control.
+Grades are provisional and no passing system has been demonstrated.
+
+[Second-paper test on 2024](docs/results/2026-09-26-2024-transfer.md): the frozen
+harness scored **9/60**, versus **8/60 without retrieval**. Its essay bank correctly
+found no match for the new topics. These results expose limited transfer; the
+2023 result alone is not a general passing result. See [how grading works](docs/grading.md).
 
 The first module is [`tasks-data`](packages/tasks-data): source-preserving exam
 imports, separate answer keys, and a bank of complete essays that can be retrieved
@@ -31,7 +37,8 @@ tasks-data essay-match packages/tasks-data/examples/essay-bank.jsonl \
 
 The essay bank supports text matching without a model and optional question
 embeddings. It returns the chosen essay unchanged or an explicit `no_match`.
-The included essays are demonstration drafts; no exam-passing result is claimed.
+The examples remain demonstration drafts. A separately documented, source-reviewed
+development essay now runs in the checkpoint harness; no exam-passing result is claimed.
 
 - [Essay retrieval: formats, examples and limits](docs/essay-bank.md)
 - [Task data: importing, reviewing and exporting exam questions](docs/tasks-data.md)
