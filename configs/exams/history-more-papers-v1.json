@@ -1,0 +1,85 @@
+{
+  "source_index": "https://arkusze.pl/historia-matura-poziom-rozszerzony/",
+  "papers": [
+    {
+      "exam_id": "history-2026-june",
+      "year": 2026,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2026-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "reserved_evaluation"
+    },
+    {
+      "exam_id": "history-2025-june",
+      "year": 2025,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2025-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    },
+    {
+      "exam_id": "history-2024-june",
+      "year": 2024,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2024-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    },
+    {
+      "exam_id": "history-2023-june",
+      "year": 2023,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2023-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    },
+    {
+      "exam_id": "history-2022-may",
+      "year": 2022,
+      "month": "maj",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2022-maj-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    },
+    {
+      "exam_id": "history-2021-may",
+      "year": 2021,
+      "month": "maj",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2021-maj-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    },
+    {
+      "exam_id": "history-2020-june",
+      "year": 2020,
+      "month": "czerwiec",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2020-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    },
+    {
+      "exam_id": "history-2019-may",
+      "year": 2019,
+      "month": "maj",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2019-maj-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive"
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "experiment": "e-Historia corpus-only addition v1",
+  "grading": "Local provisional CKE rubric review; not independent or official",
+  "direct_controls": "Reused previous runs, not rerun",
+  "matrix": [
+    {
+      "checkpoint": "qwen35-08b-2023-ehistoria-v1",
+      "model": "qwen3.5:0.8b",
+      "paper": 2023,
+      "variant": "bm25",
+      "points": 27.0,
+      "previous_bm25_points": 24.0,
+      "delta": 3.0,
+      "previous_direct_points": 19.0,
+      "non_essay_points": 15.0,
+      "essay_points": 12.0,
+      "closed_points": 7.0,
+      "closed_max": 11,
+      "items": 37,
+      "failed_ids": [
+        "9.3",
+        "13.1"
+      ],
+      "truncated_ids": [
+        "9.3",
+        "13.1"
+      ],
+      "over_budget_ids": [],
+      "calls": 36,
+      "seconds": 268.11,
+      "total_tokens": 90779,
+      "learned_bytes": 1036034688,
+      "loaded_model_vram_bytes": 1204876736,
+      "ehistoria_retrieved_successful_answer_ids": [
+        "2.2",
+        "5.2",
+        "6",
+        "8",
+        "9.1",
+        "10",
+        "11.1",
+        "11.2",
+        "13.2",
+        "14.2",
+        "16.2",
+        "17",
+        "19",
+        "20",
+        "24"
+      ],
+      "grade_changes": [
+        {
+          "question_id": "5.2",
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "question_id": "9.1",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "11.1",
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "question_id": "13.2",
+          "before": 0,
+          "after": 1
+        },
+        {
+          "question_id": "14.2",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "16.2",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "21",
+          "before": 1.0,
+          "after": 2.0
+        }
+      ],
+      "points_by_type": {
+        "art": {
+          "points": 1.0,
+          "max": 4
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 3.0,
+          "max": 3
+        },
+        "chronology": {
+          "points": 1,
+          "max": 1
+        },
+        "comparison": {
+          "points": 1.0,
+          "max": 8
+        },
+        "essay": {
+          "points": 12.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 4
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max": 1
+        },
+        "identification": {
+          "points": 5.0,
+          "max": 10
+        },
+        "map": {
+          "points": 1.0,
+          "max": 2
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 3.0,
+          "max": 6
+        }
+      },
+      "source_report_sha256": "7a7f31d1251b4a8dd5c563dd3fb468f2a745f0c47ce1d1742bcf2af7512d14d6"
+    },
+    {
+      "checkpoint": "qwen35-08b-2024-ehistoria-v1",
+      "model": "qwen3.5:0.8b",
+      "paper": 2024,
+      "variant": "bm25",
+      "points": 12.0,
+      "previous_bm25_points": 9.0,
+      "delta": 3.0,
+      "previous_direct_points": 8.0,
+      "non_essay_points": 12.0,
+      "essay_points": 0.0,
+      "closed_points": 5.0,
+      "closed_max": 7,
+      "items": 40,
+      "failed_ids": [
+        "1",
+        "2",
+        "9",
+        "16.1",
+        "22.1",
+        "23.2"
+      ],
+      "truncated_ids": [
+        "1",
+        "2",
+        "9",
+        "16.1",
+        "22.1",
+        "23.2"
+      ],
+      "over_budget_ids": [],
+      "calls": 40,
+      "seconds": 414.316,
+      "total_tokens": 100046,
+      "learned_bytes": 1036034688,
+      "loaded_model_vram_bytes": 1204876736,
+      "ehistoria_retrieved_successful_answer_ids": [
+        "3.1",
+        "3.2",
+        "4",
+        "5.1",
+        "5.2",
+        "6",
+        "7",
+        "8.1",
+        "8.2",
+        "10",
+        "11.1",
+        "11.2",
+        "12.1",
+        "12.2",
+        "12.3",
+        "13",
+        "14.1",
+        "14.2",
+        "16.2",
+        "17.1",
+        "17.2",
+        "18",
+        "19.1",
+        "20.1",
+        "20.2",
+        "21",
+        "22.2",
+        "24",
+        "25",
+        "26"
+      ],
+      "grade_changes": [
+        {
+          "question_id": "3.1",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "8.1",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "14.2",
+          "before": 0,
+          "after": 1
+        }
+      ],
+      "points_by_type": {
+        "art": {
+          "points": 0.0,
+          "max": 6
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 2,
+          "max": 3
+        },
+        "chronology": {
+          "points": 0.0,
+          "max": 1
+        },
+        "comparison": {
+          "points": 3.0,
+          "max": 6
+        },
+        "data_table": {
+          "points": 0,
+          "max": 1
+        },
+        "essay": {
+          "points": 0.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 3
+        },
+        "identification": {
+          "points": 4.0,
+          "max": 10
+        },
+        "map": {
+          "points": 0.0,
+          "max": 5
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 3.0,
+          "max": 4
+        }
+      },
+      "source_report_sha256": "8211226737f7bfed2dfce457d1cbc62dbe375d85b08b9e3641575a54e7842d41"
+    },
+    {
+      "checkpoint": "qwen35-2b-2023-ehistoria-v1",
+      "model": "qwen3.5:2b",
+      "paper": 2023,
+      "variant": "bm25",
+      "points": 29.0,
+      "previous_bm25_points": 28.0,
+      "delta": 1.0,
+      "previous_direct_points": 19.0,
+      "non_essay_points": 17.0,
+      "essay_points": 12.0,
+      "closed_points": 3.0,
+      "closed_max": 11,
+      "items": 37,
+      "failed_ids": [],
+      "truncated_ids": [],
+      "over_budget_ids": [],
+      "calls": 36,
+      "seconds": 335.609,
+      "total_tokens": 85469,
+      "learned_bytes": 2741180928,
+      "loaded_model_vram_bytes": 2508277676,
+      "ehistoria_retrieved_successful_answer_ids": [
+        "2.2",
+        "5.2",
+        "6",
+        "8",
+        "9.1",
+        "9.3",
+        "10",
+        "11.1",
+        "11.2",
+        "13.1",
+        "13.2",
+        "14.2",
+        "16.2",
+        "17",
+        "19",
+        "20",
+        "24"
+      ],
+      "grade_changes": [
+        {
+          "question_id": "6",
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "question_id": "9.1",
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "question_id": "14.2",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "16.2",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "17",
+          "before": 0.0,
+          "after": 1.0
+        }
+      ],
+      "points_by_type": {
+        "art": {
+          "points": 3.0,
+          "max": 4
+        },
+        "cartoon": {
+          "points": 2.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 2.0,
+          "max": 3
+        },
+        "chronology": {
+          "points": 1,
+          "max": 1
+        },
+        "comparison": {
+          "points": 2.0,
+          "max": 8
+        },
+        "essay": {
+          "points": 12.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 1.0,
+          "max": 4
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max": 1
+        },
+        "identification": {
+          "points": 4.0,
+          "max": 10
+        },
+        "map": {
+          "points": 2.0,
+          "max": 2
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 0.0,
+          "max": 6
+        }
+      },
+      "source_report_sha256": "5978d2dc931e41ca128e5a727826b47065a1b49a4bd73b286920b5889fe8405a"
+    },
+    {
+      "checkpoint": "qwen35-2b-2024-ehistoria-v1",
+      "model": "qwen3.5:2b",
+      "paper": 2024,
+      "variant": "bm25",
+      "points": 12.0,
+      "previous_bm25_points": 11.0,
+      "delta": 1.0,
+      "previous_direct_points": 16.0,
+      "non_essay_points": 12.0,
+      "essay_points": 0,
+      "closed_points": 5.0,
+      "closed_max": 7,
+      "items": 40,
+      "failed_ids": [
+        "26"
+      ],
+      "truncated_ids": [],
+      "over_budget_ids": [],
+      "calls": 40,
+      "seconds": 439.25,
+      "total_tokens": 84055,
+      "learned_bytes": 2741180928,
+      "loaded_model_vram_bytes": 2508277676,
+      "ehistoria_retrieved_successful_answer_ids": [
+        "1",
+        "2",
+        "3.1",
+        "3.2",
+        "4",
+        "5.1",
+        "5.2",
+        "6",
+        "7",
+        "8.1",
+        "8.2",
+        "9",
+        "10",
+        "11.1",
+        "11.2",
+        "12.1",
+        "12.2",
+        "12.3",
+        "13",
+        "14.1",
+        "14.2",
+        "16.2",
+        "17.1",
+        "17.2",
+        "18",
+        "19.1",
+        "20.1",
+        "20.2",
+        "21",
+        "22.1",
+        "22.2",
+        "24",
+        "25"
+      ],
+      "grade_changes": [
+        {
+          "question_id": "3.2",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "8.1",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "9",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "12.1",
+          "before": 1.0,
+          "after": 0.0
+        },
+        {
+          "question_id": "13",
+          "before": 0.0,
+          "after": 1.0
+        },
+        {
+          "question_id": "16.2",
+          "before": 0,
+          "after": 1
+        },
+        {
+          "question_id": "22.2",
+          "before": 2.0,
+          "after": 0.0
+        },
+        {
+          "question_id": "26",
+          "before": 1.0,
+          "after": 0
+        }
+      ],
+      "points_by_type": {
+        "art": {
+          "points": 2.0,
+          "max": 6
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 2,
+          "max": 3
+        },
+        "chronology": {
+          "points": 0.0,
+          "max": 1
+        },
+        "comparison": {
+          "points": 1.0,
+          "max": 6
+        },
+        "data_table": {
+          "points": 0.0,
+          "max": 1
+        },
+        "essay": {
+          "points": 0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 3
+        },
+        "identification": {
+          "points": 4.0,
+          "max": 10
+        },
+        "map": {
+          "points": 0.0,
+          "max": 5
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 3.0,
+          "max": 4
+        }
+      },
+      "source_report_sha256": "d19744cd536f2d5fc2d4aac173c4a1fa3f54f66a39dbb24d6508b65328f58cbc"
+    }
+  ]
+}

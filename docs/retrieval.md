@@ -1,8 +1,11 @@
 # Source-preserving history retrieval corpus
 
-The latest harness uses [focused lexical search](retrieval/focused-search.md)
-over this unchanged corpus. Its [full-paper checkpoint](results/2026-09-26-focused-retrieval-v4.md)
-scored a provisional 11/60 versus 9/60 with the preceding search policy.
+The harness uses [focused lexical search](retrieval/focused-search.md).
+The new [e-Historia importer](retrieval/e-historia.md) adds 197 lessons / 1,578
+passages to the unchanged Wikipedia snapshot, producing a separate mixed index
+with 286 articles / 4,638 passages. Its corpus-only experiment keeps the search
+policy fixed. The Wikipedia build and historical v3 experiment are documented
+below.
 
 The v3 development corpus contains **89 Polish Wikipedia articles and 3,060
 passages**, expanding the original 20-article pilot. It targets gaps observed on
@@ -11,8 +14,9 @@ century history, and twentieth century treaties and politics. Topic selection
 has seen that paper. This is development data, not an untouched evaluation.
 
 The [other-paper coverage audit](retrieval/other-papers-coverage.md) records what
-has been imported from 2024–2026, what still needs review, and topic gaps beyond
-the 2023 paper. Those other papers have not yet received a full tiny-model run.
+was imported from 2024–2026 and topic gaps beyond the 2023 paper. Since that
+audit, the reviewed 2024 paper has received full runs in the
+[two-paper model comparison](results/2026-09-26-model-size-comparison.md).
 
 Each passage contains an exact article-text span plus its article title and
 section heading. Paragraphs stay intact where possible; long ones split at

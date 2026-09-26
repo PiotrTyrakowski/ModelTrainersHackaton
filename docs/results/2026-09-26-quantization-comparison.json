@@ -1,0 +1,545 @@
+{
+  "experiment": "2B Q4_K_M versus Q8_0 on frozen mixed corpus",
+  "grading": "Local provisional CKE rubric review; not independent or official",
+  "matrix": [
+    {
+      "checkpoint": "qwen35-08b-2023-ehistoria-v1",
+      "model": "qwen3.5:0.8b",
+      "paper": 2023,
+      "learned_bytes": 1036034688,
+      "points": 27.0,
+      "non_essay_points": 15.0,
+      "essay_points": 12.0,
+      "closed_points": 7.0,
+      "closed_max": 11,
+      "items": 37,
+      "seconds": 268.11,
+      "total_tokens": {
+        "known_sum": 90779,
+        "reported_calls": 36,
+        "unknown_calls": 0
+      },
+      "calls": 36,
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "9.3",
+        "13.1"
+      ],
+      "truncated_ids": [
+        "9.3",
+        "13.1"
+      ],
+      "over_budget_ids": [],
+      "points_by_type": {
+        "art": {
+          "points": 1.0,
+          "max": 4
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 3.0,
+          "max": 3
+        },
+        "chronology": {
+          "points": 1,
+          "max": 1
+        },
+        "comparison": {
+          "points": 1.0,
+          "max": 8
+        },
+        "essay": {
+          "points": 12.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 4
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max": 1
+        },
+        "identification": {
+          "points": 5.0,
+          "max": 10
+        },
+        "map": {
+          "points": 1.0,
+          "max": 2
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 3.0,
+          "max": 6
+        }
+      },
+      "loaded_model_vram_bytes": 1204876736,
+      "model_artifact_hash": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+      "source_report_sha256": "7a7f31d1251b4a8dd5c563dd3fb468f2a745f0c47ce1d1742bcf2af7512d14d6"
+    },
+    {
+      "checkpoint": "qwen35-08b-2024-ehistoria-v1",
+      "model": "qwen3.5:0.8b",
+      "paper": 2024,
+      "learned_bytes": 1036034688,
+      "points": 12.0,
+      "non_essay_points": 12.0,
+      "essay_points": 0.0,
+      "closed_points": 5.0,
+      "closed_max": 7,
+      "items": 40,
+      "seconds": 414.316,
+      "total_tokens": {
+        "known_sum": 100046,
+        "reported_calls": 40,
+        "unknown_calls": 0
+      },
+      "calls": 40,
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "1",
+        "2",
+        "9",
+        "16.1",
+        "22.1",
+        "23.2"
+      ],
+      "truncated_ids": [
+        "1",
+        "2",
+        "9",
+        "16.1",
+        "22.1",
+        "23.2"
+      ],
+      "over_budget_ids": [],
+      "points_by_type": {
+        "art": {
+          "points": 0.0,
+          "max": 6
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 2,
+          "max": 3
+        },
+        "chronology": {
+          "points": 0.0,
+          "max": 1
+        },
+        "comparison": {
+          "points": 3.0,
+          "max": 6
+        },
+        "data_table": {
+          "points": 0,
+          "max": 1
+        },
+        "essay": {
+          "points": 0.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 3
+        },
+        "identification": {
+          "points": 4.0,
+          "max": 10
+        },
+        "map": {
+          "points": 0.0,
+          "max": 5
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 3.0,
+          "max": 4
+        }
+      },
+      "loaded_model_vram_bytes": 1204876736,
+      "model_artifact_hash": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+      "source_report_sha256": "8211226737f7bfed2dfce457d1cbc62dbe375d85b08b9e3641575a54e7842d41"
+    },
+    {
+      "checkpoint": "qwen35-2b-2023-ehistoria-v1",
+      "model": "qwen3.5:2b",
+      "paper": 2023,
+      "learned_bytes": 2741180928,
+      "points": 29.0,
+      "non_essay_points": 17.0,
+      "essay_points": 12.0,
+      "closed_points": 3.0,
+      "closed_max": 11,
+      "items": 37,
+      "seconds": 335.609,
+      "total_tokens": {
+        "known_sum": 85469,
+        "reported_calls": 36,
+        "unknown_calls": 0
+      },
+      "calls": 36,
+      "technical_failure_ids": [],
+      "format_failure_ids": [],
+      "truncated_ids": [],
+      "over_budget_ids": [],
+      "points_by_type": {
+        "art": {
+          "points": 3.0,
+          "max": 4
+        },
+        "cartoon": {
+          "points": 2.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 2.0,
+          "max": 3
+        },
+        "chronology": {
+          "points": 1,
+          "max": 1
+        },
+        "comparison": {
+          "points": 2.0,
+          "max": 8
+        },
+        "essay": {
+          "points": 12.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 1.0,
+          "max": 4
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max": 1
+        },
+        "identification": {
+          "points": 4.0,
+          "max": 10
+        },
+        "map": {
+          "points": 2.0,
+          "max": 2
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 0.0,
+          "max": 6
+        }
+      },
+      "loaded_model_vram_bytes": 2508277676,
+      "model_artifact_hash": "324d162be6ca5629ae4517c8710434d0bd2d665bc94dbad46e9af8fbf8a2f0df",
+      "source_report_sha256": "5978d2dc931e41ca128e5a727826b47065a1b49a4bd73b286920b5889fe8405a"
+    },
+    {
+      "checkpoint": "qwen35-2b-2024-ehistoria-v1",
+      "model": "qwen3.5:2b",
+      "paper": 2024,
+      "learned_bytes": 2741180928,
+      "points": 12.0,
+      "non_essay_points": 12.0,
+      "essay_points": 0,
+      "closed_points": 5.0,
+      "closed_max": 7,
+      "items": 40,
+      "seconds": 439.25,
+      "total_tokens": {
+        "known_sum": 84055,
+        "reported_calls": 39,
+        "unknown_calls": 1
+      },
+      "calls": 40,
+      "technical_failure_ids": [
+        "26"
+      ],
+      "format_failure_ids": [],
+      "truncated_ids": [],
+      "over_budget_ids": [],
+      "points_by_type": {
+        "art": {
+          "points": 2.0,
+          "max": 6
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 2,
+          "max": 3
+        },
+        "chronology": {
+          "points": 0.0,
+          "max": 1
+        },
+        "comparison": {
+          "points": 1.0,
+          "max": 6
+        },
+        "data_table": {
+          "points": 0.0,
+          "max": 1
+        },
+        "essay": {
+          "points": 0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 3
+        },
+        "identification": {
+          "points": 4.0,
+          "max": 10
+        },
+        "map": {
+          "points": 0.0,
+          "max": 5
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 3.0,
+          "max": 4
+        }
+      },
+      "loaded_model_vram_bytes": 2508277676,
+      "model_artifact_hash": "324d162be6ca5629ae4517c8710434d0bd2d665bc94dbad46e9af8fbf8a2f0df",
+      "source_report_sha256": "d19744cd536f2d5fc2d4aac173c4a1fa3f54f66a39dbb24d6508b65328f58cbc"
+    },
+    {
+      "checkpoint": "qwen35-2b-q4-2023-ehistoria-v1",
+      "model": "qwen3.5:2b-q4_K_M",
+      "paper": 2023,
+      "learned_bytes": 1945311744,
+      "points": 30.0,
+      "non_essay_points": 18.0,
+      "essay_points": 12.0,
+      "closed_points": 4.0,
+      "closed_max": 11,
+      "items": 37,
+      "seconds": 270.001,
+      "total_tokens": {
+        "known_sum": 85035,
+        "reported_calls": 36,
+        "unknown_calls": 0
+      },
+      "calls": 36,
+      "technical_failure_ids": [],
+      "format_failure_ids": [],
+      "truncated_ids": [],
+      "over_budget_ids": [],
+      "points_by_type": {
+        "art": {
+          "points": 2.0,
+          "max": 4
+        },
+        "cartoon": {
+          "points": 1.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 3.0,
+          "max": 3
+        },
+        "chronology": {
+          "points": 1,
+          "max": 1
+        },
+        "comparison": {
+          "points": 2.0,
+          "max": 8
+        },
+        "essay": {
+          "points": 12.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 1.0,
+          "max": 4
+        },
+        "genealogy": {
+          "points": 0.0,
+          "max": 1
+        },
+        "identification": {
+          "points": 7.0,
+          "max": 10
+        },
+        "map": {
+          "points": 1.0,
+          "max": 2
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 0.0,
+          "max": 6
+        }
+      },
+      "loaded_model_vram_bytes": 1739304467,
+      "model_artifact_hash": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+      "source_report_sha256": "5ded9963e9b60c0ff03e1217854c0544afd1921efef4643626cf376127009f7b"
+    },
+    {
+      "checkpoint": "qwen35-2b-q4-2024-ehistoria-v1",
+      "model": "qwen3.5:2b-q4_K_M",
+      "paper": 2024,
+      "learned_bytes": 1945311744,
+      "points": 8.0,
+      "non_essay_points": 8.0,
+      "essay_points": 0.0,
+      "closed_points": 2.0,
+      "closed_max": 7,
+      "items": 40,
+      "seconds": 304.687,
+      "total_tokens": {
+        "known_sum": 88496,
+        "reported_calls": 40,
+        "unknown_calls": 0
+      },
+      "calls": 40,
+      "technical_failure_ids": [],
+      "format_failure_ids": [
+        "23.2"
+      ],
+      "truncated_ids": [
+        "23.2"
+      ],
+      "over_budget_ids": [],
+      "points_by_type": {
+        "art": {
+          "points": 2.0,
+          "max": 6
+        },
+        "cartoon": {
+          "points": 0.0,
+          "max": 5
+        },
+        "choice": {
+          "points": 1,
+          "max": 3
+        },
+        "chronology": {
+          "points": 0.0,
+          "max": 1
+        },
+        "comparison": {
+          "points": 2.0,
+          "max": 6
+        },
+        "data_table": {
+          "points": 0,
+          "max": 1
+        },
+        "essay": {
+          "points": 0.0,
+          "max": 15
+        },
+        "explanation": {
+          "points": 0.0,
+          "max": 3
+        },
+        "identification": {
+          "points": 2.0,
+          "max": 10
+        },
+        "map": {
+          "points": 0.0,
+          "max": 5
+        },
+        "matching": {
+          "points": 0.0,
+          "max": 1
+        },
+        "true_false": {
+          "points": 1.0,
+          "max": 4
+        }
+      },
+      "loaded_model_vram_bytes": 1739304467,
+      "model_artifact_hash": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+      "source_report_sha256": "93f239746ccebe36767b9249e4d0fb8249293e9504653f8a8922c0f40a711f11"
+    }
+  ],
+  "integrity_audit": [
+    {
+      "checkpoint": "qwen35-08b-2023-ehistoria-v1",
+      "all_snapshot_files_match": true,
+      "verified_files": 70,
+      "loaded_digest_and_context_verified": true,
+      "changed_dependencies_vs_2b_q8": [
+        "source_config",
+        "model_inventory"
+      ]
+    },
+    {
+      "checkpoint": "qwen35-08b-2024-ehistoria-v1",
+      "all_snapshot_files_match": true,
+      "verified_files": 71,
+      "loaded_digest_and_context_verified": true,
+      "changed_dependencies_vs_2b_q8": [
+        "source_config",
+        "model_inventory"
+      ]
+    },
+    {
+      "checkpoint": "qwen35-2b-2023-ehistoria-v1",
+      "all_snapshot_files_match": true,
+      "verified_files": 70,
+      "loaded_digest_and_context_verified": true,
+      "changed_dependencies_vs_2b_q8": []
+    },
+    {
+      "checkpoint": "qwen35-2b-2024-ehistoria-v1",
+      "all_snapshot_files_match": true,
+      "verified_files": 71,
+      "loaded_digest_and_context_verified": true,
+      "changed_dependencies_vs_2b_q8": []
+    },
+    {
+      "checkpoint": "qwen35-2b-q4-2023-ehistoria-v1",
+      "all_snapshot_files_match": true,
+      "verified_files": 70,
+      "loaded_digest_and_context_verified": true,
+      "changed_dependencies_vs_2b_q8": [
+        "source_config",
+        "model_inventory"
+      ]
+    },
+    {
+      "checkpoint": "qwen35-2b-q4-2024-ehistoria-v1",
+      "all_snapshot_files_match": true,
+      "verified_files": 71,
+      "loaded_digest_and_context_verified": true,
+      "changed_dependencies_vs_2b_q8": [
+        "source_config",
+        "model_inventory"
+      ]
+    }
+  ],
+  "metadata_erratum": "Executed Q4 v1 configs retain an inherited descriptive model_provenance.quantization=Q8_0 label. Actual requested tag, verified manifest/blobs, inventory and live runtime all identify Q4_K_M. Frozen v1 records are retained; v2 configs correct that descriptive field only and have not been rerun."
+}

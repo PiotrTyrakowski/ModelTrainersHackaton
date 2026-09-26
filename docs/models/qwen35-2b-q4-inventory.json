@@ -1,0 +1,55 @@
+{
+  "tag": "qwen3.5:2b-q4_K_M",
+  "registry": "registry.ollama.ai/library/qwen3.5:2b-q4_K_M",
+  "manifest_sha256": "124a03c347777e8e4e5955c33610ae01d9d90d8c2a718bfba069c498d5c7f3c9",
+  "manifest_bytes": 709,
+  "learned_weight_file_bytes": 1945311744,
+  "all_blob_bytes": 1945323638,
+  "blobs": [
+    {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "digest": "sha256:d74185f092b805a275e445e4ab35eab1e8c6f0d0f8e3f1a581f75babb91a9110",
+      "size": 475,
+      "verified_sha256": "d74185f092b805a275e445e4ab35eab1e8c6f0d0f8e3f1a581f75babb91a9110",
+      "verified_bytes": 475,
+      "learned_weights": false
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.model",
+      "digest": "sha256:7a3a8d55382135a773916fd7c35044b2a2a3a7b8dee788095d70f122e6d8f520",
+      "size": 1945311744,
+      "verified_sha256": "7a3a8d55382135a773916fd7c35044b2a2a3a7b8dee788095d70f122e6d8f520",
+      "verified_bytes": 1945311744,
+      "learned_weights": true
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.license",
+      "digest": "sha256:9be69ef463066202c1b1bd299aaf42bad370a01ba4b40d293617859720776c17",
+      "size": 11354,
+      "verified_sha256": "9be69ef463066202c1b1bd299aaf42bad370a01ba4b40d293617859720776c17",
+      "verified_bytes": 11354,
+      "learned_weights": false
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.params",
+      "digest": "sha256:9371364b27a52acac9d87f88bd93c9db1174d8d6ec57f6888925cdc1788871ff",
+      "size": 65,
+      "verified_sha256": "9371364b27a52acac9d87f88bd93c9db1174d8d6ec57f6888925cdc1788871ff",
+      "verified_bytes": 65,
+      "learned_weights": false
+    }
+  ],
+  "counting_note": "All learned files counted including embedded vision weights; runtime and retrieval data excluded.",
+  "captured_at": "2026-09-26T21:34:57.266740+00:00",
+  "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+      "qwen35"
+    ],
+    "parameter_size": "2.3B",
+    "quantization_level": "Q4_K_M"
+  },
+  "parameter_count": 2274069824
+}

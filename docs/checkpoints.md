@@ -176,6 +176,20 @@ identity must still be checked against the live server. See the
 [full comparison](results/2026-09-26-model-size-comparison.md) for all eight
 results, interpretation and sensitivity checks.
 
+## Mixed corpus and quantization comparisons
+
+The subsequent [e-Historia corpus experiment](results/2026-09-26-ehistoria-comparison.md)
+uses `qwen35-{08b,2b}-{2023,2024}-ehistoria-v1.json` with `--variants bm25`.
+It changes only the corpus from the model-size comparison. The
+`qwen35-2b-q4-{2023,2024}-ehistoria-v1.json` configurations then change only the
+model artifact to Q4_K_M, keeping the same mixed corpus and harness. Retain the
+corresponding verified local model inventories before preparing either run.
+
+See the [quantization results](results/2026-09-26-quantization-comparison.md).
+The executed Q4 v1 configs have an inherited descriptive Q8_0 metadata label;
+verified weights and runtime were Q4_K_M. Use the corresponding Q4 v2 configs
+for future runs: they correct only that label. V1 records stay frozen for audit.
+
 ## Offline verification
 
 ```sh

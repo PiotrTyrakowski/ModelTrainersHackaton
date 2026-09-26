@@ -1,0 +1,2002 @@
+{
+  "kind": "e-historia-repetytorium-v1",
+  "source_index": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony.html",
+  "selection_note": "All lessons linked from the four user-selected repetytorium classes, independent of exam answer keys.",
+  "articles": 197,
+  "passages": 1578,
+  "catalogue_items": 198,
+  "failures": [],
+  "excluded_empty_lessons": [
+    {
+      "url": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-7-sprawa-polski-pod-koniec-wojny-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "catalog_title": "2. 7. Sprawa Polski pod koniec wojny",
+      "class": "Klasa 4",
+      "category_url": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "reason": "Published article body is empty",
+      "html_sha256": "1389496a6c4156dad77e5020406813f7eb424fade1a6a3db67e6bc73a18c27c0"
+    }
+  ],
+  "pending_titles": [],
+  "robots_sha256": "5cc6230a4126d736a49e17f4a1699b831962e5ec28ac84da1a79efa7f3c3da74",
+  "articles_sha256": "3d94ee7e5c78c262b88624e4631e4138a66266b58f42e39c09f4d2a9a5b62b46",
+  "passages_sha256": "d1e55248e108174681f888268a70697f0fdddff54a239efb2c54b765d8c65dca",
+  "catalogue_sha256": "a8304b2e778a88af2b90431b13167d244f100ab0dd7a4b063ef2a31f13e64591",
+  "builder_sha256": "9b8e7f6cdc8946ab3cf2c59d1e01cee617ff3685ebc204347c0f476260c48e4d",
+  "generated_facts": 0,
+  "quality_limit": "Extraction and provenance checks, not independent historical fact verification; image contents not transcribed.",
+  "licence": "No open redistribution licence identified; author rights retained. Local research snapshot.",
+  "attribution": "Wiesław Zdziabek / e-Historia",
+  "author_url": "https://e-historia.com.pl/o-projekcie-e-historia---wspolpraca-miedzynarodowa/4-o-autorze.html",
+  "catalogue": [
+    {
+      "title": "1. 01. Prahistoria",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-01-prahistoria-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "22f5781306990fbc5b656dab4b693ac9183d9b29eee945ac1ce7e06ba03adc8a",
+      "html_sha256": "47e9d145641ab014519997260457792318d8b722af7f78bc0f887fbeebe6e2af",
+      "retrieved_at": "2026-09-26T21:12:27.939982+00:00",
+      "blocks": 25,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 02. Narodziny cywilizacji w Mezopotamii",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-02-narodziny-cywilizacji-w-mezopotamii-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "19db56298f0ea02f4e373a84800bdb7fa7df0fde105f5f47fa2f8f44b23770d8",
+      "html_sha256": "d3e08e352029e593dbceaefa526e8b526fa38672b5ae4c0c3e254fd06e841d0b",
+      "retrieved_at": "2026-09-26T21:12:28.649913+00:00",
+      "blocks": 26,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 03. Babilonia i Asyria",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-03-babilonia-i-asyria-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "14de3c2e3dceb649d78c211f829c25b236d2b4eb84b97db227d72d5146708575",
+      "html_sha256": "506d0772f83d9a12b1fad2226f8a2debceb7e1189292e2dd2b66db044f6e07ae",
+      "retrieved_at": "2026-09-26T21:12:29.865099+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 04. Cywilizacja egipska",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-04-cywilizacja-egipska-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "d1944e782a34aca26bd18a3a1e3579ec02c4a84bb0d45f9e3f7f60a8e77ae23a",
+      "html_sha256": "1d48b287c7b195ea638dd6fb5bf4fdf6601c1f2ea02cc5a1553cb02afe94a25f",
+      "retrieved_at": "2026-09-26T21:12:30.572672+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 05. Dzieje Hetytów, Fenicjan i Persów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-05-dzieje-hetytow-fenicjan-i-persow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "a78f898d3171f844564cea8f742efc41f8c9ca1c440b2ad87bb81179832dd7c6",
+      "html_sha256": "0a8cc50926bde52d12b75444226c6949de1ed53b58c8270bb873794295f1e5c2",
+      "retrieved_at": "2026-09-26T21:12:31.865128+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 06. Starożytny Izrael",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-06-starozytny-izrael-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "2a2c35aa6c2023ecb71d490aabd320e44f5af1ee1202aa1419cc729d9c2dbc0e",
+      "html_sha256": "f1bde90f99bccb8ede36876fa282144d7a932a5a2811d7a647ee51810b4f3bbc",
+      "retrieved_at": "2026-09-26T21:12:32.593296+00:00",
+      "blocks": 52,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 07. Cywilizacje Chin i Indii",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/1-07-cywilizacje-chin-i-indii-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "64a93ba3956d2fb4f7d1ba4491367a2c72f0c2861732baa81277300118f4547e",
+      "html_sha256": "bf1ed0d6c56ea7af1eb6b3a0a012d1f06a0d4e728d5db1513a14eed3ba473077",
+      "retrieved_at": "2026-09-26T21:12:33.622009+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 01. Najstarsze dzieje Grecji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-01-najstarsze-dzieje-grecji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "65b46202cf94e9aa0637d3fd289a9b37dca653f553e35b367bd008c8810c83c1",
+      "html_sha256": "5b4efc428de5ea7b6233ddf7b79fadd0a3650a64c874ef36ffe1aeb5dc4a2cf3",
+      "retrieved_at": "2026-09-26T21:12:34.534698+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 02. Poleis greckie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-02-poleis-greckie-repetytorium-streszczenie-zakres-rozszerzony-2.html",
+      "class": "Klasa 1",
+      "text_sha256": "1e9cc86e90919f4eb0920ab38e8290b5012e0f6dd654a63ba8bc3f0a9794789a",
+      "html_sha256": "d509d95a8a64bdc21e2a6e06a8a6e69b7c28d8f4759f473b57123ce53fbf1960",
+      "retrieved_at": "2026-09-26T21:12:35.578584+00:00",
+      "blocks": 30,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 03. Sparta",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-03-sparta-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "02bfcce72646b799f077f530f49b2bdab41dcc61357ec9afe28fd95d8943aec8",
+      "html_sha256": "278f5d24914e03ed1e3f40579fbd9327f99967dc2b38e4c95dac8990c227a951",
+      "retrieved_at": "2026-09-26T21:12:36.528120+00:00",
+      "blocks": 32,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 04. Ateny",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-04-ateny-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "e239c5569eaf0f0a311f12063afe8a884d34b1670954b09295cb2054feb37f7a",
+      "html_sha256": "befb23b7925fcbd33b0be11de4ad0943d706e9d13a38b4b997a7439fc5cf0c52",
+      "retrieved_at": "2026-09-26T21:12:37.533076+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 05. Wojny grecko-perskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-05-wojny-grecko-perskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "cb6b641e5483ccabb95b29c5503661daf569fdea863b7e176bbd234be3917c7c",
+      "html_sha256": "8e295ef8b2319b8c9919a5492bcf81c77f94a0b0e9cf82033d7fa90ffd9f431a",
+      "retrieved_at": "2026-09-26T21:12:38.567267+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 06. Walka o hegemonię w Grecji po wojnach perskich",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-06-walka-o-hegemonie-w-grecji-po-wojnach-perskich-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "6a5c702f39bc63d284e4aac27df91a52a67d7ab2c16433d545e49d5785d48cbd",
+      "html_sha256": "bbc38e84cfd406129fde1a2434edc9d34c7a37e0c077442f8a9a9cdd44e75f38",
+      "retrieved_at": "2026-09-26T21:12:39.662736+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 07. Religia i formy kultu religijnego w antycznej Grecji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-07-religia-i-formy-kultu-religijnego-w-antycznej-grecji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "e6b1b527f9674832c7a63cdfda891d15c0c05575c597d74d73a29b9bebe554dd",
+      "html_sha256": "3ce530e07e4304cc868b1b3eb7092f7be8410d1ed9240f39c338a09a20b68d57",
+      "retrieved_at": "2026-09-26T21:12:40.615732+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 08. Literatura, nauka i filozofia grecka",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-08-literatura-nauka-i-filozofia-grecka-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "f256a904196e64878eea92c3d9a470681b4266ac4cfcfa8313aa5827fbd67d08",
+      "html_sha256": "90c54d008fed92b02e5b959c27cbf31b5fcef584f34f50b5a75a25d7ad0e072f",
+      "retrieved_at": "2026-09-26T21:12:42.116334+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 09. Sztuka antycznej Grecji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-09-sztuka-starozytnej-grecji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "96a54c37f8a48c9def0b8944ae2593a92b70db565b3a785da7925a81a03e453e",
+      "html_sha256": "23406a4294bd54a46d3114439d573256bbdeeac39cd9da6419a9761eeac0bfbe",
+      "retrieved_at": "2026-09-26T21:12:42.650268+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 10. Aleksander Wielki",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-10-aleksander-wielki-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "3a93a50dd0b65ee43efad1bafd336ca79e97ed0ebf128c54e505a14b783638a3",
+      "html_sha256": "6960b772a017d1d041780ab3bc0aeda51cbd532da39df133a01b738aaeab004b",
+      "retrieved_at": "2026-09-26T21:12:43.732905+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 11. Świat hellenistyczny",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/2-11-swiat-hellenistyczny-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "a19d98b6fa8046612d2730a7a2d8af8ebc4c852d01687d50828452beefa72380",
+      "html_sha256": "c63b5b084349e2d0c9692c033103375f073474812ea62d942f51fab8989f6aa2",
+      "retrieved_at": "2026-09-26T21:12:44.664298+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 01. Początki Rzymu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-01-poczatki-rzymu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "c567326271737ff504298d9fe0971fa8b1a93065d52aa33d836bedc710d6a789",
+      "html_sha256": "a7565b7841b623b8051d5bf22055af83197ae8812037735538e7859be0f92670",
+      "retrieved_at": "2026-09-26T21:12:45.652427+00:00",
+      "blocks": 32,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 02. Republika rzymska",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-02-republika-rzymska-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "3fca2c420a463f886284eecd90f3adb4d306b99d121f34c15a1c3408f43b8de6",
+      "html_sha256": "b34b1de3f20884aa777e7c5e109b0422c4b7b11224777895e5da2ac40bcd6e92",
+      "retrieved_at": "2026-09-26T21:12:46.639650+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 03. Narodziny imperium rzymskiego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-03-narodziny-imperium-rzymskiego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "e680b39d3ff338e415870d01a4a75a2f3193c8a45814003ea2eb4b5f779f44a7",
+      "html_sha256": "ff2b9ee901df96f74a81704bd7e29ed02573e4c104b082e91d2d7b2d2bb428e1",
+      "retrieved_at": "2026-09-26T21:12:47.656294+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 04. Przemiany społeczne w republice rzymskiej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-04-przemiany-spoleczne-w-republice-rzymskiej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "b624bcd24d0b75fc5a357af75383202b3222235f610ffd8f864bc6cfa241e19b",
+      "html_sha256": "28c78ae59fcbcfd978d638423d283036d67e45c72e87ffefbf8a3967802bf091",
+      "retrieved_at": "2026-09-26T21:12:48.817792+00:00",
+      "blocks": 31,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 05. Kryzys republiki",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-05-kryzys-republiki-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "5eea39b23ba4d28aedfb0b1e1903cfc8d59e3ac8c4e74b40d33b2c54719b7e17",
+      "html_sha256": "fe787c44e265853dadcf37f48490e6a87a3e19e95d42572b7edd9fda7d442d8a",
+      "retrieved_at": "2026-09-26T21:12:49.674817+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 06. Narodziny cesarstwa w Rzymie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-06-narodziny-cesarstwa-w-rzymie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "82a2b6680a142ed5d37a99385a0815ec7045af553e6d200e760762121b8a0a25",
+      "html_sha256": "7eacbe4b56766d5eb2990cf746e1ef252f0db3249e23d1903d84d343d3f4ee8f",
+      "retrieved_at": "2026-09-26T21:12:50.717183+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 07. Między pryncypatem a dominatem",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-07-miedzy-pryncypatem-a-dominatem-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "7daffc5a08140b9865d44ef481f46c46d928fa3cae81e46a1dbaf6d1f83a60ce",
+      "html_sha256": "19a2d273ca829d8e364b74a52cd0ef716ba5413975078e2c63f98dfc103b88a2",
+      "retrieved_at": "2026-09-26T21:12:51.668235+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 08. Kultura starożytnego Rzymu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-08-kultura-starozytnego-rzymu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "f61cfa7be10d8027a20d647f474a4ec62a6cf671113af3c240a80ad9e22765f1",
+      "html_sha256": "9e782c25e3a547b8499833f191bdb265561017c1ab50931aedf716284a64daa2",
+      "retrieved_at": "2026-09-26T21:12:52.672243+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 09. Narodziny chrześcijaństwa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-09-narodziny-chrzescijanstwa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "bdce0409c9677de9213281ccc609c1aaa82815f7658f2501fb9a6d9599e5cd8e",
+      "html_sha256": "d821c906902f3a656d595f8b07ba845115518a6516698df5da0b7b0760191a7b",
+      "retrieved_at": "2026-09-26T21:12:53.865210+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 10. Upadek cesarstwa zachodniego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/3-10-upadek-cesarstwa-zachodniego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "91af8b9365030197fd378745cab93b42291f593eee8c6c2176a5c7ad054ed3a8",
+      "html_sha256": "143b1e1a5ce63ac2addc1af114c432ee1e310cd4d7a11f9824eaf98c53cac8a9",
+      "retrieved_at": "2026-09-26T21:12:54.724411+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 01. Na gruzach Cesarstwa Zachodniego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-01-na-gruzach-cesarstwa-zachodniego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "5a6e1e1fb85a3217dabd4e0908cf53b1ec57973505ed243bed7cc39b98474877",
+      "html_sha256": "c36415deac3c6b2d3a43edc78380d6890cc5dae054402a0ad696f68b107e4154",
+      "retrieved_at": "2026-09-26T21:12:55.938271+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 02. Cesarstwo bizantyjskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-02-cesarstwo-bizantyjskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "d6e78323b9e2aa5028e7f88c14704026838663a61dab627775e238890f224c43",
+      "html_sha256": "4cb8963baabf96cd7c696125786c96e19ba00ec02fa3413749801fa5a071c25b",
+      "retrieved_at": "2026-09-26T21:12:56.837065+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 03. Narodziny islamu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-03-narodziny-islamu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "9caac46ce574f7f2430d0ff5827b29e8ce3f5dbdbca496ea4b21c7f4f18b07af",
+      "html_sha256": "0e14e645b984f5f902014bc96776da9e5e92bf68d811a3ebd8c6bff4117fbcaf",
+      "retrieved_at": "2026-09-26T21:12:57.722310+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 04. Narodziny państwa Franków",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-04-narodziny-panstwa-frankow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "6f4c6c4e2bd3150901a5b2ce19968e3749b4a99e7d95389acbb2a3f950848c5a",
+      "html_sha256": "f34bc5d5757de0c950269d14740d09fe4f06d2bae2e5d60bc7783f7bf4621608",
+      "retrieved_at": "2026-09-26T21:12:58.771470+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 05. Państwo Franków pod panowaniem dynastii Karolingów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-05-panstwo-frankow-pod-panowaniem-dynastii-karolingow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "a2317b084f77f7c44872c5874dc6bd9efb161d5745a48649bcfdfd2636fb9bc4",
+      "html_sha256": "0c165163196c7cb186558e8e8403e82c42c41cee65d1f76c61aa5015d58f4f7b",
+      "retrieved_at": "2026-09-26T21:12:59.785370+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 06. Kształtowanie się feudalizmu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-06-ksztaltowanie-sie-feudalizmu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "3c48db5039c2b1f9229c1738bbb9c48490f444432452dfed5068192c28cbaa6c",
+      "html_sha256": "de33419cd4c56f0ee6b178fa5c6f7d2b1cc75241789f5fd2761fcd7e6a057ff7",
+      "retrieved_at": "2026-09-26T21:13:01.071576+00:00",
+      "blocks": 32,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 07. Sytuacja polityczna w Europie Zachodniej w IX–XI w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-07-sytuacja-polityczna-w-europie-zachodniej-w-ix-xi-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "798b89985b905365b5f0020fc6d903f53bec458f78c7d3a867e0de05ebce4c69",
+      "html_sha256": "d94c403c2c2dd8af81e83c35acf3946617053f3b1efe287804f0cc95441974a6",
+      "retrieved_at": "2026-09-26T21:13:01.744227+00:00",
+      "blocks": 30,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 08. Pierwsze państwa słowiańskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-08-pierwsze-panstwa-slowianskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "b3dc04e7b807411e5d7766fd014231363834bfb42c290f5a80e639d91abe6a0d",
+      "html_sha256": "e991045494c4200e81b0467e14530f5cef87cdb718c7c43d172dc9be198e3167",
+      "retrieved_at": "2026-09-26T21:13:03.057850+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 09. Najazdy Węgrów i Wikingów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/4-09-najazdy-wegrow-i-wikingow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "7ce0b291b7b70375d612f0dd09afa51bfe52c71f56c30814feca3c47b9337963",
+      "html_sha256": "662ee0e45e7a108ac48e096d70e116bb21a30866e687dd713ad2f7434fcfbc86",
+      "retrieved_at": "2026-09-26T21:13:03.752372+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 1. Pradzieje ziem polskich",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/5-1-pradzieje-ziem-polskich-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "cc0b0c7adc112fdf608e0106720d3fa6d9cd37eaf73a265d67837f41ecc559e0",
+      "html_sha256": "d6f16756ce71abd46686da0e1be69409aa1671897cfd9a10a72431b13d28c846",
+      "retrieved_at": "2026-09-26T21:13:04.735275+00:00",
+      "blocks": 30,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 2. Początki państwa polskiego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/5-2-poczatki-panstwa-polskiego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "d87a2716a44d3a7b21020b946debf249dccba80297a3b954a4937402ffbbc954",
+      "html_sha256": "be8cb658e6ed415da8c81e64a72b0319980a68e0ebc30a09c70235847d3a104c",
+      "retrieved_at": "2026-09-26T21:13:05.780862+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 3. Polska za panowania Bolesława I Chrobrego (992–1025)",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/5-3-polska-za-panowania-boleslawa-i-chrobrego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "8a324144beda37c673678502653054b3f33206e0e30075fd82ba7a4c7f81c6a3",
+      "html_sha256": "34a04267bd0c5316d48aa6a53f4fd2131dd1e837335f8b749ffda769a7962d8e",
+      "retrieved_at": "2026-09-26T21:13:06.752297+00:00",
+      "blocks": 32,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 4. Kryzys monarchii pierwszych Piastów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/5-4-kryzys-monarchii-pierwszych-piastow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "bbfbbe183fd6fc7801318e795e981fcaa068e9ae7b277b003414997f7e380fcb",
+      "html_sha256": "e05ab2e174ed26d954321e6acd32f2c97b3342346c1b3496b729a1b0a60dd155",
+      "retrieved_at": "2026-09-26T21:13:07.835660+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 5. Polska na przełomie XI i XII wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/5-5-polska-na-przelomie-xi-i-xii-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "acc22e7273d6e6414876f49757f0518afb92834b39ff0a15b3e2e732275271fc",
+      "html_sha256": "a30c53cef9876c0db4a97b4020de9d9c4b8d9536073a0a4d4004a4da030d4a5a",
+      "retrieved_at": "2026-09-26T21:13:08.720260+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 6. Organizacja państwa pierwszych Piastów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/5-6-organizacja-panstwa-pierwszych-piastow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "9c6674bb535bb159857b0046bd20e1a94096429abfa7413019573d7a8ae99bee",
+      "html_sha256": "e13f08cee928a942ffc701c7196694f1914e77305607aa323b6a3857093b25fa",
+      "retrieved_at": "2026-09-26T21:13:09.840064+00:00",
+      "blocks": 24,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 1. Cesarstwo i papiestwo",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-01-cesarstwo-i-papiestwo-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "30940b3c8635f730154347d1a84268dd196576437b48755cb72d633ba3a61ea9",
+      "html_sha256": "a29dcf6c4c4a10ff27d16fb4274b5d7e3ea2193c4dabe138fc42a72f5bb7fe78",
+      "retrieved_at": "2026-09-26T21:13:10.766220+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 02. Wyprawy krzyżowe",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-02-wyprawy-krzyzowe-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "8df229aa5eb9fce2d4639bbe366eb5106fe4af8a04333a357cd5bc959a350b5e",
+      "html_sha256": "29df7264cbab4b0450e9f5ee40d618b21268663fc0c50bd3cfd6873d53ad0261",
+      "retrieved_at": "2026-09-26T21:13:11.729321+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 03. Podboje mongolskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-03-podboje-mongolskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "c7451b1e09e38d9fbde7696c42b4611ab2c99735ca6fab3f8a69030ffa27fefb",
+      "html_sha256": "a6aded311145ff225da98734059866b85e12aded356bfed0647021b118cf5dc3",
+      "retrieved_at": "2026-09-26T21:13:12.749272+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 04. Narodziny monarchii stanowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-04-narodziny-monarchii-stanowej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "6d5c0d341e073e94c17d36dc57651f2c10bca04e7e84d5f1ee4833735d85c94c",
+      "html_sha256": "f9fb0bd94df687dc25d447f8d6fe7bff61194a99f6b216e4df93e8dceb366c31",
+      "retrieved_at": "2026-09-26T21:13:13.749624+00:00",
+      "blocks": 33,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 05. Gospodarka średniowiecznej Europy",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-05-gospodarka-sredniowiecznej-europy-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "50fa9c5b6423a9abe01d01041e8637a032d01d6430eb1f0b1454209b17474645",
+      "html_sha256": "a4dbe11f9d56c10382f1aa734cd9126864b2a4e43178c7ddd52f5333f6713e04",
+      "retrieved_at": "2026-09-26T21:13:14.754159+00:00",
+      "blocks": 31,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 06. Kultura średniowieczna",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-06-kultura-sredniowieczna-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "23583d5aac3c3000d7d352bc694dfbc3b3e3d9cd277ac061cff6a34827b4f3cd",
+      "html_sha256": "a8a64781d3b410e5a0b18a6683f010c310753d426188b987283c0203341bd443",
+      "retrieved_at": "2026-09-26T21:13:15.830381+00:00",
+      "blocks": 44,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 07. Kościół w średniowieczu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/6-07-kosciol-w-sredniowieczu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "0ba22e68982f0f3385c7628c5df2379435cc70b3b0e6668b29ef5080b41d6862",
+      "html_sha256": "6c8b35e34e6d49f52c1368baa38304d1ebc8beaca137c042a786a6ddedf03150",
+      "retrieved_at": "2026-09-26T21:13:17.075443+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 01. Rozbicie dzielnicowe w Polsce",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/7-01-rozbicie-dzielnicowe-w-polsce-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "702106c0d9316370e1347df7bd0cbf3f26a83c8fd91ab0aabf52e2611ad09be0",
+      "html_sha256": "00ab38679c5210fa08c6a0a8c07c24f6a17fa83f5a6e97029188dd2ff9c6fc39",
+      "retrieved_at": "2026-09-26T21:13:17.752943+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 02. Rozwój gospodarczy ziem polskich w okresie rozbicia dzielnicowego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/7-02-rozwoj-gospodarczy-ziem-polskich-w-okresie-rozbicia-dzielnicowego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "e5aab65832a9816800bb6df0068b9cece5caceb37bc81f68bb0abb4991621ab1",
+      "html_sha256": "723c70b2726f190ce7e92b8846c4f6210ac8ec92351b4aa14fed23ac92be8595",
+      "retrieved_at": "2026-09-26T21:13:19.200555+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 03. Sąsiedzi Polski w XII i XIII w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/7-03-sasiedzi-polski-w-xii-i-xiii-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "0a6b08b2313318e94e4031db279a99f68a81a74b1d0b69ef4c1012dbbb27e817",
+      "html_sha256": "cb2575eb2275c87b47760aae161224102cd92726749b5be8bf07d3c3db6ba643",
+      "retrieved_at": "2026-09-26T21:13:19.944282+00:00",
+      "blocks": 44,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 04. Próby zjednoczenia Królestwa Polskiego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/7-04-proby-zjednoczenia-krolestwa-polskiego-repetytorium-streszczenie-zakres-rozszerzono.html",
+      "class": "Klasa 1",
+      "text_sha256": "45973f8cc068bbd3f85ff55a87ea6cb63f88668b1ff8a3d5d506d75b71c6b517",
+      "html_sha256": "07036cb8d01a07613d69b7b09b389bd6006f739ae9f80b35de406be425f87fb1",
+      "retrieved_at": "2026-09-26T21:13:21.155055+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 05. Panowanie Władysława Łokietka",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/7-05-panowanie-wladyslawa-lokietka-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "b172ac6b919a5a1d09049ddce9caefd2dbb80ab3be0458e7f0ef883214989d7e",
+      "html_sha256": "a411a3b6d1f8bbc7a92b2ce39936a527011f4d6a7d35b6fa34e3b04af645a5a6",
+      "retrieved_at": "2026-09-26T21:13:21.766272+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 06. Państwo Kazimierza III Wielkiego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/7-06-panstwo-kazimierza-iii-wielkiego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "112b8758455b81554cd08aa195abff705ed0ee144b54ccc61932f643806e11e5",
+      "html_sha256": "b4eedd16fa5e112ad26bbd03afe3bd2bee9fa29487a9a36d4d431a65d038ba1b",
+      "retrieved_at": "2026-09-26T21:13:22.835452+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 01. Unie z Węgrami i Litwą",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-01-unie-z-wegrami-i-litwa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "abf8c1b792beb4e3185c09881dfe8763319066b66ce3c7c9cd45e40844c4761e",
+      "html_sha256": "1c0bdc0597cbba79659d19d5a763960829003f29521d775ca2e4089c33bbc8b9",
+      "retrieved_at": "2026-09-26T21:13:23.876996+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 02. Wojny z zakonem krzyżackim",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-02-wojny-z-zakonem-krzyzackim-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "6acacb7d5c6c728615d6bfb963493ce5f2b8e7c4fcaa6ab273c4dda3ac6c77ba",
+      "html_sha256": "aa52030b82a4c98ef667f7ebbb22cb16916cb6ee23716bfa66ee750ad7bbda38",
+      "retrieved_at": "2026-09-26T21:13:25.172637+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 03. Wojna stuletnia",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-03-wojna-stuletnia-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "cdb963ae1bbf0671f990d405b3efd3ace487aad6522c0ab21c5f264e7355cb64",
+      "html_sha256": "1fc9ae74dfe1441b95deedc4928e006de1a7c16f3415b99661cfcc16b683c5f1",
+      "retrieved_at": "2026-09-26T21:13:25.842551+00:00",
+      "blocks": 53,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 04. Kryzys schyłku średniowiecza",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-04-kryzys-schylku-sredniowiecza-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "afa9797d9b5a6a909be46a2d549aee6d51c81570484a85d812237837f5246388",
+      "html_sha256": "b3a0f85513e52be7f3206860397094ecff03b43446b90cf675ba33e90f18f303",
+      "retrieved_at": "2026-09-26T21:13:26.859007+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 05. Europa Środkowa i Wschodnia w XV w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-05-europa-drodkowa-i-wschodnia-w-xv-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "903d6f8f29780b2332cee30d7ea89fe809989d59a8ff521bcd0eef480eef139a",
+      "html_sha256": "f8cc4e0ba0abfa2e4bcb037db48c402fad82c0677dad5b089ba092edb2c827da",
+      "retrieved_at": "2026-09-26T21:13:27.936800+00:00",
+      "blocks": 52,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 06. Panowanie Władysława Warneńczyka i Kazimierza Jagiellończyka",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-06-panowanie-wladyslawa-warnenczyka-i-kazimierza-jagiellonczyka.html",
+      "class": "Klasa 1",
+      "text_sha256": "cecbbabe8bac59bc7365168306fca6215ec038e1d1622e92ca6600847f7c5a6f",
+      "html_sha256": "daf66e2268c870eafb0a1348aef50c0ec66d17fe420caed149abb08bb9a436ef",
+      "retrieved_at": "2026-09-26T21:13:29.090103+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 07. Monarchia polska w XIV i XV wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-07-monarchia-polska-w-xiv-i-xv-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "00dc377b243b0ad03cd13cde4cb95ce64485a3d22f0826ee7c12ffd760d8d574",
+      "html_sha256": "725a9db9f930905cdf496fa76d9b910a42c227380bd7a929e72275f02d95acb0",
+      "retrieved_at": "2026-09-26T21:13:29.870535+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "8. 08. Kultura polska w średniowieczu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-1-repetytorium-streszczenie-zakres-rozszerzony/8-08-kultura-polska-w-sredniowieczu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 1",
+      "text_sha256": "38b8b42dff54e26979fd0b74ca631c40035295009ca0b1358a2f27eb507f6dfb",
+      "html_sha256": "ba5f0eccc9bf2dcff4c2d753c5c7914161dcb74c6a1422a7806f3a6289fda34a",
+      "retrieved_at": "2026-09-26T21:13:31.236620+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 01. Cywilizacje pozaeuropejskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-01-cywilizacje-pozaeuropejskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "f58bee496dda36f1f8a882d1da4ed9014d2bf7c519e6c7a493baa7f9566e1c81",
+      "html_sha256": "7c8e81ab69c72c1f27ff602e89f02f1aeb00f0313a84f94b721f7097f4fdced8",
+      "retrieved_at": "2026-09-26T21:13:31.829518+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 02. Wielkie odkrycia geograficzne",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-02-wielkie-odkrycia-geograficzne-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "67cea2ced319a502a739748e60382d12465dfa8e994e8456977cea0a2cc8094c",
+      "html_sha256": "5571f710ba7e9157d89f0c3bee2ffa118fd4bc10e4871d50f5b5968fb8f650e1",
+      "retrieved_at": "2026-09-26T21:13:33.224398+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 03. Ekspansja kolonialna",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-03-ekspansja-kolonialna-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "dd629f299e3cac1d76f45b9c95ba9235a22fbb69e4760b79aa9540d91d03e1c1",
+      "html_sha256": "4e9d8e29972f0ab84ed15feb7576d332d3cee0824bd715dea361dfd726034124",
+      "retrieved_at": "2026-09-26T21:13:33.844448+00:00",
+      "blocks": 52,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 04. Przemiany społeczno-gospodarcze w Europie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-04-przemiany-spoleczno-gospodarcze-w-europie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "3745b8cad3de679f177dc05131a409a8e0913f94d7b5a155abfe7eb94e4fb746",
+      "html_sha256": "f3d70cf624681e337ec6fb3d82dccc781c3b805b483b3798df60302f4aaba019",
+      "retrieved_at": "2026-09-26T21:13:35.138818+00:00",
+      "blocks": 31,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 05. Kultura renesansu",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-05-kultura-renesansu-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "b8196d1a339266f3aa2846768d99dab69bb2b2766fdbc16a2e93a378f80115f6",
+      "html_sha256": "3cf7fcc99dbf88ff483638740e785314146e4bfec99df376ec988d7415452994",
+      "retrieved_at": "2026-09-26T21:13:35.835613+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 06. Reformacja",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-06-reformacja-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "513d985617a04e4beabdd8b04d48a9f4ec143136b3b33a143e973c4625a04489",
+      "html_sha256": "721616a6f4edc0f1e2c2f588e9ee1a81ef87a1f8f096886d088f458d9fab24f5",
+      "retrieved_at": "2026-09-26T21:13:37.440483+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 07. Reforma wewnętrzna Kościoła i kontrreformacja",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-07-reforma-wewnetrzna-kosciola-i-kontrreformacja-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "994c5e6dd5e1a3ba37e4ff7a1b4ec3cc28cd174a642c47c744af6e90097646fa",
+      "html_sha256": "81edcb0c1096519229a436812edcd65680ffc62fca55af29a90ba70cf6010383",
+      "retrieved_at": "2026-09-26T21:13:38.222316+00:00",
+      "blocks": 29,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 08. Europa w okresie wojen włoskich",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-08-europa-w-okresie-wojen-wloskich-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "406a55dd6ea702f1980c10c7d2a0d67304f78677a304fd5a06f91ff147c5e14d",
+      "html_sha256": "6b9ce9ba33a3e7e2744a049f11e6de3cfab580b9b501e2089e45da6db9d03c27",
+      "retrieved_at": "2026-09-26T21:13:39.473376+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 09. Monarchie europejskie w drugiej połowie XVI wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-09-monarchie-europejskie-w-drugiej-polowie-xvi-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "54a3394533d2e18b5085c1b00872e2597cc3fffd68f4d1925a1c30fb9315f08e",
+      "html_sha256": "f2bfde7742198397852cf28d637271ad6408f73c774021c44f905048083d73bb",
+      "retrieved_at": "2026-09-26T21:13:40.230435+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 10. Ekspansja turecka i Europa Wschodnia w XVI w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/1-10-ekspansja-turecka-i-europa-wschodnia-w-xvi-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "2b6cfedc6a8cc699cf2d72e4863ef0a5119e7d434caa46519c80cd5cae294238",
+      "html_sha256": "1f90e809b4b6282185b3fc0070c3abbbfc3df6f298c36e93b737eb97fead7dc6",
+      "retrieved_at": "2026-09-26T21:13:41.368463+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 01. Społeczeństwo Rzeczypospolitej w XVI wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-01-spoleczenstwo-rzeczypospolitej-w-xvi-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "e259c7fb70176f2fe7c0645ecad508a458579c95047ced178f4ab57eb7424029",
+      "html_sha256": "c656db60687e2c45ecf9f7259da15fba4069e4b560a4f34817f54abfa25f2321",
+      "retrieved_at": "2026-09-26T21:13:42.328339+00:00",
+      "blocks": 25,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 02. Gospodarka Rzeczypospolitej w XVI wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-02-gospodarka-rzeczypospolitej-w-xvi-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "2a95f55e955cb2e9b4a3bf21e2244ed458e58ad6d9c27b39cd7714796652399c",
+      "html_sha256": "bec066fb629c2da01b5339eab7a225a932ec5f4462619c63984ddd30abc28b9e",
+      "retrieved_at": "2026-09-26T21:13:43.351965+00:00",
+      "blocks": 27,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 03. Rozwój demokracji szlacheckiej w Polsce",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-03-rozwoj-demokracji-szlacheckiej-w-polsce-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "5e4f69007c67e0c1f70d5ac5f7d3e93632df42c4fd44da4a64c21a9ae56f2f2c",
+      "html_sha256": "8987e784ef76d51dc098f550380eab14c54b6f93355b17193bb337b38e7aa095",
+      "retrieved_at": "2026-09-26T21:13:44.333504+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 04. Panowanie ostatnich Jagiellonów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-04-panowanie-ostatnich-jagiellonow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "98142f1e82cd9c24f9f1f95621bad5a29e57f55f6629a035e63f567c9941db88",
+      "html_sha256": "6c8160211606fbcb192748db9c060f9946f709ba0809625d9604940b09d28e1f",
+      "retrieved_at": "2026-09-26T21:13:45.240356+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 05. Unia lubelska – Rzeczpospolita Obojga Narodów",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-05-unia-lubelska-rzeczpospolita-obojga-narodow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "15da4de1c94a95d9902b0161a9c349738089e0c9caa8f49d0548fbad2d1425f6",
+      "html_sha256": "6d96d430a01ca5e03f46e2dfcece0a37d59f43f3a0dd988d343251ec614ce832",
+      "retrieved_at": "2026-09-26T21:13:46.152974+00:00",
+      "blocks": 35,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 06. Reformacja i kontrreformacja w Rzeczypospolitej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-06-reformacja-i-kontrreformacja-w-rzeczypospolitej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "58680d99a21adff151b814e9c9113353f53014ad916d4bd8dcda25fb65a8c18d",
+      "html_sha256": "2365559420ff9eb3130c76e4517a3aaa4c016a800606ea528e30c25545ca1bac",
+      "retrieved_at": "2026-09-26T21:13:47.309377+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 07. Pierwsza wolna elekcja",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-07-pierwsza-wolna-elekcja-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "b980829c29edeab830dcf25e97f5d7362ed26d53e539861239239322ebd9fa47",
+      "html_sha256": "3fc34ac24907b2c0c098e98110e94aa20daefb20a5047d51a925291edab8cf21",
+      "retrieved_at": "2026-09-26T21:13:48.401530+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 08. Rządy Stefana Batorego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-08-rzady-stefana-batorego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "b2166f7e10b70fdafc801372e3ae349ecd1636077ae1a702154934d8f4ffdb7b",
+      "html_sha256": "e1519bb61ce8e8cf2a0a1ea10818f983ae50a9df626ad382ebd709f24f165956",
+      "retrieved_at": "2026-09-26T21:13:49.349025+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 09. Renesans w Polsce",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/2-09-renesans-w-polsce-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "72801d139a79519c6c3ed71144e86d7c932ce913bb05c622b7e5074bba9feb28",
+      "html_sha256": "b07034c59633db432b7824bb7f79188c66039efd2d899d2757104288dc3992f6",
+      "retrieved_at": "2026-09-26T21:13:50.762002+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 1. Wojna domowa w Anglii",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/3-1-wojna-domowa-w-anglii-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "65eea6790925455126ca0c4f46422d967fc15d067a36979cd1c4b465b9ad3dfb",
+      "html_sha256": "54cbf455554b3ae10c03bb78c15a8a651d6304440deb9f7e5ecc35eea4200166",
+      "retrieved_at": "2026-09-26T21:13:51.675967+00:00",
+      "blocks": 78,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 2. Wojna trzydziestoletnia",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/3-2-wojna-trzydziestoletnia-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "84c45582f195b0365d167fed5c740cb8011c2c9e829f97e2900bab2bfd592530",
+      "html_sha256": "fb46c4c56bc3c5c55d93080b6343258acfec7b7319e64837858e65cc213d68ea",
+      "retrieved_at": "2026-09-26T21:13:52.555377+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 3. Absolutyzm we Francji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/3-3-absolutyzm-we-francji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "1f85c82e5add36b4f448a5ed4ecaa76db9189f70ceff8516cca1702a554b6a6e",
+      "html_sha256": "70cf1f8cc70734ed6f186292907bbf93993a6fa7bc983bc8961476c8cddeeba7",
+      "retrieved_at": "2026-09-26T21:13:53.648641+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 4. Sytuacja polityczna w Europie w XVII wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/3-4-sytuacja-polityczna-w-europie-w-xvii-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "1b5b7a07ea3dd706145188f159ed99e4c6551917bfcfbe1475e612992edb0f0a",
+      "html_sha256": "435edcc29d83a4c9b8bcdb863967057e25666463c72f8fda59f0b5543dbcadaf",
+      "retrieved_at": "2026-09-26T21:13:54.604177+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 5. Kultura baroku w Europie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/3-5-kultura-baroku-w-europie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "6e184df94eb86bd4b92d0be24d0b472673e1a8c64cd110e02d966ce051f92421",
+      "html_sha256": "8bbc1f0caa78a3f197dc50c30de419edbda81e6d3fd8df1f7d9532df4f8173a0",
+      "retrieved_at": "2026-09-26T21:13:55.643405+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 1. Początki panowania Zygmunta III Wazy. Wojny polsko-szwedzkie w pierwszej połowie XVII w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-01-poczatki-panowania-zygmunta-iii-wazy-wojny-polsko-szwedzkie-w-pierwszej-polowie-xvii-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "9fcb41f3ae79aadd289f4296e5ca135d0faab7256992a95f182c5e836a436387",
+      "html_sha256": "9cdc261a2f66423abb09604cf9b5ce9663e003c38c04a637cdfdb00f3780fe8b",
+      "retrieved_at": "2026-09-26T21:13:56.637424+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 2. Wojny Rzeczypospolitej z Moskwą",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-02-wojny-rzeczpospolitej-z-moskwa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "3a1d81ca9ca56f0c4e30f076f703d17f71414afdf28ebf6eb7d85fe61dcd86c6",
+      "html_sha256": "ce8e907329bde28db52d80b055ec87f818aa680c423b2a4d6041c15ec3f41594",
+      "retrieved_at": "2026-09-26T21:13:57.725680+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 3. Wojny polsko-tureckie w pierwszej połowie XVII w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-03-wojny-polsko-tureckie-w-pierwszej-polowie-xvii-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "bd43954e9c4069f9b7a8265a1270706148284c3ae929341078cb36664fa7bfad",
+      "html_sha256": "a725e15757caba169df7ec9baf4a6d9dace6a6545131fcd6be0490ecefcfad05",
+      "retrieved_at": "2026-09-26T21:13:58.879429+00:00",
+      "blocks": 33,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 4. Problem kozacki",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-04-problem-kozacki-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "10d29369a87b4ad4ea91ac275ab9e466c485b38b92aa6acc982f2c28d49d93f8",
+      "html_sha256": "464a3e3095078da2f96d43a0fb058268a2c080ffa8429a393771cfbe8671dd96",
+      "retrieved_at": "2026-09-26T21:13:59.759794+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 05. Potop szwedzki",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-05-potop-szwedzki-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "f0b986c010fd8af2ba3647beecf8fd5241308528c467d50773365870067c6712",
+      "html_sha256": "4ca4ae2cd4d9c2f8fd4dd112e1d80f06d975bd52a8d0cb72b11735a684835405",
+      "retrieved_at": "2026-09-26T21:14:00.776259+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 06. Wojna domowa i panowanie Korybuta Wiśniowieckiego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-06-wojna-domowa-i-panowanie-korybuta-wisniowieckiego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "0173c634a708f5a23d7504f51e03bb5bccfdd5ff60774ae060a4d8f0e017e5c0",
+      "html_sha256": "0670601917ea0de5a1bcb2760130428b47c5c93bd49d8e70f34b5945dc795333",
+      "retrieved_at": "2026-09-26T21:14:01.735407+00:00",
+      "blocks": 44,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 07. Wojny polsko-tureckie w drugiej połowie XVII w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-07-wojny-polsko-tureckie-w-drugiej-polowie-xvii-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "236f0968ffb77138dc3dcdba16458ba6e5dc0049c6706012cc544072913f8f53",
+      "html_sha256": "7395f23537e3a66beb7bfaadd4bd6be53bc498a6e950f95ba586fa38c401cd05",
+      "retrieved_at": "2026-09-26T21:14:02.731014+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 08. Kryzys Rzeczypospolitej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-08-kryzys-rzeczypospolitej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "261dc67229d8725a6b247e80fb02356f2c973f56c57a0e2e16c6dab8ca2eae8c",
+      "html_sha256": "52ea3cc4d4509d1f6a10ffd5d5e1f4d3fdbb178c2216f7a45ac579b7ee93366f",
+      "retrieved_at": "2026-09-26T21:14:03.717699+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4. 09. Barok i sarmatyzm w Polsce",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/4-09-barok-i-sarmatyzm-w-polsce-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "0ad65a6c34143207fca0dba2740609b6084bb7ffe85c60a2873bbe327ca9eb41",
+      "html_sha256": "1e9d85649d9f5c133bd9283011b83b224e65c157c1be5749a1a4f8c4853f94ef",
+      "retrieved_at": "2026-09-26T21:14:04.646680+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 1. Przemiany gospodarcze w XVIII wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-1-przemiany-gospodarcze-w-xviii-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "f1e8018d04a665cf90b726c73948478aba8761cfe8f2df8256fbe7e04c2c7b1d",
+      "html_sha256": "3bce6c9b70184c48232cbe6ba81b5f1e812e9d467f0cf143f842c0632f36eadd",
+      "retrieved_at": "2026-09-26T21:14:05.692804+00:00",
+      "blocks": 54,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 2. Oświecenie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-2-oswiecenie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "625403a3db3e1a3ba87d12c8338f68e6047279a14737ddca6ff299f542253fad",
+      "html_sha256": "0bb356d96ce37cf518b2c597b141f9301ccae1dccb9d1b3c30f51fcbd913c212",
+      "retrieved_at": "2026-09-26T21:14:06.649778+00:00",
+      "blocks": 62,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 3. Wzrost znaczenia Rosji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-3-wzrost-znaczenia-rosji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "393519bd6f65cca9c1966f6d5f1331b20f691ae4ce445afb2404c44208482fbd",
+      "html_sha256": "03d77969ffe5a31ce2291f1563be154c6d87e040dc212a520c6323fb250e1069",
+      "retrieved_at": "2026-09-26T21:14:07.758694+00:00",
+      "blocks": 56,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 4. Absolutyzm w Prusach",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-4-absolutyzm-w-prusach-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "31efcd724806030cdbabbb79e9d097bfbd5371d517061c37da1f50ad1ad84288",
+      "html_sha256": "f3666d9c411ee0785949ac712cd169a47f17b8c26f456a8188454093f93133cd",
+      "retrieved_at": "2026-09-26T21:14:08.776804+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 5. Przemiany polityczne w Europie w XVIII wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-5-przemiany-polityczne-w-europie-w-xviii-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "2ff61bbc1c099bfa27e81b9f36d2c5e36912f142c6c9a9b697c2b40436f04993",
+      "html_sha256": "1d08e9ada90fd7aacb7f4e9b6520cdf654ca001aea2e17bc2ed8911b898a9863",
+      "retrieved_at": "2026-09-26T21:14:09.733064+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 6. Wojna o niepodległość Stanów Zjednoczonych",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-6-wojna-o-niepodleglosc-stanow-zjednoczonych-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "8d0ad0dbb1f21790432986e26f61bb7bb0acb556ec4fcdc0e9ab89de4553a0d6",
+      "html_sha256": "179825760f5df1747c56317c92d3603be75a48de17a727ccaff34d601330552d",
+      "retrieved_at": "2026-09-26T21:14:10.758879+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 7. Rewolucja we Francji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-7-rewolucja-we-francji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "6619ba52579fd49f7cf9254ce2dd65ccb9276907fbc8a25c0583de04af4ab23f",
+      "html_sha256": "aa30c14da6e3aabd7748be12d6cd0d4f4e40b3897250e8489ee4733e822165f4",
+      "retrieved_at": "2026-09-26T21:14:11.744320+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5. 8. Powstanie i funkcjonowanie republiki we Francji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/5-8-powstanie-i-funkcjonowanie-republiki-we-francji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "dd21aeaf23cc39b3a3781ed137be477f4b7ebf72b8f643f230158ed1951bbda3",
+      "html_sha256": "258489aa823c4363a6f8a9ee7a4f33d7270f5598b5550d211867c3ef28b7fa04",
+      "retrieved_at": "2026-09-26T21:14:12.653151+00:00",
+      "blocks": 44,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 1. Panowanie Augusta II Mocnego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-1-panowanie-augusta-ii-mocnego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "d56e7438804ff1952493fa7b0090dd20bd3ad350e1ebca17a1c98835f7d80de3",
+      "html_sha256": "dd9c3948f459111a1abf7e85af4bad589ec95ffc22c100921a112801db2c9dbe",
+      "retrieved_at": "2026-09-26T21:14:13.630283+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 2. Anarchia i pierwsze próby reform za panowania Augusta III Sasa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-2-anarchia-i-pierwsze-proby-reform-za-panowania-augusta-iii-sasa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "1c21a548775607389b2c6ca16f4961b21cfdc558730e7be8a4696602b6b69a54",
+      "html_sha256": "e1c7290bb990ac2fb0b6ec92c0bfe11083184c65cc6f88972ae3e7a67f322962",
+      "retrieved_at": "2026-09-26T21:14:14.735373+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 3. Polska w latach 1764–1772",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-3-polska-w-latach-1764-1772-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "558a79849e7c1800364de0fd9e57b1259448b1805124d02758d555f9bc894075",
+      "html_sha256": "dae00bba1a78ea05b86d4d08b7cf6f1fc01321772e344e8749d63330b53c8b52",
+      "retrieved_at": "2026-09-26T21:14:15.744059+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 4. Oświecenie w Rzeczypospolitej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-4-oswiecenie-w-rzeczypospolitej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "a41032b4d863c62ab30c78e6fe48ba9b1762c37a3dbcbb4b34bf69821e373ab6",
+      "html_sha256": "931c26aede5bbe825c4092059cd9c96c75334d3065bff49f64b2c3cea4fdcdd4",
+      "retrieved_at": "2026-09-26T21:14:16.641223+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 5. Sejm Czteroletni",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-5-sejm-czteroletni-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "748787380d98b384300b07b698ebfee239247ee181c619ffb7af85e21c59c06a",
+      "html_sha256": "8103c2c14eac3b4a361eb954bb7278fcb3f3d88f1cb72de23802586440271743",
+      "retrieved_at": "2026-09-26T21:14:17.720335+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 6. Konstytucja 3 maja i drugi rozbiór Polski",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-6-konstytucja-3-maja-i-drugi-rozbior-polski-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "b27016e50e9c1db2d04733b163ea88e2d6e02ad538fbb3db1abdb9b72dc20821",
+      "html_sha256": "838fa11c4b548f3d0d16b868d79eacb0e3a5b86266b1242a9613a54f890aab83",
+      "retrieved_at": "2026-09-26T21:14:18.758094+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6. 7. Powstanie kościuszkowskie i upadek państwowości polskiej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/6-7-powstanie-kosciuszkowskie-i-upadek-panstwowosci-polskiej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "3254e86606d8d19199f69297577f839e5137e0de4109dbdd5dbc8739f413874c",
+      "html_sha256": "36f2d01bc444cc6b68a1c01b6908833e410a55745ef6b32babcb1c0a9f96f187",
+      "retrieved_at": "2026-09-26T21:14:19.671964+00:00",
+      "blocks": 51,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 1. Od konsulatu do cesarstwa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/7-1-od-konsulatu-do-cesarstwa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "1dbb8c09b6538b4f5db9efe84446563e5ab3bce250d3449dff012ad3824c4068",
+      "html_sha256": "fcb0a1c43952a972809e4975aab73eb0d54243d8bb86690c3f8f23ada695a3a3",
+      "retrieved_at": "2026-09-26T21:14:20.748799+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 2. Wojny napoleońskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/7-2-wojny-napoleonskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "f84c6697fa695f437921dfbe58edaa583dbb2a08e00307465d5722d8bd36177d",
+      "html_sha256": "4f7233a161d93c82f7c4254c394e37f71c57185f7a2875a039e0204ec4654a15",
+      "retrieved_at": "2026-09-26T21:14:22.551371+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 3. Upadek Napoleona",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/7-3-upadek-napoleona-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "e68c724a2aefd641ff9b255eb0ba7dbc3c1cb1ac4a070b310f731010de13998d",
+      "html_sha256": "e392b98915b1c4b3bb9fc7d2d1e3cf1cfd0b1103bfa52e2a30d1512f558155be",
+      "retrieved_at": "2026-09-26T21:14:23.520588+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 4. Legiony polskie we Włoszech",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/7-4-legiony-polskie-we-wloszech-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "fae03222f1e9ac7ac98d7f57033f8e82fb74448e26f2c359854a4c72626649b2",
+      "html_sha256": "5257d333b677d505d0388348e2806c195bd8407341e7ee6a571c943d16d52240",
+      "retrieved_at": "2026-09-26T21:14:24.677623+00:00",
+      "blocks": 21,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 5. Księstwo Warszawskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-2-repetytorium-streszczenie-zakres-rozszerzony/7-5-ksiestwo-warszawskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 2",
+      "text_sha256": "bef9c81e55713edb9a4f476a6601b493d86d26bbb4ea28055bb3c098f5c11589",
+      "html_sha256": "f6f3fa97d5856b22dcc20fc2c708ec79fcdf149e29060ab7ebf4995e4e4c2a72",
+      "retrieved_at": "2026-09-26T21:14:25.530632+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 01. Kongres wiedeński",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-1-kongres-wiedenski-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "c48b3584fe959f1679391843e54db7ddb1d8a8dee1fa814270a3f459262afacf",
+      "html_sha256": "0b9d31787c1ff23e27eab51e16ce887aa0130e42e4255ea13a7a8614e0e7b0ee",
+      "retrieved_at": "2026-09-26T21:14:26.416449+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 02. System wiedeński",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-2-system-wiedenski-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "1019405ceb2afa42dce0a668702c9521394e9f84e041f9e293747a2e67d5352c",
+      "html_sha256": "5ac70235f774ba166cce7e1473e03852f9cfa9e7499c46a8b3dc7e04044412f1",
+      "retrieved_at": "2026-09-26T21:14:27.476503+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 03. Ruchy rewolucyjne i niepodległościowe w Europie w pierwszej połowie XIX wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-3-ruchy-rewolucyjne-i-niepodleglosciowe-w-europie-w-pierwszej-polowie-xix-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "e87e52533443973ea1d3f32d4c7116c907a9e915658c95025404e07bee29e4a9",
+      "html_sha256": "08057caa8d5dcff9168bbc40059479f480010ceabd73284c4cd2e309e8439570",
+      "retrieved_at": "2026-09-26T21:14:28.573483+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 04. Rewolucja przemysłowa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-4-rewolucja-przemyslowa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "eddcdc7b3b5e2266792dd35122f51229e3d5207eaec30d716bdbd2d6223d8353",
+      "html_sha256": "4b2ee79d980b1b94b43a0f6624bf7fd26ccf60c67a6dfc5fd868b15c19ba3837",
+      "retrieved_at": "2026-09-26T21:14:29.609507+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 05. Ideologie pierwszej połowy XIX w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-5-ideologie-pierwszej-polowy-xix-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "8d5d741c9e3407709c907a5d8b5e95afbcc6561d2124f518e8e10b9986d5db78",
+      "html_sha256": "cf86dc7b6a9e6da5a614b116f5842fdb79390f69db61446f10eee2b709acf408",
+      "retrieved_at": "2026-09-26T21:14:30.668757+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 06. Kultura pierwszej połowy XIX wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-6-kultura-pierwszej-polowy-xix-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "baa9708bdf3405494354d70905d610229553fb6d400a2c851e030703b21f98b4",
+      "html_sha256": "ab8bcdb7aa4cdc73685233f8704ea649b60e38a40a185eb022630dd7a71d24bb",
+      "retrieved_at": "2026-09-26T21:14:31.869695+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 07. Ameryka w pierwszej połowie XIX wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-7-ameryka-w-pierwszej-polowie-xix-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "a644f25c03913f1a0126d1c23d9215dd7636deeab77e8f4e3f27f0e2ed4a7348",
+      "html_sha256": "ace619c5c6f5db23d1ad49afb7aa5e16bd169f961528df9a74ad5025f0d35cec",
+      "retrieved_at": "2026-09-26T21:14:32.738832+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 08. Wiosna Ludów w Europie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-8-wiosna-ludow-w-europie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "908a9c236fd0c3c040a7fd5848789062c9c519a95e9508d5aa6c1408fb5aeb5c",
+      "html_sha256": "9dac54b04fbb2ad863eaa98a660f52fd065842922390f4e1b2fdf00efa74ece6",
+      "retrieved_at": "2026-09-26T21:14:34.057909+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 09. Wojna krymska",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/1-9-wojna-krymska-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "81afa3788ce43612cdcead4bb2c4b8b227b8b35c56dc7b0ee2185cf47a0aa162",
+      "html_sha256": "839d7209c9de284423c3015b97d26d61bd48556b4b5b61791dd265856c7c8f0d",
+      "retrieved_at": "2026-09-26T21:14:34.856737+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 01. Sprawa polska na kongresie wiedeńskim",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-1-sprawa-polska-na-kongresie-wiedenskim-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "10d7c29e20d87505958bddd65e0a72a80a75317811ae02491102c4f5a466d8a1",
+      "html_sha256": "c785c03d2aced87519c4739de3840413c8b3b2c20e1fb8566055c173849a0218",
+      "retrieved_at": "2026-09-26T21:14:36.064261+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 02. Ziemie polskie w latach 1815–1830",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-2-ziemie-polskie-w-latach-1815-1830-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "9888c96af552a8eabea560051c23d0a4e106d7ccc16bb97862ed0eff958bf093",
+      "html_sha256": "3160e895a0e1bb0a7ae57cff15e9c595e05481c026fac184aa39c7d043fb15bb",
+      "retrieved_at": "2026-09-26T21:14:36.839217+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 03. Geneza powstania listopadowego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-3-geneza-powstania-listopadowego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "3ff1775009c1d6a8d61d44566f3e688f395555e2e9aa6b6e5be6d39a49da1564",
+      "html_sha256": "8b6f3d5a5c380522953afebf3f8f7a093cead9adf5fdb56548db5e089d629efa",
+      "retrieved_at": "2026-09-26T21:14:37.836654+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 04. Powstanie listopadowe",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-4-powstanie-listopadowe-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "e3b12a1797a75de76843002b499f057fdf5ee77f121931bbb909c6f371d84f31",
+      "html_sha256": "e88b17cb5b78d3b17ebfaf06803527a6e3f2106f372154a4574f4a027619039f",
+      "retrieved_at": "2026-09-26T21:14:38.958782+00:00",
+      "blocks": 61,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 05. Wielka Emigracja",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-5-wielka-emigracja-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "78db9b191ae5147ddedefb8fe9ef429ec3ff343802fa43f8fe7dfb903919b8ed",
+      "html_sha256": "59b69c6ba7b157f0b3c692448f7218a5c7f300e865d12c6870b18aba4c85afd8",
+      "retrieved_at": "2026-09-26T21:14:39.926910+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 06. Ziemie polskie w latach 1831–1846",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-6-ziemie-polskie-w-latach-1831-1846-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "7384386059cb93280533ee98a7ac34f8f25143342aac8c2f84749022cff8d521",
+      "html_sha256": "36f87c1e4efdf7b159d95d88008427b8ebdea7fbef072f41d808c6580ccd2875",
+      "retrieved_at": "2026-09-26T21:14:40.992768+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 07. Wiosna Ludów na ziemiach polskich",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-7-wiosna-ludow-na-ziemiach-polskich-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "3354640136dc9a5bc0c287a25b8f9a0d32a4de244f3b7f7a427e4a2181299108",
+      "html_sha256": "eb7e4e3f9e4ea5254b014d59b7d39cf040ef89e1dbb010409e998d3910e412bd",
+      "retrieved_at": "2026-09-26T21:14:42.013296+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 08. Kultura polska w pierwszej połowie XIX wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-8-kultura-polska-w-pierwszej-polowie-xix-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "f273cf57b47341e9725e3778cc1e3e305538a735aad9e27c92e70a4bbfdb5e0b",
+      "html_sha256": "3836b97ebb7a0555f693bfe7c3e3cc91c222357380620e03e84d63c7c0bf885e",
+      "retrieved_at": "2026-09-26T21:14:43.072857+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 09. Odwilż posewastopolska i geneza powstania styczniowego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-9-odwilz-posewastopolska-i-geneza-powstania-styczniowego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "ded02d5c7d70251dd4a5007d7889c0ce9580f64f69a6b5b16dcca9c641ac4aa7",
+      "html_sha256": "c574799d3e6e91784a4a536fa1bb00828db894f24e5ed98ca32bec86561bb9a6",
+      "retrieved_at": "2026-09-26T21:14:43.856583+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 10. Powstanie styczniowe",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/2-10-powstanie-styczniowe-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "da2d17581c9d42c05b587f44c6a1f59937f382812ceac40c1c72dfde5f856906",
+      "html_sha256": "4d655fc17ae747277bff4d5ec39f461727b6ceb8564ce166a1db510a9181ef7e",
+      "retrieved_at": "2026-09-26T21:14:44.945711+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 01. Wojna secesyjna w Stanach Zjednoczonych",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-01-wojna-secesyjna-w-stanach-zjednoczonych-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "99200474779c1d8b8ac75208bb673ee464df75df98dc2d0d60fe46614a5887a9",
+      "html_sha256": "2700498c095e3774c60620100f67a2a82c8529550a965a3d28858740f9c03bae",
+      "retrieved_at": "2026-09-26T21:14:45.835600+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 02. Zjednoczenie Włoch",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-02-zjednoczenie-wloch-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "c5c503ee995b22d5cda1cb90320c4f7fdea53fbf72fd2a0d9d766c5ebf6c8685",
+      "html_sha256": "39be980616876b57b56b34503c77f05f093b6fe7822507029acacc34c9665f9c",
+      "retrieved_at": "2026-09-26T21:14:46.750328+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 03. Zjednoczenie Niemiec",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-3-zjednoczenie-niemiec-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "1d1c637f7dbec9990830fba6e0a57a829e215ef875d6380f61f32c25d96d9c21",
+      "html_sha256": "c4fa1c9deca14d49ea1022a28657a7dcbdfb3ffbe98ec040dd0d046c79185810",
+      "retrieved_at": "2026-09-26T21:14:47.741379+00:00",
+      "blocks": 52,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 04a. Kolonializm – XIX-wieczne imperia kolonialne",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-04a-kolonializm---xix-wieczne-imperia-kolonialne-repetytorium-streszczenie-zakres-podstawowy.html",
+      "class": "Klasa 3",
+      "text_sha256": "4796342d4262c27be1027cc23807e1355fe3e09a9a2a6d052e6dc09aff307c24",
+      "html_sha256": "b399eeea71e2755b68ab661dfe14576f46cb8c2153a907872385dfc65854454a",
+      "retrieved_at": "2026-09-26T21:14:48.804952+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 04b. Kolonializm – procesy kolonizacyjne",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-04b-kolonializm-procesy-kolonizacyjne-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "0c2eced15305ebd93122536dd147a442f8b17e2883edad638af6dbd1b3237402",
+      "html_sha256": "da39521adedcfadea6845ac2872094192bd098b8659758bba85fb91342c5d9e6",
+      "retrieved_at": "2026-09-26T21:14:49.672902+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 05. Układ sił politycznych i konflikty na świecie na przełomie XIX i XX w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-5-uklad-sil-politycznych-i-konflikty-na-swiecie-na-przelomie-xix-i-xx-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "ba69a83ae7ec99e172aa175f40a36e71d90de2cde89bd99bd375b9893536d477",
+      "html_sha256": "bae82c56d8bfd175ee12071a014a89ee390cb2f4249373d690917229e342cbf7",
+      "retrieved_at": "2026-09-26T21:14:50.751119+00:00",
+      "blocks": 52,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.06. Rewolucja naukowo-techniczna",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-06-rewolucja-naukowo-techniczna-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "0a27a8706be6f08fa28fb506953623892698255344ad303ba867a1bc1e435c3d",
+      "html_sha256": "453003fddb92bc112cbe1ae57ca0a0041d3943bc1b9ff749eb436fbfa1de2017",
+      "retrieved_at": "2026-09-26T21:14:52.243782+00:00",
+      "blocks": 61,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.07. Przemiany w życiu politycznym i nowe ideologie polityczne",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-07-przemiany-w-zyciu-politycznym-i-nowe-ideologie-polityczne-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "d25d32eedca86870096f22358dc6c3148897d610393c3db0676ee3ddeb55f2f0",
+      "html_sha256": "1d19cbaac92f65e9eb925f861a035600cb4730c702c4aa78d05fac73da22934b",
+      "retrieved_at": "2026-09-26T21:14:52.800833+00:00",
+      "blocks": 59,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.08. Kultura przełomu wieków",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/3-08-kultura-przelomu-wiekow-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "bfb21087c098d04677dd0cf818997b62be679f584529eafb8c4cea035a46f359",
+      "html_sha256": "3a37caa8821af56d8451b2356b89a4664fc98527659d1c7a55b1dff6df1e5726",
+      "retrieved_at": "2026-09-26T21:14:54.101091+00:00",
+      "blocks": 51,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.01. Polityka caratu wobec Polaków po upadku powstania styczniowego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-01-polityka-caratu-wobec-polakow-po-upadku-powstania-styczniowego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "ff8d290d837fd021add4f9630b5a8bee1d76faa0d4e3462295ce2c225bb12d07",
+      "html_sha256": "4a48cd56a7f9228bc91c0e1f8da4bc9534ae89adb2883e4b61fcec166d28c1f4",
+      "retrieved_at": "2026-09-26T21:14:54.980245+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.02. Sytuacja Polaków w zaborze pruskim i austriackim w drugiej połowie XIX w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-02-sytuacja-polakow-w-zaborze-pruskim-i-austriackim-w-drugiej-polowie-xix-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "a2f696e5e00530567e0bc676683b939d1a0b2a414541441b14efa0bf1f308266",
+      "html_sha256": "b0aa5c2064b990050ddc4e6d063d0ba170aff172721106d03374a930d4ad9340",
+      "retrieved_at": "2026-09-26T21:14:55.793969+00:00",
+      "blocks": 55,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.03. Przemiany gospodarcze na ziemiach polskich w drugiej połowie XIX w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-03-przemiany-gospodarcze-na-ziemiach-polskich-w-drugiej-polowie-xix-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "7e22cd77219174fa479cb2aefb901746b7942ad830bb570bdfdd8fb500a72ca3",
+      "html_sha256": "a37f57d0eae5a7621d2afedafa8259bce9a4b98e30314f239ad5398b98f54ee3",
+      "retrieved_at": "2026-09-26T21:14:56.786769+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.04a. Powstanie nowoczesnych partii politycznych na ziemiach polskich – ruch robotniczy",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-4-powstanie-nowoczesnych-partii-politycznych-na-ziemiach-polskich-ruch-robotniczy-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "9c89cd105b13b9ce6dfb7d5d82349dc214755d75d1a0c7d0e83b77ba9d3f89df",
+      "html_sha256": "e71b032cbc15878a236bdd618692828e4fd0c7e3f720bc0dd2a858800d4b97df",
+      "retrieved_at": "2026-09-26T21:14:57.789361+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.04b. Powstanie nowoczesnych partii politycznych na ziemiach polskich – ruch narodowy i ludowy",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-05-powstanie-nowoczesnych-partii-politycznych-na-ziemiach-polskich---ruch-narodowy-i-ludowy-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "af496d9ddba0c2aeb96904264c0bef4c259363107bb52f7d63e79aef83bac1da",
+      "html_sha256": "c1b6f6b765e2b269e09341a7d5006c2334da9e4e06f5a9d1f6f1d7497a559e7e",
+      "retrieved_at": "2026-09-26T21:14:58.803380+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.05. Rewolucja 1905 r.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-05-rewolucja-1905-r-repetytorium-stresczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "effa3e2b15308e47a2fc826dfa828c4e52c429af1e7a610d110f9011837068ca",
+      "html_sha256": "98feb01355eecdd2dd2fee5dc47eff95054f0a406ab44dbf7ef6e869f2240d02",
+      "retrieved_at": "2026-09-26T21:14:59.790030+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "4.06. Kultura polska przełomu XIX i XX w.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/4-06-kultura-polska-przelomu-xix-i-xx-w-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "6db2a040e5375f07df4d3847126484e49514c556b46fb710402223b0127a58e3",
+      "html_sha256": "1c96795be33ea228a8b3b4c80c3998e8c666eba2201ad8009aca3a1577300508",
+      "retrieved_at": "2026-09-26T21:15:01.077736+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5.01. Świat w przededniu I wojny światowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/5-1-swiat-w-przededniu-i-wojny-swiatowej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "7d58277516dfb036f3bf8e1cef306639d4732bc9d19b868f2a2e6727a78fd3a5",
+      "html_sha256": "ddba723ef5bd64a3943e35e95cfe53826edc7771d2b7e64730fcf8ac61558941",
+      "retrieved_at": "2026-09-26T21:15:01.917355+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5.02. Pierwsza wojna światowa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/5-2-pierwsza-wojna-swiatowa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "c714fe7397a65b6f06421de6114dba65761dc0baeb6b681ba1d0603f7baa4867",
+      "html_sha256": "ef8ef972c7ad56619511f5812d0fa10d892fa701e110216c128d3bba3f2a2c72",
+      "retrieved_at": "2026-09-26T21:15:02.902859+00:00",
+      "blocks": 44,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5.03. Rewolucje w Rosji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/5-3-rewolucje-w-rosji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "824c6756a1a55b57a8fdfad287a6924af8d090322505cb6af77cb767f843111a",
+      "html_sha256": "1d457884d2778623df1015c08df4feb5fcb2c152403835f0ea7167a4bdb418bf",
+      "retrieved_at": "2026-09-26T21:15:03.862169+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5.04. Zakończenie I wojny światowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/5-4-zakonczenie-i-wojny-swiatowej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "69a34b536f0043c934a4c7c89d169264bfb5b1797500e96709bca04229584f9d",
+      "html_sha256": "cc2e2e2a0787243302dbc52638ffdcd57876f887addb3e7c6b58aa9303a23f45",
+      "retrieved_at": "2026-09-26T21:15:04.881405+00:00",
+      "blocks": 40,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "5.05. Sprawa polska podczas I wojny światowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/5-5-sprawa-polska-podczas-i-wojny-swiatowej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "17149c35a4940440ed2f09e9248a620745c51b59caf1f810ff17ae4db7e432da",
+      "html_sha256": "fb9acbec4a005e5cbeeafab1cd7ca2725f45cf005013c6cf29013af8f2072fe1",
+      "retrieved_at": "2026-09-26T21:15:05.902744+00:00",
+      "blocks": 50,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.01. System wersalski",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-01-system-wersalski-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "9d95eed94147353aacddee0446c4d23f9e085aecb03a37660b86acae20661fe6",
+      "html_sha256": "e4241e53f71685d5afa44eefd104328efea983ee7ef5d8963eed67fbc35449e3",
+      "retrieved_at": "2026-09-26T21:15:06.882549+00:00",
+      "blocks": 51,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.02. Odbudowa powojenna i wielki kryzys gospodarczy",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-02-odbudowa-powojenna-i-wielki-kryzys-gospodarczy-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "1eef8a41d8a15cc752f5f6f7f3ec92ebf619871ed0378e3bc79cefcfe754f359",
+      "html_sha256": "711aca25edd0a4dfedc97254c69484c6193d007e9e9bd9df0623a09f45d02d0b",
+      "retrieved_at": "2026-09-26T21:15:07.831126+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.03. Powstanie faszyzmu włoskiego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-03-powstanie-faszyzmu-wloskiego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "355bfcb1a916eb8f1708cc2f92d80b7dfef38a46651e8015926d0eaee4db3f02",
+      "html_sha256": "9f68f56c83d8f6d404a3aa581325df2b48b588522b3c059f7d6cbd6cc98cfd4e",
+      "retrieved_at": "2026-09-26T21:15:08.956299+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.04. Powstanie III Rzeszy",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-04-powstanie-iii-rzeszy-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "2b3539cc5ed6dd41b860c0c6fe32d613fd9015c48ee99a9dcbc04019379f08a5",
+      "html_sha256": "909c29b05dfbdeea5d7de8d553d00abdc486caa6e52d9e6fb081cdbf7e17f434",
+      "retrieved_at": "2026-09-26T21:15:09.992958+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.05. ZSRS w okresie międzywojennym",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-05-zsrs-w-okresie-miedzywojennym-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "5fe192ec7e711124dbcf4db193fdd777dcabd15da980b1586c6d60409e2bd832",
+      "html_sha256": "d386fb57c245a12c55c27a791afd9517500f5dfc395a53d14d6d5395bc240889",
+      "retrieved_at": "2026-09-26T21:15:11.245510+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.06. Pozaeuropejskie ogniska zapalne w dwudziestoleciu międzywojennym",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-06-pozaeuropejskie-ogniska-zapalne-w-dwudziestoleciu-miedzywojennym-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "c512e042d0d4b113a9cb0152f4944275c36ab608b7f932ab322ec87708a520b6",
+      "html_sha256": "06e49352df55c0168555b8395a4a8ec075168b1dcc18fe2278915ed92e4deff6",
+      "retrieved_at": "2026-09-26T21:15:12.202138+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.07. Europa na drodze ku wojnie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-07-europa-na-drodze-ku-wojnie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "f2579d33c2a3d465abc0ccf1c0c399dc3503de48971fdd94225b15442271cd74",
+      "html_sha256": "aa5450dd902be92733088c1ac0e2d4c371e1e0515162505c710b793e477eab04",
+      "retrieved_at": "2026-09-26T21:15:13.184474+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "6.08. Nauka i kultura okresu międzywojennego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/6-08-nauka-i-kultura-okresu-miedzywojennego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "ff51efe0070c627cd6f8f5866ac0d4595a1bcfebe05df9a2794981cc6907ace1",
+      "html_sha256": "b1d1458d15808114b78366c94bb09c1a8f429476851cc9f5480c2ce002c0f702",
+      "retrieved_at": "2026-09-26T21:15:14.151812+00:00",
+      "blocks": 38,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 1. Odrodzenie Polski",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-01-odrodzenie-polski-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "d555a78511a75480788a3edbec47a828930b9e747edaf8a5761d0595e6e39ee6",
+      "html_sha256": "d8dafa6291a76145fcf55a5989373eb24ac04d79162b7a55c66f00373c299c3d",
+      "retrieved_at": "2026-09-26T21:15:15.364308+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 2. Walka o granicę polsko-niemiecką i polsko-czeską",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-02-walka-o-granice-polsko-niemiecka-i-polsko-czeska-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "39e2452db3a3c9be23d41deb9868c2bfd4b2e4b1c1b562b49163236106fbf84d",
+      "html_sha256": "23ac5839473005f0accbc8b06202ec50fd9b58f87309edc328058611cfaeb9af",
+      "retrieved_at": "2026-09-26T21:15:16.367120+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 3. Walka o granicę wschodnią Polski",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-03-walka-o-granice-wschodnia-polski-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "3d6225930a4c57d6befdd1225c291da0be2d644678f668e6fa673d6a7486096d",
+      "html_sha256": "3d4e178f4735e605482e0e5d5f9d720458bcfb7cf6470b7fcf0ee7d74fe48369",
+      "retrieved_at": "2026-09-26T21:15:17.155339+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 4. Rządy parlamentarne w Polsce",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-04-rzady-parlamentarne-w-polsce-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "a4a2e716706a4f055104b031412722806ed287964190c5ede9ca43508f81f189",
+      "html_sha256": "e9eff32f58e71375b10cfa788acc87edc4c9d815284adc81abc415621096d409",
+      "retrieved_at": "2026-09-26T21:15:18.510407+00:00",
+      "blocks": 41,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 5. Polityka zagraniczna II Rzeczpospolitej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-05-polityka-zagraniczna-ii-rzeczpospolitej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "98fc292cda03fb4c8070207d2d961346f4293cfc6b49dae8fa21840ccc5aedfc",
+      "html_sha256": "595b2ee1ed4db347a1f01027269a6b50326cb917468e6935c849823817f1c375",
+      "retrieved_at": "2026-09-26T21:15:19.453195+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 6. Przewrót majowy i jego następstwa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-06-przewrot-majowy-i-jego-nastepstwa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "c104a72db9c6736b3d559c4b6e46221023e1a73f83f261e1f8d9e218496123a0",
+      "html_sha256": "bf627e8b1052073322ad4ded5b3825f6b0c25e54029157af1169f9251b1c8072",
+      "retrieved_at": "2026-09-26T21:15:20.276084+00:00",
+      "blocks": 39,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 7. Społeczeństwo i gospodarka II Rzeczpospolitej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-07-spoleczenstwo-i-gospodarka-ii-rzeczpospolitej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "2906f9231304528b90aebf0047625974a950ed142f650a831d0b8b7233814d47",
+      "html_sha256": "3c763343d1159cd7e29c906d6e9875938480a5ab78c04cec9354730cb1db2412",
+      "retrieved_at": "2026-09-26T21:15:21.403214+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 8. Kultura II Rzeczpospolitej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-08-kultura-ii-rzeczpospolitej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "8c913cea049cda173f5b2e6d3033c017bb32cbe19840c1b6e8fbe69221e1ace5",
+      "html_sha256": "974d50cc5306825e5cf925d6882e18ad2f64baedeb19d017b0b212a1eac0bb54",
+      "retrieved_at": "2026-09-26T21:15:22.402452+00:00",
+      "blocks": 29,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "7. 9. Polska w przededniu II wojny światowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-3-repetytorium-streszczenie-zakres-rozszerzony/7-09-polska-w-przededniu-ii-wojny-swiatowej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 3",
+      "text_sha256": "e31805551fbc92a5632757540a2aab50419d71bf121b6d621ddc4c1426dfdbe1",
+      "html_sha256": "5c9c1d3799c620f84a81fdb46efeb5211a905f4d7fd632e5bd376f98473bae4f",
+      "retrieved_at": "2026-09-26T21:15:23.402848+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 1. Kampania polska – wrzesień 1939 r.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-1-kampania-polska-wrzesien-1939-r-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "de0698dddc1337f4a75b348db883888c1cd24e1b672e853c26497e9bb6901237",
+      "html_sha256": "2ed21fe10623d03d412f7edbae4233fedc0621e756dd8b06f1d241ffd573b638",
+      "retrieved_at": "2026-09-26T21:15:24.268148+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 2. Ekspansja ZSRS i III Rzeszy w latach 1939–1940",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-2-ekspansja-zsrs-i-iii-rzeszy-w-latach-1939-1940-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "efedf105bc2485ce9025ec0c0c3082cbbeec07c6ab2a2eecb135f52d169b89de",
+      "html_sha256": "a31cc51e0e8ca115045bae7185ccf8514288574619955aaffde4a1f62737af13",
+      "retrieved_at": "2026-09-26T21:15:25.290400+00:00",
+      "blocks": 53,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 3. Najazd III Rzeszy na ZSRS",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-3-najazd-iii-rzeszy-na-zsrs-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "414f5955517b7661e634bb81b8fc43585f96b14f02dd1cfaac59032f1ee6affb",
+      "html_sha256": "65cdde24cc2074f1d13ccde084014d3b49a7f7bbc2f7fbbc24ab18fb4ba5626a",
+      "retrieved_at": "2026-09-26T21:15:26.358878+00:00",
+      "blocks": 35,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 4. Pozaeuropejskie teatry działań wojennych",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-4-pozaeuropejskie-teatry-dzialan-wojennych-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "5665e840baae0ae86a46c20e4e429b7c3ac4cae02514aae8b8548c751af369f3",
+      "html_sha256": "cd61bbefdb82b3db1c8733becfdbc7224c002c9bf1e1c5dfe5eeb7d80a2bc61f",
+      "retrieved_at": "2026-09-26T21:15:27.375220+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 5. Polityka okupacyjna Niemiec",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-5-polityka-okupacyjna-niemiec-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "cd8d4bcf8eeb17f3cb685b6d59aabe63ac4788932cf934c57fb7b235c30a913a",
+      "html_sha256": "d9b80fc0ef4d108e25c608ecaa614c3765c4099af6ad9d8c85052f252be32e20",
+      "retrieved_at": "2026-09-26T21:15:28.369196+00:00",
+      "blocks": 45,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 6. Holokaust",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-6-holokaust-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "eabf2b13fb4787d033b363cc6d1f4eec79ef95022ee1a16d7bb0bce499708237",
+      "html_sha256": "ef8d1ab616565824a4ce2b02dbc90e595f2e65045ce4a56492adbcce5d023cad",
+      "retrieved_at": "2026-09-26T21:15:29.555389+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 7. Droga do zwycięstwa",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-7-droga-do-zwyciestwa-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "d5669126c8097c9851d227f4419c5e39764c0e024a911a4b37792efb0a881f79",
+      "html_sha256": "bf6479130ffc4b642cc117528ea869e70b2c875328ba7440aac7b489f50b900a",
+      "retrieved_at": "2026-09-26T21:15:30.276856+00:00",
+      "blocks": 56,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "1. 8. Zakończenie II wojny światowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/1-8-zakonczenie-ii-wojny-swiatowej-repetytorium-streszzenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "a623ef8e37c840285d11312d562207ccf7c1782bd0ee9384e13dd5f876c6be2d",
+      "html_sha256": "baf947341603a4ff2d528d6f7c97c3d37b44657efd2820445e0e308e72274532",
+      "retrieved_at": "2026-09-26T21:15:31.279853+00:00",
+      "blocks": 48,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 1. Ziemie polskie pod okupacją",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-1-ziemie-polskie-pod-okupacja-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "90a9b4f971e544ddf008988579f656c81071c62fc5bc5b80363830291a3060bd",
+      "html_sha256": "dd589d1b2cff59697b0e34102089972e225e5b4a92c4d8519e195b131c9a25df",
+      "retrieved_at": "2026-09-26T21:15:32.334564+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 2. Rząd polski na emigracji",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-2-rzad-polski-na-emigracji-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "33e560a37244288c98d6ec74b0a0dc7bd0f8f47d57ce5a5858e41b00e8c37004",
+      "html_sha256": "ec3e74b2372698020cf9530a23a15f7670da5b7f4fc5e8e46ff5496a1e8dce22",
+      "retrieved_at": "2026-09-26T21:15:33.184159+00:00",
+      "blocks": 37,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 4. Akcja „Burza” i Powstanie Warszawskie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-4-akcja-burza-i-powstanie-warszawskie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "ab9aee1ee74c335023f05bc7bbe9f314db40432072a37ecf278347519b99ec2d",
+      "html_sha256": "f7a397188a27a231ab8f0d71fda1a30a2c12d22f54af85d252ffce699275fe2b",
+      "retrieved_at": "2026-09-26T21:15:34.191714+00:00",
+      "blocks": 34,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 5. Polskie Siły Zbrojne na Zachodzie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-5-polskie-sily-zbrojne-na-zachodzie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "2565df5b02e0e6a085d890721d3e6a3e06c196863ef82ee8333fec14830768ed",
+      "html_sha256": "bfa92d1c696bfc995ea4926794c1c2fa541b030c509e79fa1e29cbc2184cea2e",
+      "retrieved_at": "2026-09-26T21:15:35.446629+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "2. 6. Formacje polskie na froncie wschodnim",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/2-6-formacje-polskie-na-froncie-wschodnim-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "f4b67fa14571398f06aee47207cf22de0c29e285914e54fc5dced0ce4f49d557",
+      "html_sha256": "c39f1021d47c005ea5fc076ff27cbbc85e6ff14b2a8890f206d0f3791781749a",
+      "retrieved_at": "2026-09-26T21:15:41.832643+00:00",
+      "blocks": 36,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 01. Powojenny podział świata",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-01-powojenny-podzial-swiata-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "256cff0f5e947da1c9a5b05d5c54d77b63f1f8532e7bfeea24b35d37d18ff9ae",
+      "html_sha256": "5d815f5cdca79e35f90444f4ecd093861f06e8e93d5834403f6d7610a3c6abd0",
+      "retrieved_at": "2026-09-26T21:16:36.978047+00:00",
+      "blocks": 35,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 02. Rozpad koalicji antyhitlerowskiej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-02-rozpad-koalicji-antyhitlerowskiej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "ffbd10fdb90c1d913fa9ddbf71b3e8a73b401a49d86b3b8f1d8f67b17b3a9558",
+      "html_sha256": "3020e707416690ee4ea7fa1c2db98f6b1b5621d503feabd86231b30801381d79",
+      "retrieved_at": "2026-09-26T21:16:37.841659+00:00",
+      "blocks": 43,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 03. Powstanie dwóch państw niemieckich i początek zimnej wojny",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-03-powstanie-dwoch-panstw-niemieckich-i-poczatek-zimnej-wojny-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "6be03984d90e1e4a28e18d0f06e1119bbbb452ecf02f98fa1a774c60643a737f",
+      "html_sha256": "be26846abe3f1801620fc928138bcd57dee0c5f6a2ecf5c4187748731784a011",
+      "retrieved_at": "2026-09-26T21:16:38.779283+00:00",
+      "blocks": 51,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3. 04. Blok wschodni po śmierci Stalina",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-04-blok-wschodni-po-smierci-stalina-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "94addc7c3f2fb6d8128bf2b10beb3186390c17e935550afce91c81a268fa4103",
+      "html_sha256": "26a653e9cdfec226299b0f335e01f6a344c2fb3546b409b254417f39905f2c6c",
+      "retrieved_at": "2026-09-26T21:16:39.826334+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.05. Daleki Wschód po II wojnie światowej",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-05-daleki-wschod-po-ii-wojnie-swiatowej-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "d498e042cdb3762cd219c0a7ec48cb90ce1d526f9470d13464c2b261d747364b",
+      "html_sha256": "5c2c0053877963d36bf2105d081135a5f355e06bfbc89fa2756da4e73191d8e9",
+      "retrieved_at": "2026-09-26T21:16:40.921577+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.06. Rozpad systemu kolonialnego",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-06-rozpad-systemu-kolonialnego-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "792231d2802c224f7aa117b9aa8c04f5d7132cc35a73d4a7fb8d94238ed4d21e",
+      "html_sha256": "6f292a68f46102b979ab590c7100bd3c6b1e50070a33fcfcefb282ca74ee8711",
+      "retrieved_at": "2026-09-26T21:16:41.814520+00:00",
+      "blocks": 30,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.07. Konflikty na Bliskim Wschodzie",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-07-konflikty-na-bliskim-wschodzie-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "ce373aedcb90a5ce07063b95c6225213c0eee60ad92286d4ada4521f41e5b882",
+      "html_sha256": "f6d201646f67b501ad0dc4c45af7197006126437e86ef664d43f8935b02b9fed",
+      "retrieved_at": "2026-09-26T21:16:42.817513+00:00",
+      "blocks": 49,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.08. Zimna wojna w latach 60. i 70. XX wieku",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-08-zimna-wojna-w-latach-60-i-70-xx-wieku-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "0ee8f431db51a0e706ab4edbdac39956c75533ba7d3dfa0fc0526aca36131652",
+      "html_sha256": "005e45cd275e1ff80db1c09ebd09082b4ce5c7575394ec9241a07340b41bf101",
+      "retrieved_at": "2026-09-26T21:16:43.903953+00:00",
+      "blocks": 47,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.09. Europa Zachodnia i USA podczas zimnej wojny",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-09-europa-zachodnia-i-usa-podczas-zimnej-wojny-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "1535be6f6b5eaaa14d2163c2efac2098f223a4c86a2e63a0b50505240bebf9c5",
+      "html_sha256": "c9cb6cfdf64e922cf5f7863d797a25477b928c118ec3348282bc68a4f4c62292",
+      "retrieved_at": "2026-09-26T21:16:44.869656+00:00",
+      "blocks": 46,
+      "images_not_transcribed": 0
+    },
+    {
+      "title": "3.10. Przemiany społeczne i kulturowe lat 60.",
+      "source": "https://e-historia.com.pl/liceum-i-technikum/notatki-z-historii-zakres-rozszerzony/repetytorium-z-historii-zakres-rozszerzony/klasa-4-repetytorium-streszczenie-zakres-rozszerzony/3-10-przemiany-spoleczne-i-kulturowe-lat-60-repetytorium-streszczenie-zakres-rozszerzony.html",
+      "class": "Klasa 4",
+      "text_sha256": "d90d5d19390e68bbd9c9e77e8cda244469d28bcd7dd74e62f7a3c6e40b35f531",
+      "html_sha256": "0ffcc76cfa9f6f59b35367740ce190833c29b10c8f147dec598e6cb08737df6b",
+      "retrieved_at": "2026-09-26T21:16:45.906271+00:00",
+      "blocks": 42,
+      "images_not_transcribed": 0
+    }
+  ]
+}

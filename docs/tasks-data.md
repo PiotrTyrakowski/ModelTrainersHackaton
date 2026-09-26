@@ -108,3 +108,10 @@ These **154 records** include **117 PDF candidates**. The three PDF imports reta
 The base-module tests cover source changes, grading leakage, unsafe paths, duplicate IDs, unknown types, shared source blocks across pages, ambiguous headings, span bounds and refusal to export unreviewed tasks. Separate tests cover the essay bank and embedding adapter.
 
 Local import evidence: `artifacts/tasks-data-import-report.json`. A verified 37-record solver input export is at `artifacts/history-2023-model-inputs.jsonl`. Both are local ignored artifacts; neither has been uploaded to the competition.
+
+Later updates: the [reviewed May 2024 adapter](exams/history-2024-review.md) now
+provides 40 complete solver inputs and separate grading records. The original
+candidate dataset above remains unchanged. Eight more
+[exam/marking pairs from 2019–2026](exams/more-history-papers.md) are now downloaded
+as PDFs only; they are not additional reviewed task records. June 2026 is reserved
+for later evaluation and remains outside retrieval and tuning.

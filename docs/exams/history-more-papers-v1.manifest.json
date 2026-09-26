@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "captured_at": "2026-09-26T21:40:06.607231+00:00",
+  "source_index": "https://arkusze.pl/historia-matura-poziom-rozszerzony/",
+  "config_sha256": "baeed203b9c6f99713dd7adb498b7f4d74df210ab9de6af040a5ae735a8e34a7",
+  "builder_sha256": "632fea6b74c4670e64ef7f99575b9571217ade6ac4178729ddeb7bcb74e82e93",
+  "papers": [
+    {
+      "exam_id": "history-2026-june",
+      "year": 2026,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2026-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "reserved_evaluation",
+      "landing_sha256": "6f90db3c50f9c8cf039a90d7c5a2078e86c27ad61af166045aa16077e6fd4ad2",
+      "files": {
+        "marking": {
+          "path": "history-2026-june/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2026-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "891c8d4dfb3fbe9734daa75070f4969010e8eda2cb5852352b1fb2387355197b",
+          "bytes": 2050362,
+          "pages": 49,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2026-june/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2026-czerwiec-matura-rozszerzona.pdf",
+          "sha256": "fba0be74181186c84338315b2a1a1e64619e486a8ff61b9e3f4d4c78fb126617",
+          "bytes": 3650048,
+          "pages": 40,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2025-june",
+      "year": 2025,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2025-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "984f9ea3bfe5b5b54e127f65b7a83e5deb35e1e58f0eb7fc1f05b60a8f2e192d",
+      "files": {
+        "marking": {
+          "path": "history-2025-june/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2025-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "2f417b3570009e1169bf04e70fc6863f79cfd72fc91e479232df84ff133bc845",
+          "bytes": 1476118,
+          "pages": 24,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2025-june/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2025-czerwiec-matura-rozszerzona.pdf",
+          "sha256": "008d1ad726b18e3e3d5822918c73753cc55556665410943f88749de37a496ec7",
+          "bytes": 3134051,
+          "pages": 32,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2024-june",
+      "year": 2024,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2024-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "7e1599c12398f7260f45b1da317934376a20d82b88ae89ea94d4f094473aa30d",
+      "files": {
+        "marking": {
+          "path": "history-2024-june/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2024-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "dcf9b91b6086b46b5354c08e91790fb2e95fa44c257d1da3e5a864710c50e06b",
+          "bytes": 1576327,
+          "pages": 26,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2024-june/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2024-czerwiec-matura-rozszerzona.pdf",
+          "sha256": "8c14ce4608ba92ef5771c64472f5bba0e251c3ed41c09e56890dff02f4f534ac",
+          "bytes": 4215323,
+          "pages": 40,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2023-june",
+      "year": 2023,
+      "month": "czerwiec",
+      "formula": "2023",
+      "landing_url": "https://arkusze.pl/matura-historia-2023-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "49a9d888e492bcd6b1aafdbdb85d5f9fa50dfda62478653120dfabc041e8948a",
+      "files": {
+        "marking": {
+          "path": "history-2023-june/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2023-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "12609c00479326167dc96dd3f346cdf66f77cd2b51cb5446c70e27bd786ddf19",
+          "bytes": 408456,
+          "pages": 23,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2023-june/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2023-czerwiec-matura-rozszerzona.pdf",
+          "sha256": "114a7f8d7e0fc2c5e4e445c77257f46646b8ed8941370b78966ed1629f4bf8d1",
+          "bytes": 2775237,
+          "pages": 36,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2022-may",
+      "year": 2022,
+      "month": "maj",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2022-maj-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "e0da5231f2f4462285f8583e4c61e1ab5fa6508e46cf5ce108c0d91fd6f5cefa",
+      "files": {
+        "marking": {
+          "path": "history-2022-may/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2022-maj-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "2adf62a02b915928535471be13d6c4bae5a3bd47803a034b61609eea11b3b459",
+          "bytes": 498723,
+          "pages": 28,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2022-may/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2022-maj-matura-rozszerzona.pdf",
+          "sha256": "630b7e167e8bfb157973f1dd8c0486809626f2f2a50a365838ed1ccbe5de6fd9",
+          "bytes": 3535796,
+          "pages": 40,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2021-may",
+      "year": 2021,
+      "month": "maj",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2021-maj-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "5fbd0bff22816e24e23d24832e1b0c0946c4c3bc50278780c4327e30b9814407",
+      "files": {
+        "marking": {
+          "path": "history-2021-may/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2021-maj-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "8403adc7b7801b8e49f93496915ba8dba01e6106737cc5b115f52c588de071ec",
+          "bytes": 400628,
+          "pages": 31,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2021-may/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2021-maj-matura-rozszerzona.pdf",
+          "sha256": "611d0240a7086780a540f8343d8607dbae33856248899e5def99359835638b74",
+          "bytes": 15692160,
+          "pages": 40,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2020-june",
+      "year": 2020,
+      "month": "czerwiec",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2020-czerwiec-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "f7f67eaf929ed5e16a6a81e26382b83bd11d1e3301b2024bc5e5253f1d8b7609",
+      "files": {
+        "marking": {
+          "path": "history-2020-june/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2020-czerwiec-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "01bfc589cf4c8aa8b32cc43d7429ba25af6b4d96d6d1fd8b87a27dd9c3284772",
+          "bytes": 351425,
+          "pages": 28,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2020-june/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2020-czerwiec-matura-rozszerzona.pdf",
+          "sha256": "d18152d0e3baeef58a816d3ca8cbd2785e65cbaada6bb1a5cccfe879128c8566",
+          "bytes": 13241458,
+          "pages": 40,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    },
+    {
+      "exam_id": "history-2019-may",
+      "year": 2019,
+      "month": "maj",
+      "formula": "2015",
+      "landing_url": "https://arkusze.pl/matura-historia-2019-maj-poziom-rozszerzony/",
+      "publisher": "CKE",
+      "download_host": "Arkusze.pl (third-party mirror)",
+      "intended_role": "unreviewed_exam_archive",
+      "landing_sha256": "6c93dde5e57b48bad745550874242338f8069459478b0dd85dfab9bd53eca4cd",
+      "files": {
+        "marking": {
+          "path": "history-2019-may/grading/marking.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2019-maj-matura-rozszerzona-odpowiedzi.pdf",
+          "sha256": "f671d517125fb61e7ee105186611e8432d1d0939b4e5e67317ffe643e18188f8",
+          "bytes": 335200,
+          "pages": 25,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        },
+        "exam": {
+          "path": "history-2019-may/input/exam.pdf",
+          "url": "https://arkusze.pl/maturalne/historia-2019-maj-matura-rozszerzona.pdf",
+          "sha256": "3b94cd337c8169b6f89b202cf43fce9c50fbf9dfc34dd06153a03c520175c337",
+          "bytes": 15521869,
+          "pages": 37,
+          "pdf_encryption_flag": true,
+          "validation": "PDF parses; subject/year on first page verified; content not reviewed"
+        }
+      }
+    }
+  ],
+  "pending_ids": [],
+  "status": "downloaded PDF pairs only; task extraction, visual/source review and grading attachment still required",
+  "rights": "CKE exam documents with third-party source materials, retrieved from a third-party mirror. Raw PDFs remain local.",
+  "leakage_boundary": "All files excluded from RAG and current checkpoint inputs; marking PDFs stored under grading."
+}

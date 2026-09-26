@@ -59,6 +59,25 @@ See docs/results/2026-09-26-model-size-comparison.md for disputed grades; the
 retrieval gains from changing model are not robust to the selected sensitivity
 checks. These remain development results, not a passing or independent evaluation.
 
+The subsequent corpus-only experiment added 197 e-Historia lessons, preserving
+the original Wikipedia corpus, for 286 articles / 4,638 passages. Mixed BM25
+scored provisional 0.8B 27/12 and 2B Q8 29/12 on 2023/2024. The model-only Q4
+comparison then scored 30/8 with 1,945,311,744 learned bytes (29% below 2B Q8).
+Q4 is not a demonstrated upgrade. Keep the tiny reference and earlier 2B direct
+2024 control; do not choose per-paper winners as a system. All 2023 runs include
+the same 12-point stored essay. See the e-Historia and quantization comparison
+reports for failures and grading sensitivity. Q4 v1 configs are frozen executed
+records with an inherited descriptive Q8_0 label; live weights were verified Q4.
+Use Q4 v2 configs for future runs: they correct only that metadata label and have
+not themselves been run.
+
+Eight further exam/marking PDF pairs are downloaded but not extracted into
+reviewed tasks or automatic answer keys. Keep all marking files out of retrieval.
+June 2026 is reserved; only its cover was inspected. Preserve this boundary until
+an explicit final evaluation. See docs/exams/more-history-papers.md. Raw
+e-Historia pages have no identified open redistribution licence and remain local;
+retain author attribution and source hashes, not an assumed Wikipedia licence.
+
 No official passing threshold is confirmed. Label any chosen threshold as an
 experimental target and all local rubric grades as provisional. If the runtime
 is unavailable, report the blocker; never substitute demo results or claim an

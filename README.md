@@ -7,7 +7,25 @@ after each meaningful checkpoint, grade its answers, and choose the next change
 from its mistakes. The initial reference is `qwen3.5:0.8b`, including image input.
 See [the checkpoint workflow](docs/checkpoints.md).
 
-Latest experiment: [0.8B versus 2B on both full papers](docs/results/2026-09-26-model-size-comparison.md).
+Latest experiments: [adding e-Historia to retrieval](docs/results/2026-09-26-ehistoria-comparison.md)
+and [2B Q4 versus Q8](docs/results/2026-09-26-quantization-comparison.md), each
+measured on both complete development papers.
+
+| Model with mixed retrieval | Learned files | 2023 / 60 | 2024 / 60 |
+|---|---:|---:|---:|
+| 0.8B Q8 | 1.036 GB | 27 | 12 |
+| 2B Q8 | 2.741 GB | 29 | 12 |
+| 2B Q4 | 1.945 GB | 30 | 8 |
+
+Grades are local and provisional. All 2023 cells include the same 12-point
+prepared development essay; no general passing ability is established. Q4 saves
+29% of learned-file storage versus Q8 but loses points on 2024. Added 197
+source-preserved e-Historia lessons, giving 286 articles / 4,638 mixed passages.
+Also downloaded [8 more exam/marking pairs](docs/exams/more-history-papers.md);
+these are PDFs awaiting extraction/review, excluded from retrieval. June 2026
+is reserved with cover checks only.
+
+Earlier [0.8B versus 2B comparison](docs/results/2026-09-26-model-size-comparison.md):
 Without Wikipedia retrieval, 2B scored provisional **19/60 on 2023 and 16/60 on
 2024**, versus 19/60 and 8/60 for 0.8B. With retrieval, 2B scored 28/60 and 11/60,
 versus 24/60 and 9/60. All 2023 totals include the same 12-point prepared essay.
