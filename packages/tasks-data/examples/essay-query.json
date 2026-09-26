@@ -1,0 +1,18 @@
+{
+  "question": "Oceń reformy ustroju wprowadzone przez Konstytucję 3 maja 1791 roku. Uwzględnij parlament oraz władzę wykonawczą.",
+  "scope": {
+    "start_year": 1791,
+    "end_year": 1791,
+    "entities": [
+      "Rzeczpospolita",
+      "Konstytucja 3 maja"
+    ],
+    "aspects": [
+      "ustrój",
+      "sejm",
+      "władza wykonawcza"
+    ],
+    "intent": "ocena"
+  },
+  "min_words": 300
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tasks-data"
+version = "0.1.0"
+description = "Source-preserving matura task datasets and exact essay-bank retrieval"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4"]
+test = ["pypdf>=4", "reportlab>=4"]
+
+[project.scripts]
+tasks-data = "tasks_data.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

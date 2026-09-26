@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "exam_id": "history-2024-may",
+      "title": "History matura extended, May 2024",
+      "original_publisher": "CKE",
+      "download_url": "https://arkusze.pl/maturalne/historia-2024-maj-matura-rozszerzona.pdf",
+      "sha256": "a5f95323ad82f0b44b8c5e1c16fbc89d56dfe60db77ee4f583b76a669eb02ead",
+      "rights": "Third-party exam with cited source materials. Download for local analysis; raw content is not included in this repository.",
+      "expected_pdf_pages": 36,
+      "observed_candidate_items": 40,
+      "observed_point_sum": 60
+    },
+    {
+      "exam_id": "history-2025-may",
+      "title": "History matura extended, May 2025",
+      "original_publisher": "CKE",
+      "download_url": "https://arkusze.pl/maturalne/historia-2025-maj-matura-rozszerzona.pdf",
+      "sha256": "bb4964f3462d809433c0379d21faf99935fb91c366c8786b0cb1c6c82f59c934",
+      "rights": "Third-party exam with cited source materials. Download for local analysis; raw content is not included in this repository.",
+      "expected_pdf_pages": 36,
+      "observed_candidate_items": 38,
+      "observed_point_sum": 60
+    },
+    {
+      "exam_id": "history-2026-may",
+      "title": "History matura extended, May 2026",
+      "original_publisher": "CKE",
+      "download_url": "https://arkusze.pl/maturalne/historia-2026-maj-matura-rozszerzona.pdf",
+      "sha256": "d75efa28a7a52e6c1f00c6f941fce717f886bc4159f4a6f9f355b123d18f4428",
+      "rights": "Third-party exam with cited source materials. Download for local analysis; raw content is not included in this repository.",
+      "expected_pdf_pages": 36,
+      "observed_candidate_items": 39,
+      "observed_point_sum": 60
+    }
+  ],
+  "note": "Counts are observed on these exact source files, not a general parser guarantee. Validate hashes and review segmentation before evaluation."
+}
