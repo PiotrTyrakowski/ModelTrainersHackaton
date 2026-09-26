@@ -1,5 +1,9 @@
 # Answer-format and retrieval checkpoints — 26 September 2026
 
+Subsequent checkpoint: [expanded corpus v3](2026-09-26-retrieval-corpus-v3.md)
+measures the user's requested coverage expansion. The results below describe
+the preceding v2 experiments.
+
 The concise answer contract improved the tiny Qwen system from a provisional
 **3/60 to 6/60** and eliminated incomplete JSON. Adding the existing Wikipedia
 retriever produced a provisional **7/60**, but that one-point difference depends

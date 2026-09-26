@@ -11,10 +11,10 @@ First measured baseline: [Qwen3.5:0.8b scored a provisional 3/60 on the full
 practice paper](docs/results/2026-09-26-qwen35-direct.md). Its errors guide the
 next experiments.
 
-Latest comparison: [a concise answer format reached 6/60; the retrieval pilot
-scored a disputed 7/60](docs/results/2026-09-26-answer-format-and-retrieval.md).
-Concise direct remains the reference because it completed every answer and the
-retrieval gain is not robust to grading judgement.
+Latest comparison: [expanding retrieval to 89 articles raised the provisional
+score from 7/60 to 9/60](docs/results/2026-09-26-retrieval-corpus-v3.md), with five
+truncated answers and disputed grades. Concise direct remains the technically
+reliable 6/60 reference. No passing system has been demonstrated.
 
 The first module is [`tasks-data`](packages/tasks-data): source-preserving exam
 imports, separate answer keys, and a bank of complete essays that can be retrieved
@@ -34,6 +34,7 @@ The included essays are demonstration drafts; no exam-passing result is claimed.
 
 - [Essay retrieval: formats, examples and limits](docs/essay-bank.md)
 - [Task data: importing, reviewing and exporting exam questions](docs/tasks-data.md)
+- [History retrieval: source-preserving corpus and reproducible index](docs/retrieval.md)
 
 Exam PDFs and processed datasets stay in ignored local data folders; public source
 URLs and hashes are provided for reproduction. PDF imports require the optional

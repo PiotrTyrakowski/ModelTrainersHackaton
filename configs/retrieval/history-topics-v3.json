@@ -1,0 +1,15 @@
+{
+  "kind": "development_coverage_expansion",
+  "selection_note": "General historical topics chosen from observed gaps on the public development paper. These are encyclopedia articles, not exam solutions. Selection has seen the development questions; evaluation is not held out.",
+  "groups": {
+    "prehistory_and_antiquity": ["Neolit", "Rewolucja neolityczna", "Wojny punickie", "Cenzor (starożytny Rzym)", "Scypion Afrykański Starszy"],
+    "medieval_towns_and_dynasties": ["Hanza", "Prawo lubeckie", "Wojna stuletnia", "Edward III", "Bitwa pod Crécy", "Kapetyngowie"],
+    "art_and_reformation": ["Architektura gotycka", "Architektura renesansu", "Reformacja", "Luteranizm", "Realizm (malarstwo)", "Józef Chełmoński"],
+    "polish_state_and_law": ["Zygmunt III Waza", "Jan II Kazimierz Waza", "Zygmunt II August", "Wojna polsko-szwedzka (1600–1611)", "Trójpodział władzy"],
+    "nineteenth_century": ["Powstanie listopadowe", "Bitwa pod Ostrołęką (1831)", "Józef Bem", "Ignacy Łukasiewicz", "Galicja (Europa Środkowa)", "Manifest komunistyczny", "Karol Marks", "Fryderyk Engels", "Indie Brytyjskie", "Kolonializm"],
+    "world_wars_and_interwar": ["I wojna światowa", "Marie Joseph de La Fayette", "Wuj Sam", "Konstytucja marcowa", "Traktat ryski (1921)", "Plebiscyt na Górnym Śląsku", "Traktat wersalski", "Remilitaryzacja Nadrenii", "Zagłębie Saary", "Armia Krajowa", "Związek Walki Zbrojnej", "Stefan Rowecki", "Władysław Sikorski"],
+    "cold_war_and_prl": ["NATO", "Układ Warszawski", "Żelazna kurtyna", "Zbrodnia katyńska", "Marzec 1968", "Orędzie biskupów polskich do biskupów niemieckich", "Wojciech Jaruzelski", "Leonid Breżniew", "Stan wojenny w Polsce (1981–1983)", "Niezależny Samorządny Związek Zawodowy „Solidarność”", "Zimna wojna", "Wojna koreańska", "Powstanie węgierskie 1956", "Powstanie czerwcowe", "Kryzys kubański"],
+    "medieval_polish_rulers": ["Bolesław I Chrobry", "Mieszko II Lambert", "Kazimierz I Odnowiciel", "Bolesław II Szczodry", "Władysław I Herman", "Bolesław III Krzywousty", "Ustawa sukcesyjna Bolesława Krzywoustego"],
+    "revolutions": ["Rewolucja amerykańska", "Wielka rewolucja francuska", "Oświecenie (epoka)"]
+  }
+}

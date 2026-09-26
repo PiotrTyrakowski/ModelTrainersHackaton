@@ -120,6 +120,14 @@ For the retrieval-only comparison, use
 coverage. Model weights, question inputs, scoring rules, temperature, one-call
 budget and 2,200-token output cap are unchanged between these experiments.
 
+The subsequent corpus comparison uses
+`configs/checkpoints/qwen35-concise-bm25-v3.json` with `--variants bm25` and pairs
+against the v2 BM25 graded report. Build its separate local index using the
+[retrieval instructions](retrieval.md). It changes only the corpus (coverage and
+passage representation), retaining the search algorithm and inference settings.
+The [measured result](results/2026-09-26-retrieval-corpus-v3.md) is provisional
+9/60 with five truncated answers.
+
 After the first baseline, fix the largest measured loss of points: malformed answers, missed parts of an instruction, missing evidence, weak image interpretation or the essay. Change one factor at a time. Compare retrieval and deterministic tools on the same paper before trying a smaller model or more aggressive quantisation. Keep every learned component in the size accounting. The papers already inspected during development are not untouched final evaluation data.
 
 ## Offline verification

@@ -26,7 +26,10 @@ The current working answer contract is `concise_answer_v2`: prepare with an
 absolute path to `configs/checkpoints/qwen35-concise-v2.json` and select `direct`.
 It scored a provisional 6/60 with zero truncated answers. The BM25 pilot's 7/60
 depends on disputed grading and has four truncated answers; it is experimental,
-not the selected default. Preserve this distinction in future comparisons.
+not the selected default. The subsequent `qwen35-concise-bm25-v3.json` corpus
+experiment reached a provisional 9/60 with five truncated answers and two
+disputed points. It is the latest retrieval comparison, while concise direct
+remains the technically reliable reference. Preserve this distinction.
 
 No official passing threshold is confirmed. Label any chosen threshold as an
 experimental target and all local rubric grades as provisional. If the runtime
