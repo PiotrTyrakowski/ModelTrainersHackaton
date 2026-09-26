@@ -11,10 +11,11 @@ First measured baseline: [Qwen3.5:0.8b scored a provisional 3/60 on the full
 practice paper](docs/results/2026-09-26-qwen35-direct.md). Its errors guide the
 next experiments.
 
-Latest comparison: [expanding retrieval to 89 articles raised the provisional
-score from 7/60 to 9/60](docs/results/2026-09-26-retrieval-corpus-v3.md), with five
-truncated answers and disputed grades. Concise direct remains the technically
-reliable 6/60 reference. No passing system has been demonstrated.
+Latest comparison: [focused evidence selection raised the provisional score
+from 9/60 to 11/60](docs/results/2026-09-26-focused-retrieval-v4.md), with two
+truncated answers versus five previously. V4 is the current retrieval candidate;
+concise direct remains the 6/60 control with no truncation. Grades are provisional
+and no passing system has been demonstrated.
 
 The first module is [`tasks-data`](packages/tasks-data): source-preserving exam
 imports, separate answer keys, and a bank of complete essays that can be retrieved

@@ -50,9 +50,17 @@ def prompt(question, passages):
 
 def solve(question, context, retrieval=False):
     passages = []
+    retrieval_trace = None
     if retrieval:
-        from matura_lab.strategies import evidence
-        passages = evidence(question, context, "bm25")
+        mode = context.get("query_policy", "legacy")
+        if mode == "focused_bm25_v1":
+            from focused_retrieval import retrieve
+            passages, retrieval_trace = retrieve(question, context)
+        elif mode == "legacy":
+            from matura_lab.strategies import evidence
+            passages = evidence(question, context, "bm25")
+        else:
+            raise ValueError(f"Unknown query policy: {mode}")
     raw = context["client"].generate(
         prompt(question, passages), question, context["budget"], temperature=0
     )
@@ -63,6 +71,8 @@ def solve(question, context, retrieval=False):
     if retrieval:
         # Trace corpus passages independently of what the model claims it used.
         result["retrieved_evidence"] = passages
+        if retrieval_trace is not None:
+            result["retrieval_trace"] = retrieval_trace
     return result
 
 

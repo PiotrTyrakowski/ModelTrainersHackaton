@@ -128,6 +128,13 @@ passage representation), retaining the search algorithm and inference settings.
 The [measured result](results/2026-09-26-retrieval-corpus-v3.md) is provisional
 9/60 with five truncated answers.
 
+The subsequent search-policy comparison uses
+`configs/checkpoints/qwen35-focused-bm25-v4.json` and `--variants bm25`, paired
+against the v3 graded report. The corpus, answer prompt and model are unchanged.
+Its explicit `focused_bm25_v1` policy is described in
+[focused retrieval](retrieval/focused-search.md). The measured result is a
+provisional [11/60 with two truncated answers](results/2026-09-26-focused-retrieval-v4.md).
+
 After the first baseline, fix the largest measured loss of points: malformed answers, missed parts of an instruction, missing evidence, weak image interpretation or the essay. Change one factor at a time. Compare retrieval and deterministic tools on the same paper before trying a smaller model or more aggressive quantisation. Keep every learned component in the size accounting. The papers already inspected during development are not untouched final evaluation data.
 
 ## Offline verification

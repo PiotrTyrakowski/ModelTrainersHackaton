@@ -1,5 +1,9 @@
 # Source-preserving history retrieval corpus
 
+The latest harness uses [focused lexical search](retrieval/focused-search.md)
+over this unchanged corpus. Its [full-paper checkpoint](results/2026-09-26-focused-retrieval-v4.md)
+scored a provisional 11/60 versus 9/60 with the preceding search policy.
+
 The v3 development corpus contains **89 Polish Wikipedia articles and 3,060
 passages**, expanding the original 20-article pilot. It targets gaps observed on
 the public 2023 practice paper: medieval towns and dynasties, art, nineteenth

@@ -28,8 +28,10 @@ It scored a provisional 6/60 with zero truncated answers. The BM25 pilot's 7/60
 depends on disputed grading and has four truncated answers; it is experimental,
 not the selected default. The subsequent `qwen35-concise-bm25-v3.json` corpus
 experiment reached a provisional 9/60 with five truncated answers and two
-disputed points. It is the latest retrieval comparison, while concise direct
-remains the technically reliable reference. Preserve this distinction.
+disputed points. The latest `qwen35-focused-bm25-v4.json` retrieval-policy change
+reached a provisional 11/60 with two truncated answers and two disputed points.
+Use v4 as the current retrieval candidate; concise direct remains the control
+with no truncation. Preserve this distinction and the grading uncertainty.
 
 No official passing threshold is confirmed. Label any chosen threshold as an
 experimental target and all local rubric grades as provisional. If the runtime
