@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "checkpoint": "qwen35-direct-local-v1",
+  "exam_id": "history-2023-mock-v1",
+  "grading_status": "local/provisional; not an official pass",
+  "target": {
+    "points": null,
+    "basis": "not specified"
+  },
+  "model": "qwen3.5:0.8b",
+  "model_artifact_hash": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+  "learned_weight_bytes": 1036034688,
+  "config_sha256": "1e4be3d34c7b9634e742d3848c3d1037bad796550a2f01399f0a1fbda3c45fd4",
+  "execution_environment": "local macOS arm64 / Apple M5 Metal / Ollama 0.34.4",
+  "comparison_contract": {
+    "exam": "0d4559be6ffae26304b102d8cec14814849caec879fd53d8be0196f24116354c",
+    "keys": "15daf1237eafc00d3ac37d7a5a5fffb57b025b3e05d639edaba668ccf42d3229",
+    "rubric": "a8677ed0da2b7a7f3246a82a5e32e6c2457d6249d43a85d191bb08663aad4cc8",
+    "question_inputs": "bb496a7a213217052eabbab7a3f78154bd9f4fed70966ae1629f976255088e8c",
+    "exam_max_points": 60
+  },
+  "result": {
+    "earned_points": 3.0,
+    "exam_max_points": 60,
+    "processed_items": 37,
+    "answered_items": 33,
+    "grading_complete": true,
+    "pending_ids": [],
+    "format_failure_ids": [
+      "4.2",
+      "10",
+      "20",
+      "26"
+    ],
+    "technical_failure_ids": [],
+    "truncated_ids": [
+      "4.2",
+      "10",
+      "20",
+      "26"
+    ],
+    "tokens": {
+      "prompt_tokens": {
+        "known_sum": 65881,
+        "reported_calls": 37,
+        "unknown_calls": 0
+      },
+      "completion_tokens": {
+        "known_sum": 17771,
+        "reported_calls": 37,
+        "unknown_calls": 0
+      },
+      "total_tokens": {
+        "known_sum": 83652,
+        "reported_calls": 37,
+        "unknown_calls": 0
+      }
+    },
+    "latency_seconds": {
+      "sum": 317.49371733301086,
+      "mean": 8.580911279270564,
+      "median": 5.145338707996416,
+      "p95": 34.08753612500004,
+      "max": 36.56361070799903
+    }
+  },
+  "by_type": {
+    "art": {
+      "earned_points": 0.0,
+      "exam_max_points": 4,
+      "processed_items": 3
+    },
+    "cartoon": {
+      "earned_points": 0.0,
+      "exam_max_points": 5,
+      "processed_items": 2
+    },
+    "choice": {
+      "earned_points": 0.0,
+      "exam_max_points": 3,
+      "processed_items": 2
+    },
+    "chronology": {
+      "earned_points": 0.0,
+      "exam_max_points": 1,
+      "processed_items": 1
+    },
+    "comparison": {
+      "earned_points": 0.0,
+      "exam_max_points": 8,
+      "processed_items": 7
+    },
+    "essay": {
+      "earned_points": 0,
+      "exam_max_points": 15,
+      "processed_items": 1
+    },
+    "explanation": {
+      "earned_points": 0.0,
+      "exam_max_points": 4,
+      "processed_items": 4
+    },
+    "genealogy": {
+      "earned_points": 0.0,
+      "exam_max_points": 1,
+      "processed_items": 1
+    },
+    "identification": {
+      "earned_points": 0.0,
+      "exam_max_points": 10,
+      "processed_items": 10
+    },
+    "map": {
+      "earned_points": 0.0,
+      "exam_max_points": 2,
+      "processed_items": 2
+    },
+    "matching": {
+      "earned_points": 0.0,
+      "exam_max_points": 1,
+      "processed_items": 1
+    },
+    "true_false": {
+      "earned_points": 3.0,
+      "exam_max_points": 6,
+      "processed_items": 3
+    }
+  },
+  "items": [
+    {
+      "question_id": "1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "c7b93464b238bf86fdb05abeabf5c3c7b2f50ef29e1d640d44f86615a3d964db",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Chooses palaeolithic rather than neolithic; no valid settlement-based justification."
+    },
+    {
+      "question_id": "2.1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "44f62a6631066a435d9d33ef78c09fb9ddea7655a4725dde1f5efabce45cd2b1",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Chooses fragment 1 rather than fragment 2; incorrectly associates Themistocles with Sparta."
+    },
+    {
+      "question_id": "2.2",
+      "type": "matching",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "497d0d25a635d868758ce86c6fec650b256ad797bfc972c6931dd5feb1759aa6",
+      "status": "ok",
+      "points": 0.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "3",
+      "type": "true_false",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "ad71a8f6bd722f8f51a48ee7c49503d69b3e98020410b528e8d6f8abf0f73ca7",
+      "status": "ok",
+      "points": 1.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "4.1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "d5d9b75f4af77f7763994c6811b51779f90cd14d2f1afe27a576de9ce6079e75",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Names Lübeck law, not the Hanseatic League."
+    },
+    {
+      "question_id": "4.2",
+      "type": "map",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "37d6e2b76038de9d45ad1fc752beae488f7f1fe65a1f0ad2a8af984176c1cf67",
+      "status": "error",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "5.1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "284c3e599cca7621b9024d40a62106b6ea287fd9c1a53dffc9b437e17b4eee55",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Does not identify the Hundred Years War; vague royal war description is insufficient."
+    },
+    {
+      "question_id": "5.2",
+      "type": "genealogy",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "4584ed3e23703bfc9cecc7f51e213ae6e49cbacdea7094d459da803ba82277d3",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Does not identify the maternal Capetian connection; gives an incorrect paternal explanation and chronology."
+    },
+    {
+      "question_id": "5.3",
+      "type": "art",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "da771de6608a04ea65e52f87c96f891df12ff0951b369ce70d1472bd13b6634e",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Discusses the genealogy instead of the heraldic French lilies and English symbols in source 1."
+    },
+    {
+      "question_id": "6",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "5d68e80e7a22e15b7eeab07b57ed6576334d6d19e3907e9a54cbaa18e951c3cb",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "No substantive shared judgement of Łokietek or supported difference between the historians; generic writing-style contrast does not answer the task. Only the answer field is graded."
+    },
+    {
+      "question_id": "7",
+      "type": "art",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "60bcf017ad6954c543be42825935ec6134f01f29d8ca7a8e1e6c62638dffe62c",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Neither required Gothic nor Renaissance style is named; roof colours are not a correct style-feature pair."
+    },
+    {
+      "question_id": "8",
+      "type": "cartoon",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "4a71396656518ed3d378472a2574138dedb6fc8f85944f2731b0104a93d26b17",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "No valid argument about the Bible outweighing Catholic symbols or rejection of hierarchy; largely invents a court scene."
+    },
+    {
+      "question_id": "9.1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "d6fd0976321acf924f33b073746e8229dc85eadafaaf70ab5e37a6c26825fc2b",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Does not identify Sigismund III as the ruler of the broken union; incidental mention in a false genealogy is not a correct resolution."
+    },
+    {
+      "question_id": "9.2",
+      "type": "explanation",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "b2dccc60e14e74138bbef0d7f609385c602e13b03b9714c37dace7170a989685",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Repeats dynastic causes explicitly excluded by the question; no Baltic or Livonian rivalry."
+    },
+    {
+      "question_id": "9.3",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "dbacc5b6332ad2ce19644a114a3fd65121e45d21abde0db08b427ac9bef91ce5",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Does not distinguish Sigismund II Augustus dying from John II Casimir abdicating; invented rulers and chronology."
+    },
+    {
+      "question_id": "10",
+      "type": "true_false",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "1027e99c7d00221202058b76edbc7dd2e2b5b4e9a0563f9d8fbf07f279be3d88",
+      "status": "error",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "11.1",
+      "type": "explanation",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "cddc71d5b995b11da3612933cba6d6fe8c6ec38cd372d44a83d1251a8ce2d3f5",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Conservative grade: replaces the parliamentary misuse of liberum veto with a false account of princely rule, repression and a right of return; does not correctly explain breaking Sejm proceedings or magnate political manipulation."
+    },
+    {
+      "question_id": "11.2",
+      "type": "choice",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "d6278fb289b72928eb20b3f2274590031f2a6356dee67073ca889faf1580ff69",
+      "status": "ok",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "12",
+      "type": "explanation",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "4ae440693781d33c40bbe0169c2dd95d9f95445160cc5e66834c2e75f4ca6841",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Affirms Montesquieu separation of powers; confuses three legislative estates with legislative, executive and judicial powers."
+    },
+    {
+      "question_id": "13.1",
+      "type": "map",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "3450ad352a1c27acf2b3844b0e551d144ff0395069fe40ec14bb45728883012d",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Chooses A rather than B and repeats the instruction instead of naming Ostrołęka and justifying from both sources."
+    },
+    {
+      "question_id": "13.2",
+      "type": "chronology",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "4ca59727af70f1a9c74e854e59364b28cd21d5bde31db0f0ce1e5ba0d69598e0",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Explicitly chooses B; official correct option is C. Graded manually because the generic chronology parser left this prose choice pending."
+    },
+    {
+      "question_id": "14.1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "3ec122157945b33ac46a2085d9745925f6cd97778e5c75f66ac3b4befc5a92c3",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Invents Przemysław Kowalski instead of identifying Ignacy Łukasiewicz."
+    },
+    {
+      "question_id": "14.2",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "27fa403a41f31fe17183864e052c75109baf1646143cecf1c10cf948f5234712",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Invents a royal partition instead of Austrian partition/Galicia."
+    },
+    {
+      "question_id": "15",
+      "type": "art",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "b0daec1e23b87ec5a5060d42158a03b9ffe858ab00b9889941284999881bd350",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Calls the painting expressionist instead of realist; feature does not support the required style."
+    },
+    {
+      "question_id": "16.1",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "ee492b83ce9c971984d4bc39a9ec8a15bee0e0592191cda8c0d940bb956b0602",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Correct yes/no conclusion but no justification in the answer field. The rubric requires both sources and a justified resolution."
+    },
+    {
+      "question_id": "16.2",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "eef8c253fe39722c5aabc4cfa68fc788a47dc664f48470980ed7e1eb3caac5df",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Names Janusz Kowalski instead of Marx or Engels."
+    },
+    {
+      "question_id": "17",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "77059aeb6f3afe032eb73385b4ac16f310b5c94cdfca80057dbb164d452db289",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Contradictory conclusion and incorrect reading of tax oppression as tax reduction; lacks valid comparison of colonial exploitation."
+    },
+    {
+      "question_id": "18",
+      "type": "cartoon",
+      "variant": "direct",
+      "max_points": 3,
+      "question_hash": "e96bc5cdfd30ece4d344b90413cabc95152315d39bf7e55e10d64e4bd5bb8162",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Misidentifies the donor and claims Lafayette served Napoleon III in 1917; no correct US–French aid interpretation or title explanation."
+    },
+    {
+      "question_id": "19",
+      "type": "true_false",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "495d2ea14dad9d00532275ca81da0de05a510707ef4ea44d6a0d12cd0e9bc512",
+      "status": "ok",
+      "points": 2.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "20",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "228606f5040273cd2f9e19a80f74a3296386f6a6f88bb57cf745625fcefbec66",
+      "status": "error",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "21",
+      "type": "choice",
+      "variant": "direct",
+      "max_points": 2,
+      "question_hash": "053ada73e83e9c3067c266df0dfd33d44f7667a6a29984998c52eb3c9add851b",
+      "status": "ok",
+      "points": 0.0,
+      "grader": null,
+      "grade_reason": null
+    },
+    {
+      "question_id": "22",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "301d3e28b506400dc7b300ce8c14ae1cda98d3ffaa725c685d47c53876fb4d08",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Claims both treaties concern the same side; does not distinguish NATO from the Warsaw Pact."
+    },
+    {
+      "question_id": "23",
+      "type": "explanation",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "1a6441640761ac13e2a365c2ced611b24675cb3a44b562d8b3b1cf83437422ff",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Mentions censorship in general but omits Soviet responsibility for the Katyn massacre and PRL dependence on the USSR; invents a benign public-order explanation."
+    },
+    {
+      "question_id": "24",
+      "type": "comparison",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "ad701bd3462c105d0e1d147a59da12eef80e4e3477f473ca9221ab260243a118",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "No clear resolution or distinction between the 1968 anti-Zionist campaign and the campaign against the bishops; generic cartoon description is insufficient."
+    },
+    {
+      "question_id": "25.1",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "5fc11a9d9fb6bebb9d1bc0114f4bd247e52249b81f1d92a2ed7823e65aec6202",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Does not identify Brezhnev or Solidarity; gives an invented surname and places the collapse of the USSR before October 1981."
+    },
+    {
+      "question_id": "25.2",
+      "type": "identification",
+      "variant": "direct",
+      "max_points": 1,
+      "question_hash": "bf2a7e6cc2b1465d1ccb9b539d71a8b47fcc7bcc752bbf8bc0c1e733d790f927",
+      "status": "ok",
+      "points": 0.0,
+      "grader": "Codex rubric review; provisional, not official",
+      "grade_reason": "Does not identify Jaruzelski or martial law and suppression of Solidarity."
+    },
+    {
+      "question_id": "26",
+      "type": "essay",
+      "variant": "direct",
+      "max_points": 15,
+      "question_hash": "8deb0618aa61cacd2fb55632d328db8fccc94f82f49211d23878b83ed9a4c763",
+      "status": "error",
+      "points": 0,
+      "grader": null,
+      "grade_reason": null
+    }
+  ],
+  "local_artifact_hashes": {
+    "snapshot.json": "56df39214bca3ac8145caa2d7789cbb2cc8b79ad3c7d5fa599e97ce6bc1c901c",
+    "run.json": "346b6954740a46da28a9d2b73782d1c19e61e20c84b33c8533b7f275fdb3d254",
+    "grades.jsonl": "ce321ff94fb3de672ddf3ae6e671393286d5973ef038a6e354f9892d1776dfff",
+    "run-graded.json": "f0e343c0e90eee88583311df17cf6917d7aa3b555b819e559c7ac3b1e27b9f79",
+    "checkpoint-graded.json": "e4018134b343a0b66b8408c54c2403efac1de351f2ea173a8277010552f56870",
+    "runtime-evidence.json": "873dd9174fc6fdcc5701d5eb249e1f6735d6020eebd2dac51890d59615ecf3f5",
+    "answers.json": "ec686260ffd85f8e2d09ae640bbd55a344d931ed777af2a13a1a852e97ac829d"
+  },
+  "notes": [
+    "Development practice paper already inspected; not a held-out result.",
+    "Open grades are conservative Codex rubric reviews, not official examiner grades.",
+    "Four truncated JSON generations count as failed submissions; 19 potential points, not 19 recoverable points.",
+    "Rubrics and keys were used only for grading, never provided to the solver.",
+    "Raw model outputs and full local provenance remain in ignored artifacts/checkpoints/qwen35-direct-local-v1."
+  ]
+}
