@@ -46,6 +46,19 @@ Keep both 2023 and 2024 fixed for further comparisons; do not infer general
 passing ability from the narrow 2023 essay gain. See `docs/grading.md` for grading
 limitations and the result reports for disputed awards.
 
+The controlled model-size comparison reran both full papers with both variants.
+The 0.8B reference scored 2023 direct/BM25 19/24 and 2024 direct/BM25 8/9.
+Qwen3.5:2b Q8_0 scored 2023 direct/BM25 19/28 and 2024 direct/BM25 16/11.
+Here direct excludes Wikipedia but still shares typed answers and the essay bank;
+all 2023 cells include the same 12-point stored essay. The 2B artifact has
+2,741,180,928 learned-file bytes. Use 2B without Wikipedia as the next experiment's
+comparison control while retaining 0.8B as the tiny reference. Do not silently
+replace the size objective or combine per-paper winners into a claimed system.
+The next proposed single change is stricter retrieval relevance with fallback.
+See docs/results/2026-09-26-model-size-comparison.md for disputed grades; the
+retrieval gains from changing model are not robust to the selected sensitivity
+checks. These remain development results, not a passing or independent evaluation.
+
 No official passing threshold is confirmed. Label any chosen threshold as an
 experimental target and all local rubric grades as provisional. If the runtime
 is unavailable, report the blocker; never substitute demo results or claim an

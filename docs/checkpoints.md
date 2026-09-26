@@ -160,6 +160,22 @@ Both retain the v4 corpus, tiny model and inference budget. Grading stays separa
 from inference. A prepared essay selected for an already inspected practice topic
 is development data, not evidence of generalization.
 
+## Model-size comparison on both papers
+
+The four `qwen35-{08b,2b}-{2023,2024}-comparison-v1.json` configurations run
+`--variants direct bm25` with the same v6 harness. Only model identity and
+provenance differ between paired sizes. Both variants retain the prepared essay
+bank; `direct` excludes Wikipedia retrieval but is not a bare-model baseline.
+Keep the 0.8B reference and report non-essay points separately from bank gains.
+
+The 2B model inventory lives at
+`artifacts/local-runtime/qwen35-2b/inventory.json`; its verified public copy is in
+`docs/models/qwen35-2b-q8-inventory.json`. Download the official artifact and verify
+its manifest/blobs before using that inventory to prepare a new run. Runtime
+identity must still be checked against the live server. See the
+[full comparison](results/2026-09-26-model-size-comparison.md) for all eight
+results, interpretation and sensitivity checks.
+
 ## Offline verification
 
 ```sh

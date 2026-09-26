@@ -1,0 +1,55 @@
+{
+  "tag": "qwen3.5:2b",
+  "registry": "registry.ollama.ai/library/qwen3.5:2b",
+  "captured_at": "2026-09-26T19:25:15.389659+00:00",
+  "manifest_sha256": "324d162be6ca5629ae4517c8710434d0bd2d665bc94dbad46e9af8fbf8a2f0df",
+  "manifest_bytes": 709,
+  "learned_weight_file_bytes": 2741180928,
+  "all_blob_bytes": 2741192820,
+  "counting_note": "All model, projector and adapter files counted, including container metadata and embedded vision weights. Runtime and retrieval data excluded.",
+  "blobs": [
+    {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "digest": "sha256:ee043a99abe5e8317272712ed08ee2993af1f7930d69aefa3eba562cdc2822bd",
+      "size": 473,
+      "verified_sha256": "ee043a99abe5e8317272712ed08ee2993af1f7930d69aefa3eba562cdc2822bd",
+      "verified_bytes": 473,
+      "learned_weights": false
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.model",
+      "digest": "sha256:b709d81508a078a686961de6ca07a953b895d9b286c46e17f00fb267f4f2d297",
+      "size": 2741180928,
+      "verified_sha256": "b709d81508a078a686961de6ca07a953b895d9b286c46e17f00fb267f4f2d297",
+      "verified_bytes": 2741180928,
+      "learned_weights": true
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.license",
+      "digest": "sha256:9be69ef463066202c1b1bd299aaf42bad370a01ba4b40d293617859720776c17",
+      "size": 11354,
+      "verified_sha256": "9be69ef463066202c1b1bd299aaf42bad370a01ba4b40d293617859720776c17",
+      "verified_bytes": 11354,
+      "learned_weights": false
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.params",
+      "digest": "sha256:9371364b27a52acac9d87f88bd93c9db1174d8d6ec57f6888925cdc1788871ff",
+      "size": 65,
+      "verified_sha256": "9371364b27a52acac9d87f88bd93c9db1174d8d6ec57f6888925cdc1788871ff",
+      "verified_bytes": 65,
+      "learned_weights": false
+    }
+  ],
+  "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+      "qwen35"
+    ],
+    "parameter_size": "2.3B",
+    "quantization_level": "Q8_0"
+  },
+  "parameter_count": 2274069824
+}

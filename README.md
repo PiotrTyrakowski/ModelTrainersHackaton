@@ -7,11 +7,19 @@ after each meaningful checkpoint, grade its answers, and choose the next change
 from its mistakes. The initial reference is `qwen3.5:0.8b`, including image input.
 See [the checkpoint workflow](docs/checkpoints.md).
 
+Latest experiment: [0.8B versus 2B on both full papers](docs/results/2026-09-26-model-size-comparison.md).
+Without Wikipedia retrieval, 2B scored provisional **19/60 on 2023 and 16/60 on
+2024**, versus 19/60 and 8/60 for 0.8B. With retrieval, 2B scored 28/60 and 11/60,
+versus 24/60 and 9/60. All 2023 totals include the same 12-point prepared essay.
+Retrieval helps one paper and hurts the larger model on the other; stricter
+relevance filtering is the next experiment. Keep 0.8B as the size reference and
+2B without Wikipedia as the next comparison control. Grading remains provisional.
+
 First measured baseline: [Qwen3.5:0.8b scored a provisional 3/60 on the full
 practice paper](docs/results/2026-09-26-qwen35-direct.md). Its errors guide the
 next experiments.
 
-Latest 2023 comparison: [complete closed-answer formats reached 12/60 and
+Earlier 2023 comparison: [complete closed-answer formats reached 12/60 and
 prepared essay retrieval reached 24/60](docs/results/2026-09-26-typed-answers-and-essay-bank.md).
 The bank covers one previously inspected topic and its author also performed the
 local rubric review; the gain is not evidence of unseen-topic performance. Two

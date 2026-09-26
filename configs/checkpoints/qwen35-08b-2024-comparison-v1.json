@@ -1,0 +1,354 @@
+{
+  "demo": false,
+  "split": "development",
+  "exam_id": "history-2024-may-reviewed-v1",
+  "questions": "../ModelTrainersHackaton/data/processed/history-2024-reviewed-v1/input/questions.jsonl",
+  "keys": "../ModelTrainersHackaton/data/processed/history-2024-reviewed-v1/grading/keys.jsonl",
+  "model": {
+    "base_url": "http://127.0.0.1:18081/v1",
+    "model": "qwen3.5:0.8b",
+    "key_env": "MATURA_LOCAL_API_KEY",
+    "vision": true,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "reasoning_effort": "none"
+  },
+  "variants": [
+    "direct",
+    "bm25"
+  ],
+  "budget": {
+    "max_seconds": 120,
+    "max_calls": 1,
+    "max_output_tokens": 2200
+  },
+  "coverage": {
+    "exam": "../ModelTrainersHackaton/data/processed/history-2024-reviewed-v1/exam.json",
+    "types": "../ModelTrainersHackaton/data/processed/history-2024-reviewed-v1/types.json",
+    "contract": "../ModelTrainersHackaton/data/processed/history-2024-reviewed-v1/coverage.json",
+    "require_full_exam": true
+  },
+  "model_provenance": {
+    "registry": "https://ollama.com/library/qwen3.5:0.8b",
+    "runtime": "Ollama 0.34.4",
+    "download_verified": true,
+    "note": "Same verified unchanged Qwen3.5:0.8b weights as the baseline. Live identity is verified separately for each local runtime session.",
+    "manifest_sha256": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+    "total_learned_bytes": 1036034688,
+    "inventory": "data/models/qwen3.5-0.8b/inventory.json",
+    "context_tokens": 8192
+  },
+  "corpus": "../ModelTrainersHackaton/data/raw/retrieval/wiki-focused-v3/index.sqlite",
+  "strategy": {
+    "top_k": 3,
+    "output_contract": "typed_answer_v3",
+    "query_policy": "focused_bm25_v1",
+    "essay_bank": {
+      "version": "reviewed_essay_v1",
+      "bank": "../ModelTrainersHackaton/data/essay-bank/history-development-v1.jsonl",
+      "catalog": "../ModelTrainersHackaton/data/essay-bank/reviewed-topics-v1.json",
+      "min_score": 0.3,
+      "min_margin": 0.03
+    }
+  },
+  "corpus_provenance": {
+    "kind": "development_coverage_expansion",
+    "selection_note": "General historical topics chosen from observed gaps on the public development paper. These are encyclopedia articles, not exam solutions. Selection has seen the development questions; evaluation is not held out.",
+    "articles": 89,
+    "passages": 3060,
+    "failures": [],
+    "pending_titles": [],
+    "articles_sha256": "1dd81cde22f6a4e46029823306b2f97e64894213a042bf24095e821f9b8a7e6f",
+    "passages_sha256": "f5541e1323437fde5d4ecf21bf120d3c988592834258510946692d0b11b6fe1a",
+    "topics_sha256": "8b16c8450d230ab339638bb8adf21a1c5d533ab20d972f89e5d7b49a085ac757",
+    "transform": "Exact paragraph/sentence spans; title and section prefixes; omit bibliography/navigation; no generated facts or exam answer keys",
+    "quality_limit": "Provenance and passage boundaries verified; encyclopedia claims are not independently fact-checked",
+    "index_sha256": "d47a281ed2f5fce648bc9159af44bc12afec1a6bc355da206ce8da584fba40b2",
+    "index_chunks": 3060,
+    "legacy_add_size": 1406,
+    "legacy_add_overlap": 0,
+    "verification": "Every indexed passage matches its exact article span plus title/section prefix; unique IDs and canonical titles; no secondary splitting",
+    "builder_sha256": "8caf8ac58509226748f90e5fa2bc7429d3884bc509944dcd9d6e5c89151e029f",
+    "indexer_sha256": "32848e83e7d062ee56fb037025cb328212b686f2e6446ee2aa7e425608513a57"
+  },
+  "experiment_note": "Controlled model-size comparison v1: both variants share typed answers and the same prepared essay bank; direct excludes Wikipedia retrieval, bm25 includes it. Fixed prompts, inputs, corpus and budgets. This is the 0.8B reference rerun, not an untouched test.",
+  "rubrics": "../ModelTrainersHackaton/data/processed/history-2024-reviewed-v1/grading/rubrics.jsonl",
+  "exam_provenance": {
+    "reviewer": "Codex text and visual source review; not independent expert review",
+    "review_date": "2026-09-26",
+    "items": 40,
+    "points": 60,
+    "source_pdf_sha256": "a5f95323ad82f0b44b8c5e1c16fbc89d56dfe60db77ee4f583b76a669eb02ead",
+    "candidate_sha256": "ec885ddfc3fa533e1394a1bbfd1f8b1fd23130512f3d6fe5c7726c4cba380a7c",
+    "grading_pdf_sha256": "c4e7722bc5ee4613dfe218852680f892e113e7f63f3fbdff2d440c4338c5a376",
+    "grading_text_sha256": "37ec2f6a1cacf8debf957229ea5569fb0bf523166746cad5907fa49796bbaa8d",
+    "builder_sha256": "bb7f46b5031408901f397a7af70a0594484629470161a518eb19122332108f79",
+    "review_notes": [
+      "All relevant pages 4–29 visually inspected; discarded trailing headers and blank writing pages.",
+      "Separated instructions and sources; preserved source wording and original figures.",
+      "Removed genealogy spillover from task 12 and unrelated engraving date from task 14.",
+      "Restored poetry column labels; transcribed visible genealogy and cartoon labels.",
+      "Image crops retain original pixels and labels; crops use source pages, not marking pages.",
+      "Previously audited public paper: second development test, not untouched holdout."
+    ],
+    "image_regions": {
+      "1": {
+        "path": "images/task-1.png",
+        "sha256": "908341703041a439c1e0e103c5e06b181e272faf41e49ac48ab7f5ebd9f5ab0b",
+        "source_page": 4,
+        "pixel_bbox": [
+          0,
+          296,
+          910,
+          797
+        ],
+        "page_sha256": "a7bb82dbe28fe0c53b2a71e9c6dd03ad90adff23b3c7d1f2416a0614712e1a50"
+      },
+      "2": {
+        "path": "images/task-2.png",
+        "sha256": "b812948c3fd72c75669f28716aabee26f73b924f2cc1dc1070642854a1f80daa",
+        "source_page": 5,
+        "pixel_bbox": [
+          0,
+          334,
+          910,
+          875
+        ],
+        "page_sha256": "8f88071f8949f0986c7538586c5f575803968888318f73def2b0f9e743a9c336"
+      },
+      "4": {
+        "path": "images/task-4.png",
+        "sha256": "bb379f1e1f24a71a17cfca2cd7b94966a06f16c7f9634758bcab2c0e3c2b4f77",
+        "source_page": 7,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          707
+        ],
+        "page_sha256": "255c21e708524b59ae7c2d8d32e776ee27a7cfe57255a29065dab72ac89f22ef"
+      },
+      "5": {
+        "path": "images/task-5.png",
+        "sha256": "589c2bd44e0e8a4b1526410334c4fa0469a5859153daa73abfd6d4cdaa24f516",
+        "source_page": 8,
+        "pixel_bbox": [
+          0,
+          347,
+          910,
+          875
+        ],
+        "page_sha256": "9c17f9c473944580df0ba2158b35e2e12454b45f05504f50c5dc01463022e672"
+      },
+      "6": {
+        "path": "images/task-6.png",
+        "sha256": "c71ff5a18e4860a6aba00f4b801bcc33a101cb7f2770990fd8c56612877ef07f",
+        "source_page": 9,
+        "pixel_bbox": [
+          0,
+          257,
+          910,
+          849
+        ],
+        "page_sha256": "4a74162dd4ca8d86ea75dc48e5b30d92b879fc107562b7c4cbcabc0a379208a5"
+      },
+      "8": {
+        "path": "images/task-8.png",
+        "sha256": "dc12a9d2d9c2924238e5402443b840b551ac79247ebcfe8c090c45039a5de9ed",
+        "source_page": 11,
+        "pixel_bbox": [
+          0,
+          90,
+          910,
+          669
+        ],
+        "page_sha256": "e230c1b1183002af375909b25df3f47ef010826da46c8ee3c66b6b72fe3d20b1"
+      },
+      "9": {
+        "path": "images/task-9.png",
+        "sha256": "43dfa8a380fe1a34c9fc0d15520a08367b943d06174487f121fcc0514a87c9be",
+        "source_page": 12,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          900
+        ],
+        "page_sha256": "38631fb9ae00dbd84e08ebdb0cc4cd204a1741a95c7cbde592b7a638ae12396c"
+      },
+      "10": {
+        "path": "images/task-10.png",
+        "sha256": "8f6dd4a5efff92fbd71b6f9991c20152ae754d3c857a42c769982f0e44fd6fc5",
+        "source_page": 13,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          450
+        ],
+        "page_sha256": "bc10288e3b7bdf7b1fd9db871f13ca5442b1efbec9f44829013ce3e7a335ecb4"
+      },
+      "11": {
+        "path": "images/task-11.png",
+        "sha256": "a790a624a480774f73785a99ff0654c2b0bc669f51a9e63e13dd42ecdad93038",
+        "source_page": 14,
+        "pixel_bbox": [
+          0,
+          45,
+          910,
+          643
+        ],
+        "page_sha256": "3ee157a994da30cf1f3db89d0e3cbc47652ffc97a13b9413b20d233dcb099923"
+      },
+      "12": {
+        "path": "images/task-12.png",
+        "sha256": "559b67eaf99475ad66aff68fceaf5c654075d6ea2f77a127b6adb605890817df",
+        "source_page": 15,
+        "pixel_bbox": [
+          0,
+          90,
+          910,
+          656
+        ],
+        "page_sha256": "88543144ffc819040f0cb40400832d266b79a721ee707616c3b4a6830bd2b0b3"
+      },
+      "13": {
+        "path": "images/task-13.png",
+        "sha256": "4a61b819167d1725636b2c887893e40194c33ad3c35615bcf884f7a3b720927c",
+        "source_page": 16,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          656
+        ],
+        "page_sha256": "b7adce77901efbe90577b8f7cedc5df74c502c6a61db461ccbbe071b184b3ec4"
+      },
+      "14": {
+        "path": "images/task-14.png",
+        "sha256": "9b090a8daa7431a12d748473fdf630bc615ae23167e54ed62699b58eb6dc833b",
+        "source_page": 17,
+        "pixel_bbox": [
+          0,
+          90,
+          910,
+          643
+        ],
+        "page_sha256": "25ec4db4035d732d62fbe2b8428425faf123a618db4dc8e7349f950f1eeb2e45"
+      },
+      "16": {
+        "path": "images/task-16.png",
+        "sha256": "1009ccd7fc01a182507c72a35c2b1faa7ffaa23200427ddb28614bb3acec9171",
+        "source_page": 19,
+        "pixel_bbox": [
+          0,
+          128,
+          910,
+          643
+        ],
+        "page_sha256": "94cab9d9c583fad67c70c520d1ce70f148fb84f2e9eb460c3b192fceefed3c41"
+      },
+      "17": {
+        "path": "images/task-17.png",
+        "sha256": "5bb09d052e01357f7a2b3fa2fb343b4561274dd5b2cefb9ee3b667a0709710dc",
+        "source_page": 20,
+        "pixel_bbox": [
+          0,
+          540,
+          910,
+          900
+        ],
+        "page_sha256": "c259342c5684a767d951cdf1c1811ffeb9c5e81b1debf84e60e9a53874c432fd"
+      },
+      "18": {
+        "path": "images/task-18.png",
+        "sha256": "8684fd962a02c2232fac09042c94992e52f7044c18b691d43519592cd1fb93e0",
+        "source_page": 21,
+        "pixel_bbox": [
+          0,
+          257,
+          910,
+          888
+        ],
+        "page_sha256": "737e55f27602c49d8862db01bbb1d957192d43283e74dbab1d10104a964f22c4"
+      },
+      "19": {
+        "path": "images/task-19.png",
+        "sha256": "f3147e6fc89965e8f657e674bce3984d9eaefc4d6b5f1988595a484efc3ce0e1",
+        "source_page": 22,
+        "pixel_bbox": [
+          0,
+          141,
+          910,
+          785
+        ],
+        "page_sha256": "98b4435301b20f5efc7eb94968ffed80c2fc5e756364a4c18be6d319e3df2a5f"
+      },
+      "21": {
+        "path": "images/task-21.png",
+        "sha256": "7f9bb8a34e295a44e2ee5efc37d552aa98667ef0d6333835e944f4e08f2ae6c2",
+        "source_page": 24,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          540
+        ],
+        "page_sha256": "a1e66d534eb50bb4cbb05f93fadc686bd8e458b43fee125802180fe2c99bfe22"
+      },
+      "23": {
+        "path": "images/task-23.png",
+        "sha256": "dc64670bd8149ffab2e1d3708ffd315c00b35f04cd4cf7055d694b5348cb8b64",
+        "source_page": 26,
+        "pixel_bbox": [
+          0,
+          128,
+          910,
+          694
+        ],
+        "page_sha256": "0c5fbb1eaf2e158924fdbed7c531b02e61fae35e652a2b07a701c9f26fb94962"
+      },
+      "24": {
+        "path": "images/task-24.png",
+        "sha256": "e5571eb2c7ae51fa9ceb29dc684cc368b5e62df3c2339b41bfe649b8414183f3",
+        "source_page": 27,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          617
+        ],
+        "page_sha256": "9d36274f798215f6c467a7a11dc435d0c69f77c7efb3d7a66732fd828a8db850"
+      },
+      "25": {
+        "path": "images/task-25.png",
+        "sha256": "602897df8c0f2fe4d388eb3f2f31e43cb31ac99edd89e8fcc0177d1887f7be9b",
+        "source_page": 28,
+        "pixel_bbox": [
+          0,
+          154,
+          910,
+          656
+        ],
+        "page_sha256": "d0109f5b56b219933ecac2f8b0dc07f49410a39319b4d362edc35b133cfc83ca"
+      }
+    }
+  }
+}
