@@ -80,6 +80,46 @@ python3 scripts/checkpoints/checkpoint.py report /absolute/next-checkpoint \
 
 Comparisons require the same exam, question inputs, keys, rubric and full-paper maximum. Changed model, configuration, dependencies and execution environment are flagged. Comparisons are paired by variant name. Full-exam score deltas require both reports to cover and grade the entire paper; otherwise only common graded-item deltas are shown. Those partial deltas are not an overall improvement claim. Use the same grading standard and review borderline answers consistently.
 
+To compare different variants explicitly, set `comparison_variant_map` in the
+prepared configuration, for example `{"bm25": "direct"}`. The report then pairs
+the new `bm25` answers with the preceding checkpoint's `direct` answers by
+question ID, and records both variant names. Invalid mappings are rejected.
+
+## Concise answer and retrieval experiments
+
+`configs/checkpoints/qwen35-concise-v2.json` selects `concise_answer_v2`. It uses
+a shorter Polish prompt and a JSON schema containing only a string `answer`.
+The complete justification belongs in that string; there is no separate model
+generated evidence list. The prompt requests up to 100 words for short open
+answers, item labels for closed tasks, and exactly one 300–350-word essay topic.
+These length instructions are soft constraints, not guaranteed limits.
+
+The explicit adapter in `scripts/checkpoints/answer_contract.py` temporarily
+replaces the legacy direct/BM25 functions only for that named contract, restores
+them afterward, and leaves the legacy evaluator files unchanged. It supports
+only `direct` and `bm25`, and requires the matching answer-only response schema.
+Both strategies use the same prompt builder. BM25 adds the existing retriever's
+top three corpus passages and stores those actual passages in the answer trace;
+it does not ask the model to invent citations. No answer keys or rubrics enter
+that prompt builder.
+
+Use an absolute config path when preparing: relative config paths resolve
+against `--runner-root`. For example, from this repository:
+
+```sh
+python3 scripts/checkpoints/checkpoint.py prepare \
+  --runner-root ../matura-lab \
+  --config "$PWD/configs/checkpoints/qwen35-concise-v2.json" \
+  --output artifacts/checkpoints/my-concise-direct-run --variants direct \
+  --runtime-label 'record the verified local runtime here'
+```
+
+For the retrieval-only comparison, use
+`configs/checkpoints/qwen35-concise-bm25-v2.json` and `--variants bm25`. Its
+20-article Wikipedia corpus is a development pilot, not general history
+coverage. Model weights, question inputs, scoring rules, temperature, one-call
+budget and 2,200-token output cap are unchanged between these experiments.
+
 After the first baseline, fix the largest measured loss of points: malformed answers, missed parts of an instruction, missing evidence, weak image interpretation or the essay. Change one factor at a time. Compare retrieval and deterministic tools on the same paper before trying a smaller model or more aggressive quantisation. Keep every learned component in the size accounting. The papers already inspected during development are not untouched final evaluation data.
 
 ## Offline verification

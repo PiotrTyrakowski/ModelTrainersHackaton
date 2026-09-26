@@ -104,6 +104,21 @@ class ReportingTests(unittest.TestCase):
         report = build_report(snapshot, run, before)
         self.assertEqual(report['comparison']['variants'][0]['full_exam_delta'], 9)
 
+    def test_explicit_retrieval_to_direct_pairing(self):
+        snapshot, run = fixture()
+        for row in run['results']: row['points'] = 0
+        before = build_report(snapshot, run)
+        run['config']['variants'] = ['bm25']
+        run['config']['comparison_variant_map'] = {'bm25': 'direct'}
+        for row in run['results']: row['variant'] = 'bm25'
+        run['results'][0]['points'] = 1
+        comparison = build_report(snapshot, run, before)['comparison']['variants'][0]
+        self.assertEqual(comparison['previous_variant'], 'direct')
+        self.assertEqual(comparison['full_exam_delta'], 1)
+        self.assertEqual(comparison['common_graded_items'], 3)
+        run['config']['comparison_variant_map'] = {'bm25': 'missing'}
+        with self.assertRaises(ValueError): build_report(snapshot, run, before)
+
 
 class SnapshotTests(unittest.TestCase):
     def prepared(self, directory):

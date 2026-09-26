@@ -131,7 +131,9 @@ def run_checkpoint(directory):
             def save(row):
                 journal.write(json.dumps(row,ensure_ascii=False)+'\n');journal.flush()
                 print(f'{row["variant"]} {row["question_id"]}: {row["status"]}; points={row["points"]}; {row["seconds"]:.2f}s',flush=True)
-            result=experiments.run(config,on_result=save)
+            from answer_contract import use_answer_contract
+            with use_answer_contract(config):
+                result=experiments.run(config,on_result=save)
         check_snapshot(directory)
         write(directory/'run.json',result)
         write(directory/'run-state.json',{'status':'complete','completed_at':datetime.now(timezone.utc).isoformat(),'run_sha256':file_hash(directory/'run.json')})

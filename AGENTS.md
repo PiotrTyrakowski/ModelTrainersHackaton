@@ -22,6 +22,12 @@ and marking rubrics out of solver prompts and retrieval corpora. Repeatedly used
 practice papers are development data, so success on them needs later confirmation
 on an untouched paper.
 
+The current working answer contract is `concise_answer_v2`: prepare with an
+absolute path to `configs/checkpoints/qwen35-concise-v2.json` and select `direct`.
+It scored a provisional 6/60 with zero truncated answers. The BM25 pilot's 7/60
+depends on disputed grading and has four truncated answers; it is experimental,
+not the selected default. Preserve this distinction in future comparisons.
+
 No official passing threshold is confirmed. Label any chosen threshold as an
 experimental target and all local rubric grades as provisional. If the runtime
 is unavailable, report the blocker; never substitute demo results or claim an

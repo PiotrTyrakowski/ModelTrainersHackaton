@@ -1,0 +1,71 @@
+{
+  "demo": false,
+  "split": "development",
+  "exam_id": "history-2023-mock-v1",
+  "questions": "data/mock-2023/questions.jsonl",
+  "keys": "data/grading/history-2023/keys.jsonl",
+  "model": {
+    "base_url": "http://127.0.0.1:18081/v1",
+    "model": "qwen3.5:0.8b",
+    "key_env": "MATURA_LOCAL_API_KEY",
+    "vision": true,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "exam_answer",
+        "strict": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "reasoning_effort": "none"
+  },
+  "variants": [
+    "bm25"
+  ],
+  "budget": {
+    "max_seconds": 120,
+    "max_calls": 1,
+    "max_output_tokens": 2200
+  },
+  "coverage": {
+    "exam": "data/official/history-2023-mock-v1/exam.json",
+    "types": "configs/mock-2023-types.json",
+    "contract": "configs/mock-2023-coverage.json",
+    "require_full_exam": true
+  },
+  "model_provenance": {
+    "registry": "https://ollama.com/library/qwen3.5:0.8b",
+    "runtime": "Ollama 0.34.4",
+    "download_verified": true,
+    "note": "Same verified unchanged Qwen3.5:0.8b weights as the baseline. Live identity is verified separately for each local runtime session.",
+    "manifest_sha256": "f3817196d142eaf72ce79dfebe53dcb20bd21da87ce13e138a8f8e10a866b3a4",
+    "total_learned_bytes": 1036034688,
+    "inventory": "data/models/qwen3.5-0.8b/inventory.json",
+    "context_tokens": 8192
+  },
+  "corpus": "indexes/wiki-pilot.sqlite",
+  "strategy": {
+    "top_k": 3,
+    "output_contract": "concise_answer_v2"
+  },
+  "corpus_provenance": {
+    "kind": "development_pilot_not_comprehensive",
+    "articles": 20,
+    "documents_sha256": "11bd9bc02a611e6b1392ad13dda3f7fdb7388d43f62b2e9c0289ab7fe7e732c8"
+  },
+  "experiment_note": "Retrieval-only change versus concise direct v2: add top 3 BM25 passages from the same existing 20-article development pilot. Prompt template, weights, exam, budget and grading are unchanged.",
+  "comparison_variant_map": {
+    "bm25": "direct"
+  }
+}

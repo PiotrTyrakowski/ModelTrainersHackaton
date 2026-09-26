@@ -69,16 +69,21 @@ def compare(current, previous):
         return {'status': 'incomparable', 'reason': 'Exam inputs, answer keys, rubric, or maximum points differ'}
     changes = [field for field in ['model_artifact_hash', 'config_sha256', 'dependency_hashes', 'execution_environment']
                if current.get(field) != previous.get(field)]
+    variant_map = current.get('comparison_variant_map', {})
+    if (not isinstance(variant_map, dict) or set(variant_map) - set(current['variants'])
+            or any(not isinstance(v, str) or v not in previous['variants'] for v in variant_map.values())):
+        raise ValueError('Invalid explicit comparison variant map')
     pairs = []
     for variant, now in current['variants'].items():
-        before = previous.get('variants', {}).get(variant)
+        previous_variant = variant_map.get(variant, variant)
+        before = previous.get('variants', {}).get(previous_variant)
         if before is None: continue
-        old_rows = {r['question_id']: r for r in previous['items'] if r['variant'] == variant}
+        old_rows = {r['question_id']: r for r in previous['items'] if r['variant'] == previous_variant}
         common = [(r, old_rows[r['question_id']]) for r in current['items']
                   if r['variant'] == variant and r['question_id'] in old_rows
                   and r['points'] is not None and old_rows[r['question_id']]['points'] is not None]
         complete = all(s['run_complete'] and s['grading_complete'] and s['full_exam_selected'] for s in [now, before])
-        pairs.append({'variant': variant, 'full_exam_delta': now['earned_points'] - before['earned_points'] if complete else None,
+        pairs.append({'variant': variant, 'previous_variant': previous_variant, 'full_exam_delta': now['earned_points'] - before['earned_points'] if complete else None,
                       'common_graded_items': len(common), 'common_graded_max_points': sum(a['max_points'] for a, _ in common),
                       'common_graded_delta': sum(a['points'] - b['points'] for a, b in common),
                       'type_deltas': {kind: sum(a['points'] - b['points'] for a, b in common if a['type'] == kind)
@@ -108,7 +113,7 @@ def build_report(snapshot, run, previous=None):
         if row['status'] != 'ok' and row['points'] != 0: raise ValueError('Failed or abstained result must have zero points')
         number(row['seconds'], 'latency'); number(row['calls'], 'calls')
         if int(row['calls']) != row['calls']: raise ValueError('Calls must be an integer')
-    string_answer = run['config'].get('strategy', {}).get('output_contract') == 'complete_answer_v1'
+    string_answer = run['config'].get('strategy', {}).get('output_contract') in {'complete_answer_v1', 'concise_answer_v2'}
     summaries = {}
     for variant in variants:
         rows = [r for r in run['results'] if r['variant'] == variant]
@@ -128,6 +133,7 @@ def build_report(snapshot, run, previous=None):
                                 'rubric': hashes.get('rubrics'), 'question_inputs': hashes.get('questions'),
                                 'exam_max_points': snapshot['exam_max_points']},
         'variants': summaries,
+        'comparison_variant_map': run['config'].get('comparison_variant_map', {}),
         'items': [{key: row.get(key) for key in ['question_id', 'type', 'variant', 'max_points', 'question_hash', 'status', 'points', 'grader', 'grade_reason']}
                   for row in run['results']],
         'notes': ['Pending grades and selected-but-not-run items remain unknown; excluded items contribute zero to the full-paper total.',
