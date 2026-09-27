@@ -1,6 +1,21 @@
 # Research objective
 
-Current user override (27 September 2026): **run only Qwen3.5 2B Q4_K_M**.
+Current user override (27 September 2026, harness of models): find the
+**smallest system that passes the history matura** (extended level, formula
+2023, 60 points; pass = 35% = 21/60 including the essay). Essays are never
+generated: prepared essays from `data/essay-bank/v2` are submitted unchanged and
+the model only chooses one. Fine-tuning, several models and any quantization
+are allowed. The selected system is `scripts/harness/run_system.sh`: fine-tuned
+Qwen3.5-4B IQ2_M plus the Q8_0 vision projector, 2,126,891,136 learned bytes
+(GGUFs in `artifacts/harness/gguf`, rebuilt by `scripts/harness/build_model.sh`).
+One frozen run on the June 2026 paper scored a provisional 27–28/60, so June
+2026 is no longer an untouched holdout. Identical development runs differ by up
+to 4 points per paper; see `docs/results/2026-09-27-harness-of-models.md`.
+The 2B-only override below is superseded for this goal; keep it and all
+historical results unchanged. Do not commit `data/sft/` (CKE items and
+e-Historia-derived context); rebuild it with `scripts/harness/build_sft.py`.
+
+Previous user override (27 September 2026): **run only Qwen3.5 2B Q4_K_M**.
 Temporarily exclude essays and the essay bank. Use the complete non-essay suite
 in `configs/evaluation/nonessay-v1.json`: 2023 and May 2024–2026, 150 items,
 180 points (45 per paper). This replaces the earlier tiny-model/full-paper run

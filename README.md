@@ -2,10 +2,30 @@
 
 Modules for preparing matura task data and comparing exam-solving systems.
 
+## Harness of models (27 September 2026)
+
+Goal: the smallest system that passes the history matura (formula 2023; pass
+mark 21/60 including the essay). The essay is never generated; the model picks a
+prepared essay. `scripts/harness/run_system.sh <exam.json> <answers.json>` runs a
+fine-tuned Qwen3.5-4B at IQ2_M with the Q8_0 vision projector
+(**2,126,891,136 learned bytes**), BM25 retrieval and the essay bank.
+
+| Evaluation | Non-essay /45 | Essay /15 | Total /60 |
+|---|---:|---:|---:|
+| June 2026 reserved paper, one frozen run (two graders) | 15–16 | 12 | **27–28** |
+| Four development papers × three passes | 12–20 | 4–15 (selected essays) | 18–33 (8 of 12 reach 21) |
+
+Grades are provisional (Claude graders, CKE rubric). The June paper passed; on
+the development papers the margin is thin and run-to-run variance moves a paper
+by up to 4 points. See the [results and limitations](docs/results/2026-09-27-harness-of-models.md).
+
+## Earlier work
+
 Our research is guided by exam points: run a fixed model after each meaningful
 checkpoint, grade its answers, and choose the next change from measured errors.
-The current user-selected model is **Qwen3.5 2B Q4_K_M only**, including image
-input. Essays are temporarily excluded. See the [four-paper workflow](docs/nonessay-evaluation.md).
+Before the harness-of-models goal, the user-selected model was **Qwen3.5 2B
+Q4_K_M only**, including image input, with essays excluded. See the
+[four-paper workflow](docs/nonessay-evaluation.md).
 
 Latest [non-essay baseline](docs/results/2026-09-27-nonessay-baseline.md):
 
