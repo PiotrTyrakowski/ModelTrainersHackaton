@@ -15,8 +15,13 @@ its topic was seen). The non-essay mean over the four June papers is 12–13/45:
 a borderline pass. A larger alternative was declared before its runs:
 `scripts/harness/run_system_q4.sh`, the same harness with the base Qwen3.5-4B
 Q4_K_M, 3,107,832,544 learned bytes. It passed all four June papers (22–39/60,
-non-essay mean 21.75). All eight formula-2023 papers in the repository are now
-used, so neither system has an untouched confirmation. Identical development
+non-essay mean 21.75). A pre-declared in-between size,
+`scripts/harness/run_system_q3.sh` (base Q3_K_M, answers up to 600 tokens,
+2,660,283,104 learned bytes), passed its development gate and all four June
+papers (23–35/60, non-essay 14–25, mean about 20); it is the smallest
+configuration that did, and its essay votes never parse, so it picks essays
+lexically. All eight formula-2023 papers in the repository are now used, so no
+system has an untouched confirmation. Identical development
 runs differ by up to 4 points per paper; see
 `docs/results/2026-09-27-harness-of-models.md`.
 The 2B-only override below is superseded for this goal; keep it and all

@@ -50,6 +50,15 @@ record (answers, points, grader reasons) is in
   - non-essay 18–27/45, mean 21.75.
 
   The June papers were no longer held out for this comparison.
+- **Pre-declared in-between size, one run per June paper.** The base Qwen3.5-4B
+  Q3_K_M, with answers of up to 600 tokens, has **2,660,283,104 learned bytes**,
+  14% less than the alternative. It passed a development gate (90/180), then
+  every June paper:
+  - totals 33–35 (June 2023), 23–24 (2024), 28 (2025) and 29–30 (2026);
+  - non-essay 14–25/45, mean 19.75–20. Its lowest, 14/45 on June 2025, is one
+    point above the target.
+  - Its essay votes never counted, so essays were chosen lexically. On June 2026
+    that gave a 5/15 essay where the other systems chose a 12/15 one.
 - **Development papers.** Three passes of the same weights scored 72, 59 and 63
   out of 180 on non-essay items (four papers of 45).
   - 11 of the 12 paper-passes reach 13/45.
@@ -65,9 +74,12 @@ record (answers, points, grader reasons) is in
     selected essays are added.
   - Nothing smaller that we measured came close. This is a borderline pass, not a
     reliable one.
-  - The 3.11 GB alternative passed every June paper, 9–10 non-essay points
-    ahead. It is the smallest configuration we saw pass every paper. Confirming
-    either system needs a new paper.
+  - The 2.66 GB in-between size passed every June paper, about 7 non-essay
+    points per paper ahead of the 2.13 GB system. It is the smallest
+    configuration that did, though by one point on June 2025.
+  - The 3.11 GB alternative also passed every June paper, with the widest
+    margin: its worst non-essay paper was 18/45.
+  - Confirming any of the three needs a new paper.
 
 ## The system
 
@@ -178,6 +190,8 @@ The GGUFs are in `artifacts/harness/gguf/`, which is not in git.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | FT 4B Q4_K_M + f16 projector | 3,455,869,984 | 18+6=24 | 16+7=23 | 23+4=27 | 16+4=20 | 94 | 20 | 0 |
 | Base 4B Q4_K_M + Q8_0 projector | 3,107,832,544 | 19+5=24 | 16+7=23 | 19+6=25 | 15+4=19 | 91 | 19 | 8 |
+| Base 4B Unsloth Q3_K_M + Q8_0 projector, answers up to 600 tokens | 2,660,283,104 | 21+6=27 | 16+6=22 | 16+6=22 | 16+3=19 | 90 | 19 | 3† |
+| Base 4B Unsloth Q3_K_M + Q8_0 projector | 2,660,283,104 | 20+6=26 | 16+6=22 | 16+6=22 | 16+3=19 | 89 | 19 | 25 |
 | Base 4B Q4_K_M + f16 projector | 3,413,361,504 | 20+5=25 | 14+6=20 | 17+6=23 | 16+5=21 | 89 | 20 | 8 |
 | Base 4B Q3_K_M + f16 projector | 2,991,230,496 | 19+4=23 | 15+7=22 | 13+6=19 | 16+1=17 | 81 | 17 | 12 |
 | FT 4B IQ3_XXS (UD recipe) + Q8_0 projector | 2,309,582,976 | 19+4=23 | 11+5=16 | 20+4=24 | 13+4=17 | 80 | 16 | 0 |
@@ -196,6 +210,10 @@ The GGUFs are in `artifacts/harness/gguf/`, which is not in git.
 | Base 2B Q4_K_M, text only, no retrieval | 1,312,164,800 | 3+4=7 | 3+2=5 | 3+3=6 | 3+1=4 | 22 | 4 | 10 |
 | FT 0.8B Q4_K_M, text only | 541,903,296 | 6+5=11 | 4+2=6 | 1+4=5 | 4+0=4 | 26 | 4 | 0 |
 | FT 0.8B Q4_K_M, text only, no retrieval | 541,903,296 | 1+4=5 | 3+1=4 | 4+4=8 | 1+0=1 | 18 | 1 | 0 |
+
+† Cut at 600 tokens, the only configuration with that limit. The two Q3_K_M
+rows ran after the June results, on local Metal (see "Pre-declared in-between
+size").
 
 Six further configurations were screened out on closed items and degenerate
 output before open grading:
@@ -514,14 +532,145 @@ earned 2 points; the alternative earned 7.
   development score is optimistic.
 - **Every paper passes.** With the assumed 8/15 essay the totals would be 26–35.
   The worst actual total is 22–24, on June 2024.
-- **Smallest reliable system.** On this evidence the 3.11 GB alternative is the
-  smallest configuration that passed every June paper. The 2.13 GB system is 32%
-  smaller but passed only when its essay was strong.
-- **Untested sizes.** Nothing between the two sizes ran on the June papers. For
-  example, the base Q3_K_M with the Q8_0 projector would be about 2.69 GB; it
-  scored 81/180 on development with the f16 projector.
+- **Smallest reliable system.** At this point the 3.11 GB alternative was the
+  smallest configuration that had passed every June paper. The 2.13 GB system is
+  32% smaller but passed only when its essay was strong. The in-between size in
+  the next section later passed all four as well.
 - **Limits.** These are single runs, graded by Claude, on papers that were no
   longer held out. Confirming either system needs a new paper.
+
+## Pre-declared in-between size: base Q3_K_M
+
+The selected system (2.13 GB) passed three of the four June papers; the
+alternative (3.11 GB) passed all four. We then tested one size in between. Each
+step was declared before its runs and had to pass a development gate before
+any June run.
+
+**Candidate**
+- The base Qwen3.5-4B Q3_K_M, not fine-tuned: Unsloth's GGUF, 2,293,388,448
+  bytes, SHA-256 `d6981ab4d77ba712b48ef69d69042d75b5e39b9dce5fb5a5b054fd08e06afb95`.
+  It was downloaded from Hugging Face (`unsloth/Qwen3.5-4B-GGUF`) during this
+  work.
+- With the same Q8_0 projector: **2,660,283,104 learned bytes**. That is 14%
+  less than the alternative and 25% more than the selected system.
+- Our own Q3_K_M quantization had scored 81/180 on development with the f16
+  projector; it was lost with the VM.
+
+**Gate (declared 07:03:13 CEST).** One development pass, graded like the
+development table: one grader per paper, and identical answers reuse earlier
+grades. The candidate passes only if:
+- every development paper reaches 16/45, the margin the selected system was
+  chosen by;
+- the total reaches 72/180, the selected system's best development pass;
+- at most 20 of the 154 answers are cut at the token limit.
+
+**First attempt: same harness, only `MODEL` swapped.** The gate failed on
+truncation.
+- Scores: 26, 22, 22 and 19, total 89/180. The alternative scored 91 with the
+  same worst paper.
+- But 25 of 154 answers were cut at 400 tokens (6, 7, 3 and 9 per paper), above
+  the limit of 20. The alternative had 8.
+- None of the 25 is a repetition loop. They are long answers cut mid-sentence,
+  so what they lost is already in the scores.
+- As declared, it was not run on the June papers.
+
+**Follow-up (declared 07:30:09 CEST, before its runs).**
+- One change, aimed at the measured failure: answers may run to 600 tokens
+  instead of 400 (`run_exam.py --max-tokens 600`). The essay votes are not
+  affected.
+- `scripts/harness/run_system_q3.sh` differs from `run_system.sh` only in the
+  model and this limit.
+- The gate is the same, with truncation counted at the new limit. The follow-up
+  was declared as the last size tested, whatever its outcome.
+
+**Follow-up on development: the gate passed.**
+- Scores 27, 22, 22 and 19, total 90/180, worst paper 19. The alternative scored
+  91 with the same worst paper.
+- 3 of 154 answers were cut at 600 tokens (0, 1, 0 and 2).
+- All three conditions held, so as declared it ran once on each June paper
+  (07:47–08:04 CEST).
+
+**June papers, one run each**
+
+| Paper | Closed | Open (A / B) | Non-essay (A / B) | Essay (A / B) | Total (A / B) | Selected | Alternative |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| June 2023 | 10/13 | 13 / 12 of 32 | 23 / 22 | 12 / 11, S10-18 | **35 / 33** | 26 / 24 | 34 / 33 |
+| June 2024 | 4/7 | 15 / 14 of 38 | 19 / 18 | 5 / 5, S10-19 | **24 / 23** | 13 / 16 | 22 / 24 |
+| June 2025 | 5/13 | 9 / 9 of 32 | 14 / 14 | 14 / 14, S14-02* | **28 / 28** | 25 / 26 | 34 / 34 |
+| June 2026 | 6/8 | 18 / 19 of 37 | 24 / 25 | 5 / 5, S13-01 | **29 / 30** | 27 / 28 | 39 / 38 |
+
+\* Written after the June 2025 topics had been seen.
+
+**Runs**
+- 33, 39, 35 and 41 answers in 223, 252, 218 and 259 s. The alternative took
+  224–286 s.
+- 2 of 148 answers were cut at 600 tokens, both on June 2025 (items 6.1 and 21).
+- **The essay selector ran without its model votes.** Each vote asks for one
+  letter within 8 tokens. The base Q3_K_M began every reply with an explanation
+  instead, so no vote was counted on any paper, and each topic fell back to its
+  best lexical candidate.
+  - We confirmed this after the runs by sending the June 2026 vote prompts to the
+    same model again. All five replies began with an explanation, such as
+    "Analizując podany temat…", and none reached a letter within 8 tokens.
+  - On June 2023–2025 the fallback gave the same essays as the selected system,
+    so their grades were reused.
+  - On June 2026 it submitted S13-01, on the reign of Kazimierz Jagiellończyk.
+    Topic 2 asks whether the whole Jagiellonian era was the best period of
+    pre-partition Poland. The votes of the other two systems had chosen S05-02,
+    on the last two Jagiellons, which was graded 12/15.
+    Two new strict grades gave 5 and 5: the essay argues about one king and
+    takes no stance on the era as a whole.
+  - The development papers have no essay item, so the gate could not catch this.
+
+**Grading.** Two independent blinded graders per paper for the open items, as
+for the other systems. They differ by one point on three items (June 2023 item 21,
+June 2024 item 12 and June 2026 item 25.1).
+
+**Where the points come from** (four June papers, 180 non-essay points, graders
+A / B)
+
+| Items | Selected, 2.13 GB | In-between, 2.66 GB | Alternative, 3.11 GB | Max |
+|---|---:|---:|---:|---:|
+| With images | 26 / 28 | 49 / 48 | 54 / 53 | 115 |
+| Text only | 22 / 24 | 31 / 31 | 33 / 34 | 65 |
+| Closed (keys) | 17 | 25 | 22 | 41 |
+| Open | 31 / 35 | 55 / 54 | 65 / 65 | 139 |
+| **Total** | **48 / 52** | **80 / 79** | **87 / 87** | **180** |
+
+**Reading**
+- **Declared criterion: met.** Non-essay reached at least 13/45 on every June
+  paper: 22–23, 18–19, 14 and 24–25. By the rule declared at 07:30 the
+  follow-up passes reliably.
+  - With the essays it actually chose, every total passes: 33–35, 23–24, 28 and
+    29–30.
+  - With the assumed 8/15 essay the totals would be 22–33.
+- **Between the other two, closer to the alternative.** Its non-essay mean is
+  19.75–20/45: about 7 points above the selected system and 2 below the
+  alternative.
+  - It earned the most closed points of the three (25/41).
+  - It trails the alternative on open items (55 vs 65 of 139).
+  - From development to June it lost about 2.5 points per paper; the
+    alternative lost about 1 and the selected system 3–4.
+- **Thin spot: June 2025.** 14/45 is one point above the target.
+  - Identical runs of the selected system differed by up to 4 points per paper,
+    so a paper like this could fail in another run.
+  - Its total of 28 relies on an essay written after the topic had been seen.
+    With the assumed 8/15 it would be 22.
+- **Essay choice is lexical only.** With this model the selector's votes never
+  count. On June 2026 that cost 7 points: 5/15 instead of 12/15. On another
+  paper the lexical ranking may choose well or badly.
+- **Smallest reliable system.** On this evidence the 2.66 GB in-between size is
+  the smallest configuration that met the declared criterion on every June
+  paper.
+  - It is 14% smaller than the alternative and 25% larger than the selected
+    system.
+  - The alternative keeps the wider margin: its worst non-essay paper was 18/45,
+    against 14/45 here.
+- **Limits.** These are single runs graded by Claude, on papers that were no
+  longer held out.
+  - This size was tested after the other systems' June results were known.
+  - Its gate used the same development papers as every earlier choice.
+  - Only a new paper can confirm it.
 
 ## What did not work
 
@@ -589,9 +738,10 @@ commit.
     mean, 12–13/45, is the best estimate of this system's non-essay level, and it
     sits at the 13/45 target.
   - The single run on June 2024 fails.
-  - The larger alternative ran on the same four papers after they had been used.
-    All eight formula-2023 papers in this repository have now been used, so a
-    new paper is needed to confirm either system.
+  - The larger alternative and the in-between size ran on the same four papers
+    after they had been used. All eight formula-2023 papers in this repository
+    have now been used, so a new paper is needed to confirm any of the three
+    systems.
 - **All grades come from Claude graders**, not CKE examiners. Two independent
   graders agreed closely on June; the development regrade differed by 2 points on
   one paper.
@@ -620,13 +770,17 @@ python3 scripts/harness/score.py --answers answers.json --keys data/generated/fi
 # the larger alternative: same harness, base Qwen3.5-4B Q4_K_M from unsloth/Qwen3.5-4B-GGUF
 # saved as artifacts/harness/gguf/Qwen3.5-4B-Q4_K_M.gguf (SHA-256 above)
 scripts/harness/run_system_q4.sh data/generated/final-exams/2026-june/exam.json answers-q4.json
+# the in-between size: base Qwen3.5-4B Q3_K_M from the same repository, answers up to 600 tokens
+# saved as artifacts/harness/gguf/Qwen3.5-4B-Q3_K_M.gguf (SHA-256 above)
+scripts/harness/run_system_q3.sh data/generated/final-exams/2026-june/exam.json answers-q3.json
 ```
 
 **Organiser format.** An end-to-end run of `run_system.sh` on the organisers'
 own mock `exam.json` (May 2023, which also has a `group` field) passed a format
 check: 37 answers in the order of their `answers-template.json`, with the same
 `exam_id` and no empty or cut answers, in 212 s. Its closed items scored 6/11,
-as in the development passes.
+as in the development passes. `run_system_q3.sh` passed the same check in 243 s,
+with closed items 6/11 and the same essay.
 
 For development papers without the essay, run
 `scripts/harness/make_dev_exams.py`, then `run_exam.py` with the same flags as

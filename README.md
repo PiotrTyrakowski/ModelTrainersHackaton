@@ -40,9 +40,30 @@ once on each June paper:
 
 \* The same essay as above, written after that topic had been seen.
 
-It passed every paper, even with an assumed 8/15 essay. It is the smallest
-configuration we saw do that. But the June papers were no longer held out when
-we chose to test it, so a new paper is needed to confirm it.
+It passed every paper, even with an assumed 8/15 essay, with the widest margin
+of the systems we tested. But the June papers were no longer held out when we chose to test
+it, so a new paper is needed to confirm it.
+
+**In-between size.** `scripts/harness/run_system_q3.sh` uses the base
+Qwen3.5-4B Q3_K_M and allows answers of up to 600 tokens
+(**2,660,283,104 learned bytes**, 14% less than the alternative). It was
+declared before its runs and passed a development gate before any June run:
+
+| June paper | Non-essay /45 | Essay /15 | Total /60 |
+|---|---:|---:|---:|
+| 2023 | 22–23 | 11–12 | 33–35 |
+| 2024 | 18–19 | 5 | 23–24 |
+| 2025 | 14 | 14* | 28 |
+| 2026 | 24–25 | 5 | 29–30 |
+
+\* The same essay as above.
+
+- It passed every paper and reached the declared 13/45 non-essay criterion on
+  each. That makes it the smallest configuration that did, though by only one
+  point on June 2025.
+- With this model the essay selector's votes never count, so essays are chosen
+  lexically. On June 2026 that gave a 5/15 essay where the other systems chose a
+  12/15 one.
 
 See the [results and limitations](docs/results/2026-09-27-harness-of-models.md).
 

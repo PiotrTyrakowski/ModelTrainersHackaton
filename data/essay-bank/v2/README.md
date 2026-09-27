@@ -62,3 +62,11 @@ Median length 641 words, minimum 456; the exam minimum is 300.
 - With the larger alternative model (base Qwen3.5-4B Q4_K_M), the selector made
   the same picks on the June papers except June 2024. There it chose S08-01 for
   topic 2 (Congress of Vienna), graded 4 and 5.
+- With the in-between model (base Qwen3.5-4B Q3_K_M), no vote was counted on any
+  June paper. The model begins its reply with an explanation instead of a
+  letter, so the 8-token vote finds none, and each topic falls back to its best
+  lexical candidate.
+  - On June 2023–2025 this gave the same picks as the frozen system.
+  - On June 2026 it gave S13-01 (Kazimierz Jagiellończyk) for topic 2, graded 5
+    and 5; the other models' votes had chosen S05-02, graded 12.
+  - The selector's votes therefore need a model that answers with a letter.
