@@ -9,8 +9,16 @@ are allowed. The selected system is `scripts/harness/run_system.sh`: fine-tuned
 Qwen3.5-4B IQ2_M plus the Q8_0 vision projector, 2,126,891,136 learned bytes
 (GGUFs in `artifacts/harness/gguf`, rebuilt by `scripts/harness/build_model.sh`).
 One frozen run on the June 2026 paper scored a provisional 27–28/60, so June
-2026 is no longer an untouched holdout. Identical development runs differ by up
-to 4 points per paper; see `docs/results/2026-09-27-harness-of-models.md`.
+2026 is no longer an untouched holdout. Single frozen runs on the June 2023,
+2024 and 2025 papers scored 24–26, 13–16 (fail) and 25–26 (essay written after
+its topic was seen). The non-essay mean over the four June papers is 12–13/45:
+a borderline pass. A larger alternative was declared before its runs:
+`scripts/harness/run_system_q4.sh`, the same harness with the base Qwen3.5-4B
+Q4_K_M, 3,107,832,544 learned bytes. It passed all four June papers (22–39/60,
+non-essay mean 21.75). All eight formula-2023 papers in the repository are now
+used, so neither system has an untouched confirmation. Identical development
+runs differ by up to 4 points per paper; see
+`docs/results/2026-09-27-harness-of-models.md`.
 The 2B-only override below is superseded for this goal; keep it and all
 historical results unchanged. Do not commit `data/sft/` (CKE items and
 e-Historia-derived context); rebuild it with `scripts/harness/build_sft.py`.

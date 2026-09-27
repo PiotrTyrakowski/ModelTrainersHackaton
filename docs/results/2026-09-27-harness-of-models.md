@@ -36,20 +36,38 @@ record (answers, points, grader reasons) is in
   - essay 12/15 from both graders.
 
   Without the essay the score is 15–16/45.
+- **June 2023, 2024 and 2025 check papers, one frozen run each.** None of their
+  non-essay items had been used in development.
+  - Non-essay scores were 14/13, 8/11 and 11/12 out of 45 (graders A/B).
+  - Totals with the selected essays were 26/24, 13/16 and 25/26.
+  - June 2024 fails. June 2025 passes only through an essay written after its
+    topic had been seen.
+  - Over the four June papers the non-essay part averages 12–13/45.
+- **Pre-declared larger alternative, one run per June paper.** The same harness
+  with the base Qwen3.5-4B Q4_K_M in place of the fine-tuned IQ2_M has
+  **3,107,832,544 learned bytes**. It passed all four June papers:
+  - totals 33–34 (June 2023), 22–24 (2024), 34 (2025) and 38–39 (2026);
+  - non-essay 18–27/45, mean 21.75.
+
+  The June papers were no longer held out for this comparison.
 - **Development papers.** Three passes of the same weights scored 72, 59 and 63
   out of 180 on non-essay items (four papers of 45).
   - 11 of the 12 paper-passes reach 13/45.
   - Only the first pass met the 16/45 margin on every paper.
   - If the essay the selector actually chose for each paper is added (strict
     grades 4, 6, 15 and 5), 8 of 12 paper-passes reach 21/60.
-- **Reading.** The system passed the reserved paper and passes the development
-  papers on average, but the margin is thin.
+- **Reading.** The 2.13 GB system passed June 2026 and June 2023 and failed June
+  2024. Its margin is thin even on the development papers.
+  - On unseen papers the non-essay part is 3–4 points below its development mean.
   - Non-deterministic batched decoding moves a paper by up to 4 points between
     identical runs.
   - May 2024 and May 2026 fall to 18–20/60 in two of three passes once their weak
     selected essays are added.
   - Nothing smaller that we measured came close. This is a borderline pass, not a
     reliable one.
+  - The 3.11 GB alternative passed every June paper, 9–10 non-essay points
+    ahead. It is the smallest configuration we saw pass every paper. Confirming
+    either system needs a new paper.
 
 ## The system
 
@@ -218,10 +236,10 @@ first pass.
 | 3 | Metal, Apple M5 (the June runtime), final code | 19 | 14 | 15 | 15 | 63 |
 | Mean | | 19.3 | 14.0 | 15.7 | 15.7 | 64.7 |
 
-**Retrieval and answers.** All three passes use the same weights. Retrieved
-passages were identical for every item in all passes. The code change between
-passes 1 and 2 only strips written image descriptions from retrieval queries,
-which did not change any retrieval here. Even so, few answers were identical:
+**Retrieval and answers.** All three passes use the same weights. Pass 1 ran an
+earlier checkout of the harness code; passes 2 and 3 ran the final code.
+Retrieved passages were identical for every item in all passes. Even so, few
+answers were identical:
 
 | Passes compared | Identical answers |
 |---|---:|
@@ -229,6 +247,7 @@ which did not change any retrieval here. Even so, few answers were identical:
 | 2 and 3 | 60/154 |
 | 1 and 3 | 56/154 |
 
+Passes 2 and 3 ran the same code and still share only 60 of 154 answers.
 llama-server's batched decoding (8 parallel slots) is not bit-reproducible, so
 each pass is one sample of the same system.
 
@@ -353,6 +372,157 @@ Jagiellons as a golden age".
 this system (about 16), and the essay is above the bank's usual grade. The total
 passes by 6–7 points.
 
+## June 2023–2025 check papers (one frozen run each)
+
+After the June 2026 run, the same frozen system ran once on three more
+formula-2023 papers: the CKE additional sessions of June 2023, 2024 and 2025.
+
+**What these papers are**
+- Their non-essay items were never used:
+  - they are not development papers;
+  - the SFT build drops every 2023+ session and every record with 8-gram overlap
+    with any formula-2023 paper.
+- They are not fully untouched:
+  - their essay topics were the bank's selection check;
+  - essay S14-02 was written after the June 2025 topics had been seen;
+  - search results showed short marking snippets for June 2024 and June 2025
+    when the PDFs were downloaded (see `docs/exams/more-history-papers.md`).
+- Claude subagents extracted them from the CKE PDFs into
+  `data/generated/final-exams/<year>-june/` (not in git), with the June 2026
+  instructions. No human reviewed them. We checked:
+  - item ids;
+  - point totals: 60, with one 15-point essay;
+  - the image files;
+  - that no marking text is in `exam.json`;
+  - every closed key against the marking PDF.
+
+**Procedure**
+- Before each run, a declaration recorded the same frozen hashes as for June
+  2026, at 05:53:50, 06:02:18 and 06:03:06 CEST.
+- Local Metal runtime, one run per paper, nothing changed after the results.
+- Grading as for June 2026:
+  - two independent graders for the open items, from blinded packets;
+  - two strict essay graders, each using that paper's own rubric.
+
+| Paper | Closed | Open (A / B) | Non-essay (A / B) | Essay (A / B) | Total (A / B) |
+|---|---:|---:|---:|---:|---:|
+| June 2023 | 6/13 | 8 / 7 of 32 | 14 / 13 | 12 / 11, S10-18 | **26 / 24** |
+| June 2024 | 3/7 | 5 / 8 of 38 | 8 / 11 | 5 / 5, S10-19 | **13 / 16** |
+| June 2025 | 5/13 | 6 / 7 of 32 | 11 / 12 | 14 / 14, S14-02* | **25 / 26** |
+| June 2026 (above) | 3/8 | 12 / 13 of 37 | 15 / 16 | 12 / 12, S05-02 | **27 / 28** |
+
+\* Written after the June 2025 topics had been seen; this grade does not
+measure the bank.
+
+**Runs**
+- 33, 39 and 35 answers in 174, 205 and 176 s, with no truncated answers.
+- The selector picked the same essays as in the selection check. Graded against
+  each paper's own rubric, S10-18 rose from 10 to 11–12.
+
+**Grader agreement**
+- The graders differ on one item each in 2023 and 2025.
+- In 2024 they differ on three items (16, 21.2 and 26.3): grader B gave 1 point
+  to answers that contain invented details.
+
+**Reading**
+- **Non-essay.** On the four June papers the non-essay part averages 12.0 (A) and
+  13.0 (B) out of 45. That is 3–4 points below the development mean of about 16;
+  the development papers were used for every choice, so they overstate this
+  system.
+- **With the assumed 8/15 essay**, only June 2023 and June 2026 reach 21/60. The
+  13/45 non-essay target is met on two of the four papers.
+- **With the essays the selector actually chose**, three of four pass. But June
+  2025 passes only through an essay written after its topic was seen, and June
+  2024 fails clearly (13–16).
+- **Images are the weakest part.** Items with images earned 18–20 of 85 points
+  on the three check papers; text items earned 15–16 of 50.
+  - In June 2024, all five "which picture or map, A or B" items (1, 3, 6, 9.2
+    and 13) were answered wrongly; the model chose B every time.
+  - Several answers contain invented names.
+- **Conclusion.** The frozen 2.13 GB system is a borderline pass, not a reliable
+  one. It passes when its essay fits the topic and fails when both the essay and
+  the non-essay part are weak.
+
+## Pre-declared larger alternative on the four June papers
+
+The check papers left the selected system at the 13/45 non-essay target, with
+June 2024 failed. We then tested one larger configuration to see whether it
+passes reliably.
+
+**Declaration (06:20:14 CEST, before its first run)**
+- Exactly one alternative, chosen on development evidence only:
+  - the base Qwen3.5-4B Q4_K_M, not fine-tuned: Unsloth's GGUF, 2,740,937,888
+    bytes, SHA-256 `00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4`;
+  - the same Q8_0 projector.
+
+  Together **3,107,832,544 learned bytes**, 46% more than the selected system.
+- It was the best configuration still available: 91/180 on development, worst
+  paper 19. The fine-tuned Q4_K_M (94) was lost with the VM.
+- Same harness code, retrieval index, essay bank and `run_system.sh` defaults;
+  only `MODEL` changes. `scripts/harness/run_system_q4.sh` runs it.
+- One run on each June paper, reported whatever the outcome; nothing was tuned.
+  The declaration recorded the same frozen hashes plus this model's.
+- **Not a held-out test.** Testing a larger model was prompted by the selected
+  system's June results, so these papers are not held out for this choice.
+- The model file was downloaded from Hugging Face (`unsloth/Qwen3.5-4B-GGUF`)
+  during this work.
+
+| Paper | Closed | Open (A / B) | Non-essay (A / B) | Essay (A / B) | Total (A / B) | Selected system |
+|---|---:|---:|---:|---:|---:|---:|
+| June 2023 | 8/13 | 14 / 14 of 32 | 22 / 22 | 12 / 11, S10-18 | **34 / 33** | 26 / 24 |
+| June 2024 | 3/7 | 15 / 16 of 38 | 18 / 19 | 4 / 5, S08-01 | **22 / 24** | 13 / 16 |
+| June 2025 | 6/13 | 14 / 14 of 32 | 20 / 20 | 14 / 14, S14-02* | **34 / 34** | 25 / 26 |
+| June 2026 | 5/8 | 22 / 21 of 37 | 27 / 26 | 12 / 12, S05-02 | **39 / 38** | 27 / 28 |
+
+\* Written after the June 2025 topics had been seen.
+
+**Runs**
+- 33, 39, 35 and 41 answers in 224, 271, 226 and 286 s. The selected system
+  took 174–210 s.
+- 10 of 148 answers were cut at 400 tokens (1, 4, 1 and 4); the selected system
+  had none.
+- The selector chose the same essays except on June 2024. There it chose topic 2
+  with S08-01 (prepared for the Congress of Vienna) instead of topic 3; two new
+  strict grades gave 4 and 5. The other three essays are the same texts, so their
+  grades were reused.
+
+**Grading.** As for the selected system: two independent blinded graders per
+paper for the open items. They differ on three items (June 2024 item 11, June
+2026 items 16 and 22).
+
+**Where the points come from** (four June papers, 180 non-essay points, graders
+A / B)
+
+| Items | Selected, 2.13 GB | Alternative, 3.11 GB | Max |
+|---|---:|---:|---:|
+| With images | 26 / 28 | 54 / 53 | 115 |
+| Text only | 22 / 24 | 33 / 34 | 65 |
+| Closed (keys) | 17 | 22 | 41 |
+| Open | 31 / 35 | 65 / 65 | 139 |
+| **Total** | **48 / 52** | **87 / 87** | **180** |
+
+On the 11 "picture A or B" items, the selected system answered B nine times and
+earned 2 points; the alternative earned 7.
+
+**Reading**
+- **Non-essay.** The alternative averages 21.75/45 on the June papers with both
+  graders, 9–10 points above the selected system. On development it was about 7
+  points per paper ahead.
+- **Development to June.** The selected system lost 3–4 points per paper, the
+  alternative about 1. One explanation is selection: the selected system was
+  picked among many ~2 GB configurations on the development papers, so its
+  development score is optimistic.
+- **Every paper passes.** With the assumed 8/15 essay the totals would be 26–35.
+  The worst actual total is 22–24, on June 2024.
+- **Smallest reliable system.** On this evidence the 3.11 GB alternative is the
+  smallest configuration that passed every June paper. The 2.13 GB system is 32%
+  smaller but passed only when its essay was strong.
+- **Untested sizes.** Nothing between the two sizes ran on the June papers. For
+  example, the base Q3_K_M with the Q8_0 projector would be about 2.69 GB; it
+  scored 81/180 on development with the f16 projector.
+- **Limits.** These are single runs, graded by Claude, on papers that were no
+  longer held out. Confirming either system needs a new paper.
+
 ## What did not work
 
 - **Small models, even fine-tuned.** Tested: Qwen3.5-0.8B and 2B (base and our
@@ -412,9 +582,16 @@ commit.
 
 - **Development papers were used for every choice**: model, quantization,
   prompts and essay selector. Their scores are optimistic for this system.
-- **Only June 2026 was untouched.** It gives one sample of about 45 non-essay
-  points and one essay. Its 27–28 is consistent with the development spread but
-  does not establish a reliable pass.
+- **Only June 2026 was untouched.**
+  - The June 2023–2025 check papers had unused non-essay items, but their essay
+    topics had been seen and marking snippets for 2024/2025 had been visible.
+  - Together the four June papers give four samples of 45 non-essay points. Their
+    mean, 12–13/45, is the best estimate of this system's non-essay level, and it
+    sits at the 13/45 target.
+  - The single run on June 2024 fails.
+  - The larger alternative ran on the same four papers after they had been used.
+    All eight formula-2023 papers in this repository have now been used, so a
+    new paper is needed to confirm either system.
 - **All grades come from Claude graders**, not CKE examiners. Two independent
   graders agreed closely on June; the development regrade differed by 2 points on
   one paper.
@@ -440,7 +617,16 @@ LLAMA=/path/to/llama.cpp scripts/harness/build_model.sh /tmp/harness-build
 # one exam: organiser exam.json in, answers.json out (starts llama-server itself)
 scripts/harness/run_system.sh data/generated/final-exams/2026-june/exam.json answers.json
 python3 scripts/harness/score.py --answers answers.json --keys data/generated/final-exams/2026-june/keys.jsonl
+# the larger alternative: same harness, base Qwen3.5-4B Q4_K_M from unsloth/Qwen3.5-4B-GGUF
+# saved as artifacts/harness/gguf/Qwen3.5-4B-Q4_K_M.gguf (SHA-256 above)
+scripts/harness/run_system_q4.sh data/generated/final-exams/2026-june/exam.json answers-q4.json
 ```
+
+**Organiser format.** An end-to-end run of `run_system.sh` on the organisers'
+own mock `exam.json` (May 2023, which also has a `group` field) passed a format
+check: 37 answers in the order of their `answers-template.json`, with the same
+`exam_id` and no empty or cut answers, in 212 s. Its closed items scored 6/11,
+as in the development passes.
 
 For development papers without the essay, run
 `scripts/harness/make_dev_exams.py`, then `run_exam.py` with the same flags as

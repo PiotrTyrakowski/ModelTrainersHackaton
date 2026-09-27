@@ -13,11 +13,38 @@ fine-tuned Qwen3.5-4B at IQ2_M with the Q8_0 vision projector
 | Evaluation | Non-essay /45 | Essay /15 | Total /60 |
 |---|---:|---:|---:|
 | June 2026 reserved paper, one frozen run (two graders) | 15–16 | 12 | **27–28** |
+| June 2023 check paper, one frozen run | 13–14 | 11–12 | 24–26 |
+| June 2024 check paper, one frozen run | 8–11 | 5 | **13–16 (fail)** |
+| June 2025 check paper, one frozen run | 11–12 | 14* | 25–26 |
 | Four development papers × three passes | 12–20 | 4–15 (selected essays) | 18–33 (8 of 12 reach 21) |
 
-Grades are provisional (Claude graders, CKE rubric). The June paper passed; on
-the development papers the margin is thin and run-to-run variance moves a paper
-by up to 4 points. See the [results and limitations](docs/results/2026-09-27-harness-of-models.md).
+\* Written after that topic had been seen.
+
+Grades are provisional (Claude graders, CKE rubric).
+- The system passed June 2026 and June 2023 and failed June 2024. June 2025
+  passed only through an essay written after its topic had been seen.
+- Over the four June papers the non-essay part averages 12–13/45, so this is a
+  borderline pass, not a reliable one.
+
+**Larger alternative.** `scripts/harness/run_system_q4.sh` is the same harness
+with the base (not fine-tuned) Qwen3.5-4B Q4_K_M and the same projector
+(**3,107,832,544 learned bytes**). It was declared before its runs, then run
+once on each June paper:
+
+| June paper | Non-essay /45 | Essay /15 | Total /60 |
+|---|---:|---:|---:|
+| 2023 | 22 | 11–12 | 33–34 |
+| 2024 | 18–19 | 4–5 | 22–24 |
+| 2025 | 20 | 14* | 34 |
+| 2026 | 26–27 | 12 | 38–39 |
+
+\* The same essay as above, written after that topic had been seen.
+
+It passed every paper, even with an assumed 8/15 essay. It is the smallest
+configuration we saw do that. But the June papers were no longer held out when
+we chose to test it, so a new paper is needed to confirm it.
+
+See the [results and limitations](docs/results/2026-09-27-harness-of-models.md).
 
 ## Earlier work
 

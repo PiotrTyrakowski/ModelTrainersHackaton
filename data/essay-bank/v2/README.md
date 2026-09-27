@@ -53,3 +53,12 @@ Median length 641 words, minimum 456; the exam minimum is 300.
   S05-02 for its topic 2 (provisional 12/15 from two strict graders). Graded
   picks on the other sets were 4–10/15, apart from two S14 essays written after
   their topics had been seen.
+- In the frozen check runs on the June 2023–2025 papers, the selector chose the
+  same essays as in the selection check. Two strict graders used each paper's
+  own rubric:
+  - S10-18: 12 and 11;
+  - S10-19: 5 and 5;
+  - S14-02: 14 and 14, but it was written after that topic had been seen.
+- With the larger alternative model (base Qwen3.5-4B Q4_K_M), the selector made
+  the same picks on the June papers except June 2024. There it chose S08-01 for
+  topic 2 (Congress of Vienna), graded 4 and 5.
