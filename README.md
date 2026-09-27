@@ -65,6 +65,14 @@ declared before its runs and passed a development gate before any June run:
   lexically. On June 2026 that gave a 5/15 essay where the other systems chose a
   12/15 one.
 
+**Before uploading.** Run
+`python3 scripts/harness/check_submission.py <answers-template.json> <answers.json> --exam <exam.json>`.
+It checks the organisers' file rules:
+- every ID exactly once, with string answers;
+- only the `exam_id`/`answers` and `id`/`answer` keys;
+- UTF-8 and under 1 MiB;
+- the essay names its topic number and has at least 300 words.
+
 See the [results and limitations](docs/results/2026-09-27-harness-of-models.md).
 
 ## Earlier work

@@ -775,6 +775,9 @@ scripts/harness/run_system_q4.sh data/generated/final-exams/2026-june/exam.json 
 # the in-between size: base Qwen3.5-4B Q3_K_M from the same repository, answers up to 600 tokens
 # saved as artifacts/harness/gguf/Qwen3.5-4B-Q3_K_M.gguf (SHA-256 above)
 scripts/harness/run_system_q3.sh data/generated/final-exams/2026-june/exam.json answers-q3.json
+# before uploading: the organisers' file rules (IDs, string answers, keys, size, essay topic and length);
+# --aligned out.json writes a copy in template order with "" for any missing ID
+python3 scripts/harness/check_submission.py answers-template.json answers.json --exam exam.json
 ```
 
 **Organiser format.** An end-to-end run of `run_system.sh` on the organisers'
@@ -783,6 +786,28 @@ check: 37 answers in the order of their `answers-template.json`, with the same
 `exam_id` and no empty or cut answers, in 212 s. Its closed items scored 6/11,
 as in the development passes. `run_system_q3.sh` passed the same check in 243 s,
 with closed items 6/11 and the same essay.
+
+**Submission robustness (added after every run above).** These changes are for the
+final upload only:
+- **`run_exam.py`.** An item that raises now gets an empty answer, which the answer
+  contract allows. Before, one such item aborted the run with no answers file.
+  Items that succeed are unaffected.
+- **`essay_bank.topics_of`.** It tries a looser topic numbering ("Temat 1.",
+  "Temat nr 1:", "1)") only when no line starts with "1. ". All 33 essay items in
+  the teammate's CKE item files (2015–2026 papers) and the organisers' mock parse
+  identically before and after.
+- **`check_submission.py`.** New: it checks the organisers' file rules before upload.
+- **`run_system.sh` and `run_system_q3.sh`.** These now start llama-server with
+  `--cache-ram 0`. `run_system_q4.sh` calls `run_system.sh`, so it changes too.
+  - The default cache keeps up to 8 GB of prompt states in RAM. With the desktop
+    apps open, it made the 16 GB Mac swap: server resident memory reached 9.2 GB
+    and generation fell below 1 token/s per slot. The mock rerun was stopped after
+    20 minutes, where earlier runs took about 4.
+  - Disabling the cache only means prompts are recomputed, not reused.
+
+No score reported here changes. However, `run_exam.py`, `essay_bank.py` and the
+two launchers no longer match the hashes in the declarations. The declared
+versions are in commit `3aba706` and earlier.
 
 For development papers without the essay, run
 `scripts/harness/make_dev_exams.py`, then `run_exam.py` with the same flags as

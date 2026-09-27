@@ -248,9 +248,17 @@ def solve(it):
     return it["id"], ans, trace
 
 
+def solve_safe(it):
+    """An item that raises gets an empty answer (allowed by the answer contract) instead of aborting the run."""
+    try:
+        return solve(it)
+    except Exception as e:
+        return it["id"], "", {"id": it["id"], "kind": kind(it), "error": f"{type(e).__name__}: {e}"}
+
+
 t0 = time.time()
 with ThreadPoolExecutor(args.workers) as ex:
-    res = list(ex.map(solve, items))
+    res = list(ex.map(solve_safe, items))
 answers = [{"id": i, "answer": a} for i, a, _ in res]
 Path(args.out).parent.mkdir(parents=True, exist_ok=True)
 Path(args.out).write_text(json.dumps({"exam_id": exam.get("exam_id"), "answers": answers}, ensure_ascii=False, indent=1), encoding="utf-8")

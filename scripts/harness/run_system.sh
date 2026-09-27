@@ -19,8 +19,9 @@ PORT=${PORT:-8080}
 INDEX=${INDEX:-$ROOT/data/raw/retrieval/wiki-ehistoria-v1/index.sqlite}
 BANK=${BANK:-$ROOT/data/essay-bank/v2/bank.jsonl}
 
+# --cache-ram 0: the default 8 GB RAM prompt cache made a 16 GB Mac swap; it only saves prompt recomputation
 if [ -z "${SERVER:-}" ]; then
-  "$LLAMA_SERVER" -m "$MODEL" --mmproj "$MMPROJ" -ngl 99 -c 65536 -np 8 --jinja --host 127.0.0.1 --port "$PORT" \
+  "$LLAMA_SERVER" -m "$MODEL" --mmproj "$MMPROJ" -ngl 99 -c 65536 -np 8 --cache-ram 0 --jinja --host 127.0.0.1 --port "$PORT" \
     > "${OUT}.server.log" 2>&1 &
   SPID=$!; trap 'kill $SPID 2>/dev/null' EXIT
   for _ in $(seq 1 120); do curl -sf "localhost:$PORT/health" >/dev/null && break; sleep 2; done

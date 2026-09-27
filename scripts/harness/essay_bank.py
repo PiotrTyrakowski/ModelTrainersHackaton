@@ -29,12 +29,18 @@ ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 
 
 
 def topics_of(question):
-    """Split an essay task into its numbered topics: [(n, text)]."""
-    parts = re.split(r"(?m)^\s*(\d)\.\s+", question)
-    out = []
-    for i in range(1, len(parts) - 1, 2):
-        out.append((int(parts[i]), " ".join(parts[i + 1].split())))
-    return out
+    """Split an essay task into its numbered topics: [(n, text)].
+
+    Topics are lines starting with "1. ", as in the CKE papers and the organisers' mock. Only when none are
+    found is a looser numbering tried ("Temat 1.", "Temat nr 1:", "1)"), so parsed papers are unaffected."""
+    for pattern in (r"(?m)^\s*(\d)\.\s+", r"(?mi)^\s*(?:temat\s*(?:nr\.?\s*)?)?(\d)\s*[.):]\s*"):
+        parts = re.split(pattern, question)
+        out = []
+        for i in range(1, len(parts) - 1, 2):
+            out.append((int(parts[i]), " ".join(parts[i + 1].split())))
+        if out:
+            return out
+    return []
 
 
 PREDICATE = re.compile(r"\b(był|była|było|byli|były|jest|są|okazała|okazał|okazały|okazało|przyniosła|przyniósł|przyniosły|"
