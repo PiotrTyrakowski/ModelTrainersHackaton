@@ -765,6 +765,8 @@ commit.
 # model files (CUDA GPU; about 1.5 h on an A100), or use the GGUFs with the hashes above
 LLAMA=/path/to/llama.cpp scripts/harness/build_model.sh /tmp/harness-build
 # one exam: organiser exam.json in, answers.json out (starts llama-server itself)
+# llama-server comes from $LLAMA_SERVER or PATH; on the Mac used here the Metal build of
+# llama.cpp 95887577a is in artifacts/harness/llama-bin/ (not in git)
 scripts/harness/run_system.sh data/generated/final-exams/2026-june/exam.json answers.json
 python3 scripts/harness/score.py --answers answers.json --keys data/generated/final-exams/2026-june/keys.jsonl
 # the larger alternative: same harness, base Qwen3.5-4B Q4_K_M from unsloth/Qwen3.5-4B-GGUF
